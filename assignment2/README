@@ -1,0 +1,51 @@
+This is an implementation of RAFT Consensus Algorithm (only internal state machine of RAFT Node)
+In Search of an Understandable Consensus Algorithm(Extended Version)
+Diego Ongaro and John Ousterhout
+Stanford University
+
+Implemented by Jash Dave for course CS-733 at IIT-Bombay
+
+In short this implementation takes input from above node in event channel, does replecation and gives response to above layer from action channel. Input events can be Append, AppendEntriesReq, AppendEntriesResp, Timeout, VoteReq and VoteResp. Output actions can be Commit, Send, Alarm, SaveState and Redirect.
+
+Functions :
+
+InitStateMachine() :
+Creates an instance of state machine and initializes it.
+
+Start() :
+Starts the state machine by calling processEvents()
+
+Stop() :
+Stops the state machine once the current request has ben completed.
+
+
+processEvents():
+This runs an infinite loop and calls processEvent().
+
+processEvent():
+This function dequeues one event from event channel and calls the corresponding handeler function.
+
+Append():
+Takes data and uid provided by above layer and replicates it on other servers and commits it to above layer.
+
+AppendEntriesReq():
+Send by leader to other peers to append the given data in their logs.
+
+AppendEntriesResp():
+Response for the AppendEntriesReq function.
+
+VoteReq():
+Send by candidate to other peers to get vote for becoming leader.
+
+VoteResp():
+Response for the VoteReq function.
+
+Assumes all functions are atomic i.e. StateMachine can only be stoped after completion of function in progress.
+stop flag has race condition but it is Ok 
+
+More References : 
+http://web.stanford.edu/~ouster/cgi-bin/papers/raft-atc14
+https://docs.google.com/document/d/18jQLDKf4k-Br6DMEONV4Sm0Sdy2YYw5bzKPX2U72Tzs/edit?usp=sharing
+https://en.wikipedia.org/wiki/Raft_%28computer_science%29
+
+

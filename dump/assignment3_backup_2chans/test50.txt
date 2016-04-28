@@ -1,0 +1,984 @@
+100 : {Alarm map[t:500ms]}
+200 : {Alarm map[t:500ms]}
+300 : {Alarm map[t:500ms]}
+400 : {Alarm map[t:500ms]}
+500 : {Alarm map[t:500ms]}
+200 : {Alarm map[t:500ms]}
+300 : {Alarm map[t:500ms]}
+200 : {SaveState map[currentTerm:1 votedFor:200]}
+300 : {SaveState map[votedFor:300 currentTerm:1]}
+200 : {Send map[peerId:100 event:{VoteReq map[term:1 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]}
+300 : {Send map[peerId:100 event:{VoteReq map[term:1 candidateId:300 lastLogIndex:0 lastLogTerm:0]}]}
+200 : {Send map[peerId:300 event:{VoteReq map[term:1 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]}
+300 : {Send map[peerId:200 event:{VoteReq map[term:1 candidateId:300 lastLogIndex:0 lastLogTerm:0]}]}
+200 : {Send map[peerId:400 event:{VoteReq map[term:1 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]}
+300 : {Send map[event:{VoteReq map[lastLogIndex:0 lastLogTerm:0 term:1 candidateId:300]} peerId:400]}
+200 : {Send map[peerId:500 event:{VoteReq map[term:1 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]}
+300 : {Send map[peerId:500 event:{VoteReq map[term:1 candidateId:300 lastLogIndex:0 lastLogTerm:0]}]}
+200 : {Send map[peerId:300 event:{VoteResp map[term:1 voteGranted:false]}]}
+500 : {SaveState map[currentTerm:1 votedFor:0]}
+300 : {Send map[peerId:200 event:{VoteResp map[term:1 voteGranted:false]}]}
+100 : {SaveState map[currentTerm:1 votedFor:0]}
+500 : {SaveState map[currentTerm:1 votedFor:200]}
+100 : {SaveState map[currentTerm:1 votedFor:200]}
+400 : {SaveState map[currentTerm:1 votedFor:0]}
+400 : {SaveState map[currentTerm:1 votedFor:200]}
+100 : {Send map[peerId:200 event:{VoteResp map[term:1 voteGranted:true]}]}
+100 : {Send map[peerId:300 event:{VoteResp map[term:1 voteGranted:false]}]}
+100 : {Alarm map[t:500ms]}
+100 : {SaveState map[currentTerm:2 votedFor:100]}
+400 : {Send map[peerId:200 event:{VoteResp map[voteGranted:true term:1]}]}
+400 : {Send map[peerId:300 event:{VoteResp map[term:1 voteGranted:false]}]}
+400 : {Alarm map[t:500ms]}
+400 : {SaveState map[currentTerm:2 votedFor:400]}
+500 : {Send map[peerId:200 event:{VoteResp map[term:1 voteGranted:true]}]}
+500 : {Send map[event:{VoteResp map[term:1 voteGranted:false]} peerId:300]}
+500 : {Alarm map[t:500ms]}
+500 : {SaveState map[currentTerm:2 votedFor:500]}
+200 : {Alarm map[t:50ms]}
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:1 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:1 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:1 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:1 leaderId:200 prevLogIndex:0 prevLogTerm:0]}]}
+300 : {SaveState map[currentTerm:1 votedFor:200]}
+300 : {Alarm map[t:500ms]}
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:1 success:true senderId:300 forIndex:0]}]}
+400 : {Send map[peerId:100 event:{VoteReq map[candidateId:400 lastLogIndex:0 lastLogTerm:0 term:2]}]}
+400 : {Send map[peerId:200 event:{VoteReq map[lastLogTerm:0 term:2 candidateId:400 lastLogIndex:0]}]}
+400 : {Send map[event:{VoteReq map[term:2 candidateId:400 lastLogIndex:0 lastLogTerm:0]} peerId:300]}
+400 : {Send map[peerId:500 event:{VoteReq map[lastLogTerm:0 term:2 candidateId:400 lastLogIndex:0]}]}
+400 : {Send map[peerId:0 event:{AppendEntriesResp map[forIndex:0 term:2 success:false senderId:400]}]}
+200 : {SaveState map[currentTerm:2 votedFor:400]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:400 event:{VoteResp map[term:2 voteGranted:false]}]}
+300 : {SaveState map[currentTerm:2 votedFor:0]}
+300 : {SaveState map[currentTerm:2 votedFor:400]}
+300 : {Send map[peerId:400 event:{VoteResp map[term:2 voteGranted:true]}]}
+500 : {Send map[peerId:100 event:{VoteReq map[term:2 candidateId:500 lastLogIndex:0 lastLogTerm:0]}]}
+500 : {Send map[peerId:200 event:{VoteReq map[lastLogIndex:0 lastLogTerm:0 term:2 candidateId:500]}]}
+500 : {Send map[peerId:300 event:{VoteReq map[term:2 candidateId:500 lastLogIndex:0 lastLogTerm:0]}]}
+200 : {Send map[peerId:500 event:{VoteResp map[term:2 voteGranted:false]}]}
+500 : {Send map[peerId:400 event:{VoteReq map[term:2 candidateId:500 lastLogIndex:0 lastLogTerm:0]}]}
+500 : {Send map[peerId:0 event:{AppendEntriesResp map[term:2 success:false senderId:500 forIndex:0]}]}
+500 : {Send map[peerId:400 event:{VoteResp map[term:2 voteGranted:false]}]}
+400 : {Send map[peerId:500 event:{VoteResp map[term:2 voteGranted:false]}]}
+300 : {Send map[peerId:500 event:{VoteResp map[term:2 voteGranted:false]}]}
+100 : {Send map[peerId:200 event:{VoteReq map[term:2 candidateId:100 lastLogIndex:0 lastLogTerm:0]}]}
+100 : {Send map[peerId:300 event:{VoteReq map[term:2 candidateId:100 lastLogIndex:0 lastLogTerm:0]}]}
+100 : {Send map[peerId:400 event:{VoteReq map[term:2 candidateId:100 lastLogIndex:0 lastLogTerm:0]}]}
+100 : {Send map[peerId:500 event:{VoteReq map[candidateId:100 lastLogIndex:0 lastLogTerm:0 term:2]}]}
+500 : {Send map[peerId:100 event:{VoteResp map[voteGranted:false term:2]}]}
+200 : {Send map[peerId:100 event:{VoteResp map[term:2 voteGranted:false]}]}
+300 : {Send map[peerId:100 event:{VoteResp map[term:2 voteGranted:false]}]}
+400 : {Send map[peerId:100 event:{VoteResp map[term:2 voteGranted:false]}]}
+100 : {Send map[peerId:0 event:{AppendEntriesResp map[term:2 success:false senderId:100 forIndex:0]}]}
+100 : {Send map[peerId:400 event:{VoteResp map[term:2 voteGranted:false]}]}
+100 : {Send map[peerId:500 event:{VoteResp map[term:2 voteGranted:false]}]}
+100 : {SaveState map[currentTerm:2 votedFor:0]}
+400 : {SaveState map[currentTerm:2 votedFor:0]}
+400 : {Alarm map[t:535.268ms]}
+500 : {SaveState map[currentTerm:2 votedFor:0]}
+500 : {Alarm map[t:784.045ms]}
+100 : {Alarm map[t:682.796ms]}
+300 : {Alarm map[t:500ms]}
+300 : {SaveState map[currentTerm:3 votedFor:300]}
+300 : {Send map[event:{VoteReq map[lastLogIndex:0 lastLogTerm:0 term:3 candidateId:300]} peerId:100]}
+300 : {Send map[peerId:200 event:{VoteReq map[term:3 candidateId:300 lastLogIndex:0 lastLogTerm:0]}]}
+300 : {Send map[peerId:400 event:{VoteReq map[term:3 candidateId:300 lastLogIndex:0 lastLogTerm:0]}]}
+300 : {Send map[event:{VoteReq map[lastLogIndex:0 lastLogTerm:0 term:3 candidateId:300]} peerId:500]}
+500 : {SaveState map[currentTerm:3 votedFor:0]}
+200 : {Alarm map[t:500ms]}
+200 : {SaveState map[currentTerm:3 votedFor:200]}
+200 : {Send map[peerId:100 event:{VoteReq map[term:3 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]}
+200 : {Send map[event:{VoteReq map[term:3 candidateId:200 lastLogIndex:0 lastLogTerm:0]} peerId:300]}
+200 : {Send map[peerId:400 event:{VoteReq map[term:3 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]}
+200 : {Send map[peerId:500 event:{VoteReq map[term:3 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]}
+300 : {Send map[peerId:200 event:{VoteResp map[term:3 voteGranted:false]}]}
+200 : {Send map[peerId:300 event:{VoteResp map[term:3 voteGranted:false]}]}
+100 : {SaveState map[currentTerm:3 votedFor:0]}
+400 : {SaveState map[currentTerm:3 votedFor:0]}
+400 : {SaveState map[votedFor:300 currentTerm:3]}
+100 : {SaveState map[votedFor:300 currentTerm:3]}
+500 : {SaveState map[currentTerm:3 votedFor:300]}
+400 : {Send map[peerId:300 event:{VoteResp map[term:3 voteGranted:true]}]}
+400 : {Send map[peerId:200 event:{VoteResp map[term:3 voteGranted:false]}]}
+100 : {Send map[peerId:300 event:{VoteResp map[term:3 voteGranted:true]}]}
+100 : {Send map[peerId:200 event:{VoteResp map[voteGranted:false term:3]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[event:{AppendEntriesResp map[senderId:100 forIndex:0 term:3 success:true]} peerId:300]}
+200 : {SaveState map[currentTerm:3 votedFor:300]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[success:true senderId:400 forIndex:0 term:3]}]}
+500 : {Send map[peerId:300 event:{VoteResp map[term:3 voteGranted:true]}]}
+500 : {Send map[event:{VoteResp map[term:3 voteGranted:false]} peerId:200]}
+500 : {Alarm map[t:500ms]}
+500 : {Send map[event:{AppendEntriesResp map[senderId:500 forIndex:0 term:3 success:true]} peerId:300]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:300 event:{AppendEntriesResp map[senderId:100 forIndex:0 term:3 success:true]}]}
+300 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]} peerId:200]}
+300 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]} peerId:400]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]}]}
+500 : {Alarm map[t:500ms]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[success:true senderId:200 forIndex:0 term:3]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[event:{AppendEntriesResp map[senderId:400 forIndex:0 term:3 success:true]} peerId:300]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:300]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0]}]}
+500 : {Alarm map[t:500ms]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[forIndex:0 term:3 success:true senderId:500]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:100 forIndex:0]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[forIndex:0 term:3 success:true senderId:200]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[forIndex:0 term:3 success:true senderId:400]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:300]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Alarm map[t:500ms]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[event:{AppendEntriesResp map[senderId:100 forIndex:0 term:3 success:true]} peerId:300]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[senderId:400 forIndex:0 term:3 success:true]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+300 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]} peerId:200]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]}]}
+500 : {Alarm map[t:500ms]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:300 event:{AppendEntriesResp map[forIndex:0 term:3 success:true senderId:100]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:400 forIndex:0]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:300]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:300]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Alarm map[t:500ms]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[senderId:500 forIndex:0 term:3 success:true]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:300 event:{AppendEntriesResp map[success:true senderId:100 forIndex:0 term:3]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:400 forIndex:0]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0]}]}
+300 : {Send map[event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:300]} peerId:400]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Alarm map[t:500ms]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[event:{AppendEntriesResp map[senderId:100 forIndex:0 term:3 success:true]} peerId:300]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:400 forIndex:0]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3]}]}
+500 : {Alarm map[t:500ms]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[forIndex:0 term:3 success:true senderId:500]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[event:{AppendEntriesResp map[senderId:400 forIndex:0 term:3 success:true]} peerId:300]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:100 forIndex:0]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0 prevLogTerm:0]}]}
+500 : {Alarm map[t:500ms]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:300 event:{AppendEntriesResp map[success:true senderId:100 forIndex:0 term:3]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[event:{AppendEntriesResp map[senderId:400 forIndex:0 term:3 success:true]} peerId:300]}
+i: 0 CmtIdx: 18446744073709551615 LastLogIdx -1
+300 : {LogStore map[index:1 data:[48] term:3]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogTerm:0 entries:{3 [48] true} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0]}]}
+300 : {Send map[event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{3 [48] true} leaderCommit:0 term:3 leaderId:300]} peerId:200]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:300 prevLogIndex:0 prevLogTerm:0 entries:{3 [48] true} leaderCommit:0 term:3]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[prevLogTerm:0 entries:{3 [48] true} leaderCommit:0 term:3 leaderId:300 prevLogIndex:0]}]}
+300 : {LogStore map[term:3 index:2 data:[49]]}
+500 : {Alarm map[t:500ms]}
+500 : {LogStore map[data:[48] term:3 index:1]}
+100 : {Alarm map[t:500ms]}
+100 : {LogStore map[term:3 index:1 data:[48]]}
+200 : {Alarm map[t:500ms]}
+200 : {LogStore map[index:1 data:[48] term:3]}
+400 : {Alarm map[t:500ms]}
+400 : {LogStore map[term:3 index:1 data:[48]]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:400 forIndex:1]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:500 forIndex:1]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:1 prevLogTerm:3 entries:{3 [49] true} leaderCommit:0]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[prevLogTerm:3 entries:{3 [49] true} leaderCommit:0 term:3 leaderId:300 prevLogIndex:1]}]}
+300 : {Send map[event:{AppendEntriesReq map[prevLogIndex:1 prevLogTerm:3 entries:{3 [49] true} leaderCommit:0 term:3 leaderId:300]} peerId:400]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:1 prevLogTerm:3 entries:{3 [49] true} leaderCommit:0]}]}
+300 : {LogStore map[term:3 index:3 data:[50]]}
+100 : {Send map[peerId:300 event:{AppendEntriesResp map[forIndex:1 term:3 success:true senderId:100]}]}
+500 : {Alarm map[t:500ms]}
+500 : {LogStore map[term:3 index:2 data:[49]]}
+100 : {Alarm map[t:500ms]}
+100 : {LogStore map[term:3 index:2 data:[49]]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:1]}]}
+200 : {Alarm map[t:500ms]}
+200 : {LogStore map[data:[49] term:3 index:2]}
+400 : {Alarm map[t:500ms]}
+400 : {LogStore map[term:3 index:2 data:[49]]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:500 forIndex:2]}]}
+100 : {Send map[event:{AppendEntriesResp map[senderId:100 forIndex:2 term:3 success:true]} peerId:300]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true} leaderCommit:0 term:3 leaderId:300]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true} leaderCommit:0]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{3 [50] true} leaderCommit:0 term:3 leaderId:300 prevLogIndex:2 prevLogTerm:3]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true} leaderCommit:0]}]}
+300 : {LogStore map[term:3 index:4 data:[51]]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:2]}]}
+500 : {Alarm map[t:500ms]}
+500 : {LogStore map[term:3 index:3 data:[50]]}
+100 : {Alarm map[t:500ms]}
+100 : {LogStore map[term:3 index:3 data:[50]]}
+200 : {Alarm map[t:500ms]}
+200 : {LogStore map[term:3 index:3 data:[50]]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[senderId:400 forIndex:2 term:3 success:true]}]}
+400 : {Alarm map[t:500ms]}
+400 : {LogStore map[term:3 index:3 data:[50]]}
+100 : {Send map[peerId:300 event:{AppendEntriesResp map[senderId:100 forIndex:3 term:3 success:true]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:500 forIndex:3]}]}
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[senderId:200 forIndex:3 term:3 success:true]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogTerm:3 entries:{3 [51] true} leaderCommit:0 term:3 leaderId:300 prevLogIndex:3]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[entries:{3 [51] true} leaderCommit:0 term:3 leaderId:300 prevLogIndex:3 prevLogTerm:3]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:0]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:0]}]}
+300 : {LogStore map[term:3 index:5 data:[52]]}
+500 : {Alarm map[t:500ms]}
+200 : {Alarm map[t:500ms]}
+200 : {LogStore map[data:[51] term:3 index:4]}
+500 : {LogStore map[term:3 index:4 data:[51]]}
+100 : {Alarm map[t:500ms]}
+100 : {LogStore map[term:3 index:4 data:[51]]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:400 forIndex:3]}]}
+400 : {Alarm map[t:500ms]}
+400 : {LogStore map[term:3 index:4 data:[51]]}
+i: 1 CmtIdx: 18446744073709551615 LastLogIdx 4
+200 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:200 forIndex:4]}]}
+400 : {Send map[peerId:300 event:{AppendEntriesResp map[term:3 success:true senderId:400 forIndex:4]}]}
+100 : {Send map[peerId:300 event:{AppendEntriesResp map[success:true senderId:100 forIndex:4 term:3]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesResp map[success:true senderId:500 forIndex:4 term:3]}]}
+200 : {Alarm map[t:500ms]}
+200 : {SaveState map[currentTerm:4 votedFor:200]}
+200 : {Send map[event:{VoteReq map[lastLogIndex:4 lastLogTerm:3 term:4 candidateId:200]} peerId:100]}
+200 : {Send map[peerId:300 event:{VoteReq map[term:4 candidateId:200 lastLogIndex:4 lastLogTerm:3]}]}
+200 : {Send map[peerId:400 event:{VoteReq map[term:4 candidateId:200 lastLogIndex:4 lastLogTerm:3]}]}
+200 : {Send map[peerId:500 event:{VoteReq map[candidateId:200 lastLogIndex:4 lastLogTerm:3 term:4]}]}
+500 : {SaveState map[currentTerm:4 votedFor:0]}
+500 : {SaveState map[currentTerm:4 votedFor:200]}
+100 : {Alarm map[t:500ms]}
+100 : {SaveState map[currentTerm:4 votedFor:100]}
+100 : {Send map[peerId:200 event:{VoteReq map[term:4 candidateId:100 lastLogIndex:4 lastLogTerm:3]}]}
+100 : {Send map[peerId:300 event:{VoteReq map[term:4 candidateId:100 lastLogIndex:4 lastLogTerm:3]}]}
+100 : {Send map[peerId:400 event:{VoteReq map[term:4 candidateId:100 lastLogIndex:4 lastLogTerm:3]}]}
+100 : {Send map[peerId:500 event:{VoteReq map[term:4 candidateId:100 lastLogIndex:4 lastLogTerm:3]}]}
+200 : {Send map[peerId:100 event:{VoteResp map[term:4 voteGranted:false]}]}
+100 : {Send map[peerId:200 event:{VoteResp map[term:4 voteGranted:false]}]}
+400 : {SaveState map[currentTerm:4 votedFor:0]}
+400 : {SaveState map[currentTerm:4 votedFor:200]}
+500 : {Send map[peerId:200 event:{VoteResp map[term:4 voteGranted:true]}]}
+500 : {Send map[peerId:100 event:{VoteResp map[term:4 voteGranted:false]}]}
+500 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:200 event:{VoteResp map[term:4 voteGranted:true]}]}
+500 : {SaveState map[currentTerm:5 votedFor:500]}
+400 : {Send map[event:{VoteResp map[term:4 voteGranted:false]} peerId:100]}
+200 : {Alarm map[t:50ms]}
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:4]}]}
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderCommit:0 term:4 leaderId:200 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false}]}]}
+100 : {SaveState map[votedFor:200 currentTerm:4]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:0]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:0]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:4 prevLogTerm:3 entries:{3 [52] true}]} peerId:100]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:4 prevLogTerm:3 entries:{3 [52] true}]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:3 entries:{3 [52] true} leaderCommit:0 term:3 leaderId:300 prevLogIndex:4]}]}
+500 : {Send map[peerId:100 event:{VoteReq map[term:5 candidateId:500 lastLogIndex:4 lastLogTerm:3]}]}
+300 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:300 prevLogIndex:4 prevLogTerm:3 entries:{3 [52] true}]} peerId:500]}
+500 : {Send map[event:{VoteReq map[term:5 candidateId:500 lastLogIndex:4 lastLogTerm:3]} peerId:200]}
+300 : {LogStore map[term:3 index:6 data:[53]]}
+500 : {Send map[peerId:300 event:{VoteReq map[lastLogIndex:4 lastLogTerm:3 term:5 candidateId:500]}]}
+500 : {Send map[peerId:400 event:{VoteReq map[candidateId:500 lastLogIndex:4 lastLogTerm:3 term:5]}]}
+500 : {Send map[peerId:0 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:0]}]}
+400 : {SaveState map[currentTerm:5 votedFor:0]}
+400 : {SaveState map[currentTerm:5 votedFor:500]}
+500 : {Send map[peerId:0 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:5]}]}
+200 : {SaveState map[currentTerm:5 votedFor:500]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{VoteResp map[term:5 voteGranted:false]}]}
+200 : {Alarm map[t:500ms]}
+200 : {LogStore map[term:5 index:5 data:[52]]}
+400 : {Send map[peerId:500 event:{VoteResp map[term:5 voteGranted:true]}]}
+400 : {Alarm map[t:500ms]}
+400 : {LogStore map[term:5 index:5 data:[52]]}
+100 : {SaveState map[currentTerm:5 votedFor:0]}
+100 : {SaveState map[currentTerm:5 votedFor:500]}
+100 : {Send map[peerId:500 event:{VoteResp map[voteGranted:true term:5]}]}
+100 : {Alarm map[t:500ms]}
+100 : {LogStore map[term:5 index:5 data:[52]]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4]}]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false}]}]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false}]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesReq map[leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false}]}]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false}]}]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500]} peerId:300]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5]}]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3]}]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3]}]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5]}]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesReq map[leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5]}]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3]}]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3]}]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4]}]}
+300 : {Alarm map[t:50ms]}
+200 : {Send map[event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:5]} peerId:200]}
+200 : {Alarm map[t:500ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[entries:{3 [53] true} leaderCommit:0 term:3 leaderId:300 prevLogIndex:5 prevLogTerm:3]}]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}]}
+200 : {Alarm map[t:500ms]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:5 prevLogTerm:3 entries:{3 [53] true} leaderCommit:0]}]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}]}
+300 : {Send map[event:{AppendEntriesReq map[prevLogIndex:5 prevLogTerm:3 entries:{3 [53] true} leaderCommit:0 term:3 leaderId:300]} peerId:400]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[forIndex:0 term:5 success:true senderId:200]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:5 prevLogTerm:3 entries:{3 [53] true} leaderCommit:0]}]}
+200 : {Alarm map[t:500ms]}
+300 : {LogStore map[term:3 index:7 data:[54]]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[senderId:200 forIndex:0 term:5 success:true]}]}
+500 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:6]}]}
+200 : {Alarm map[t:500ms]}
+200 : {LogStore map[term:5 index:6 data:[53]]}
+400 : {Send map[event:{AppendEntriesResp map[term:5 success:true senderId:400 forIndex:5]} peerId:200]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:500 event:{AppendEntriesResp map[senderId:400 forIndex:0 term:5 success:true]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:400 forIndex:0]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:400 forIndex:0]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:500 event:{AppendEntriesResp map[success:true senderId:400 forIndex:0 term:5]}]}
+400 : {Alarm map[t:500ms]}
+400 : {Send map[peerId:500 event:{AppendEntriesResp map[forIndex:0 term:5 success:true senderId:400]}]}
+400 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:5 success:true senderId:100 forIndex:5]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[success:true senderId:100 forIndex:0 term:5]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:100 forIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[event:{AppendEntriesResp map[senderId:100 forIndex:0 term:5 success:true]} peerId:500]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[forIndex:0 term:5 success:true senderId:100]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[forIndex:0 term:5 success:true senderId:100]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:100 forIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {LogStore map[term:5 index:6 data:[53]]}
+400 : {Send map[peerId:500 event:{AppendEntriesResp map[senderId:400 forIndex:0 term:5 success:true]}]}
+400 : {Alarm map[t:500ms]}
+400 : {LogStore map[index:6 data:[53] term:5]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500]} peerId:100]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4]}]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4]}]}
+500 : {Send map[event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500]} peerId:300]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5]}]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500]}]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3]}]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500]} peerId:100]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false}]} peerId:300]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false}]}]}
+i: 2 CmtIdx: 18446744073709551615 LastLogIdx 6
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:200 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3]}]}
+500 : {Send map[peerId:300 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Alarm map[t:50ms]}
+500 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500 prevLogIndex:4]}]}
+500 : {Send map[event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0 term:5 leaderId:500]} peerId:200]}
+500 : {Send map[peerId:300 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+500 : {Send map[peerId:400 event:{AppendEntriesReq map[term:5 leaderId:500 prevLogIndex:4 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:6]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[success:true senderId:200 forIndex:0 term:5]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[senderId:200 forIndex:0 term:5 success:true]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}]}
+200 : {Alarm map[t:500ms]}
+200 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}]}
+300 : {Alarm map[t:50ms]}
+300 : {Send map[peerId:100 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:6 prevLogTerm:3 entries:{3 [54] true} leaderCommit:0]}]}
+300 : {Send map[peerId:200 event:{AppendEntriesReq map[term:3 leaderId:300 prevLogIndex:6 prevLogTerm:3 entries:{3 [54] true} leaderCommit:0]}]}
+300 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:300 prevLogIndex:6 prevLogTerm:3 entries:{3 [54] true} leaderCommit:0 term:3]}]}
+300 : {Send map[peerId:500 event:{AppendEntriesReq map[entries:{3 [54] true} leaderCommit:0 term:3 leaderId:300 prevLogIndex:6 prevLogTerm:3]}]}
+300 : {LogStore map[term:3 index:8 data:[55]]}
+500 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:7]}]}
+200 : {Alarm map[t:500ms]}
+200 : {LogStore map[data:[54] term:5 index:7]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:100 forIndex:6]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:100 forIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:100 forIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[forIndex:0 term:5 success:true senderId:100]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[forIndex:0 term:5 success:true senderId:100]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[success:true senderId:100 forIndex:0 term:5]}]}
+100 : {Alarm map[t:500ms]}
+100 : {Send map[peerId:500 event:{AppendEntriesResp map[term:5 success:true senderId:100 forIndex:0]}]}
+100 : {Alarm map[t:500ms]}
+100 : {LogStore map[index:7 data:[54] term:5]}
+exit status 2
+FAIL	github.com/JashDave/cs733/assignment4/assignment3	7.285s
+
+
+
+------------------------------------------------------500ms   50ms --------------------------
+panic: runtime error: index out of range
+
+goroutine 79 [running]:
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).AppendEntriesResp(0xc8204e83c0, 0x5, 0xc822c32801, 0x64, 0x6)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:388 +0x11af
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvent(0xc8204e83c0)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:210 +0xf1c
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvents(0xc8204e83c0)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:193 +0x2d
+created by github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:163 +0xf4
+
+goroutine 1 [chan receive]:
+testing.RunTests(0x790ed0, 0xa79d20, 0x1, 0x1, 0xc81ffff801)
+	/usr/local/go/src/testing/testing.go:562 +0x8ad
+testing.(*M).Run(0xc82003ff08, 0x20)
+	/usr/local/go/src/testing/testing.go:494 +0x70
+main.main()
+	github.com/JashDave/cs733/assignment4/assignment3/_test/_testmain.go:54 +0x116
+
+goroutine 17 [syscall, locked to thread]:
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:1721 +0x1
+
+goroutine 5 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+github.com/JashDave/cs733/assignment4/assignment3.TestMultipleCommit(0xc82007e510)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node_test.go:289 +0x99a
+testing.tRunner(0xc82007e510, 0xa79d20)
+	/usr/local/go/src/testing/testing.go:456 +0x98
+created by testing.RunTests
+	/usr/local/go/src/testing/testing.go:561 +0x86d
+
+goroutine 6 [select]:
+github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).drain(0xc8200aa000)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:206 +0x29d
+created by github.com/syndtr/goleveldb/leveldb/util.NewBufferPool
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:237 +0x26b
+
+goroutine 19 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).compactionError(0xc820001800)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:90 +0x54a
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:141 +0x6d2
+
+goroutine 20 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mpoolDrain(0xc820001800)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_state.go:97 +0x14b
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:142 +0x6f4
+
+goroutine 21 [runnable]:
+github.com/syndtr/goleveldb/leveldb.(*DB).tCompaction(0xc820001800)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:804 +0x7fe
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:148 +0x8f8
+
+goroutine 22 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mCompaction(0xc820001800)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:751 +0x253
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:149 +0x91a
+
+goroutine 23 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).jWriter(0xc820001800)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_write.go:37 +0x1a2
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:150 +0x93c
+
+goroutine 26 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).receiveForever(0xc8200148c0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:290 +0x44
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:186 +0x180
+
+goroutine 10 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).receiveForever(0xc8200146e0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:290 +0x44
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:186 +0x180
+
+goroutine 11 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).sendForever(0xc8200146e0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:241 +0x53
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:187 +0x1a2
+
+goroutine 12 [select]:
+github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).drain(0xc8204d80e0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:206 +0x29d
+created by github.com/syndtr/goleveldb/leveldb/util.NewBufferPool
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:237 +0x26b
+
+goroutine 13 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).compactionError(0xc8204e4480)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:90 +0x54a
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:141 +0x6d2
+
+goroutine 14 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mpoolDrain(0xc8204e4480)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_state.go:97 +0x14b
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:142 +0x6f4
+
+goroutine 15 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).tCompaction(0xc8204e4480)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:804 +0x7fe
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:148 +0x8f8
+
+goroutine 16 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mCompaction(0xc8204e4480)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:751 +0x253
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:149 +0x91a
+
+goroutine 34 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).jWriter(0xc8204e4480)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_write.go:37 +0x1a2
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:150 +0x93c
+
+goroutine 37 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).compactionError(0xc8204e4900)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:90 +0x54a
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:141 +0x6d2
+
+goroutine 38 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mpoolDrain(0xc8204e4900)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_state.go:97 +0x14b
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:142 +0x6f4
+
+goroutine 27 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).sendForever(0xc8200148c0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:241 +0x53
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:187 +0x1a2
+
+goroutine 28 [select]:
+github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).drain(0xc8200aa1c0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:206 +0x29d
+created by github.com/syndtr/goleveldb/leveldb/util.NewBufferPool
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:237 +0x26b
+
+goroutine 39 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).tCompaction(0xc8204e4900)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:804 +0x7fe
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:148 +0x8f8
+
+goroutine 40 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mCompaction(0xc8204e4900)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:751 +0x253
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:149 +0x91a
+
+goroutine 41 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).jWriter(0xc8204e4900)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_write.go:37 +0x1a2
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:150 +0x93c
+
+goroutine 44 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).receiveForever(0xc8204e6230)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:290 +0x44
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:186 +0x180
+
+goroutine 45 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).sendForever(0xc8204e6230)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:241 +0x53
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:187 +0x1a2
+
+goroutine 46 [select]:
+github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).drain(0xc8204d81c0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:206 +0x29d
+created by github.com/syndtr/goleveldb/leveldb/util.NewBufferPool
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:237 +0x26b
+
+goroutine 29 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).compactionError(0xc820d6a000)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:90 +0x54a
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:141 +0x6d2
+
+goroutine 30 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mpoolDrain(0xc820d6a000)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_state.go:97 +0x14b
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:142 +0x6f4
+
+goroutine 31 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).tCompaction(0xc820d6a000)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:804 +0x7fe
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:148 +0x8f8
+
+goroutine 32 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mCompaction(0xc820d6a000)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:751 +0x253
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:149 +0x91a
+
+goroutine 33 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).jWriter(0xc820d6a000)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_write.go:37 +0x1a2
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:150 +0x93c
+
+goroutine 52 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).receiveForever(0xc820014910)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:290 +0x44
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:186 +0x180
+
+goroutine 53 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).sendForever(0xc820014910)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:241 +0x53
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:187 +0x1a2
+
+goroutine 54 [select]:
+github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).drain(0xc8200aa460)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:206 +0x29d
+created by github.com/syndtr/goleveldb/leveldb/util.NewBufferPool
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/util/buffer_pool.go:237 +0x26b
+
+goroutine 55 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).compactionError(0xc8204e5680)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:90 +0x54a
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:141 +0x6d2
+
+goroutine 56 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mpoolDrain(0xc8204e5680)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_state.go:97 +0x14b
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:142 +0x6f4
+
+goroutine 57 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).tCompaction(0xc8204e5680)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:804 +0x7fe
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:148 +0x8f8
+
+goroutine 58 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).mCompaction(0xc8204e5680)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:751 +0x253
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:149 +0x91a
+
+goroutine 59 [select]:
+github.com/syndtr/goleveldb/leveldb.(*DB).jWriter(0xc8204e5680)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_write.go:37 +0x1a2
+created by github.com/syndtr/goleveldb/leveldb.openDB
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db.go:150 +0x93c
+
+goroutine 47 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).receiveForever(0xc8204e60a0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:290 +0x44
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:186 +0x180
+
+goroutine 48 [chan receive]:
+github.com/cs733-iitb/cluster/mock.(*MockServer).sendForever(0xc8204e60a0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:241 +0x53
+created by github.com/cs733-iitb/cluster/mock.newMockServer
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/cluster/mock/mock_cluster.go:187 +0x1a2
+
+goroutine 49 [syscall]:
+syscall.Syscall(0x4a, 0x1d, 0x0, 0x0, 0xc821eec0a7, 0x0, 0x3fff59)
+	/usr/local/go/src/syscall/asm_linux_amd64.s:18 +0x5
+syscall.Fsync(0x1d, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_linux_amd64.go:492 +0x4a
+os.(*File).Sync(0xc8200a4408, 0x0, 0x0)
+	/usr/local/go/src/os/file_posix.go:121 +0x61
+github.com/syndtr/goleveldb/leveldb/storage.(*fileWrap).Sync(0xc822c475c0, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/storage/file_storage.go:497 +0x45
+github.com/syndtr/goleveldb/leveldb.(*tWriter).finish(0xc822c5d8c0, 0x0, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/table.go:512 +0x107
+github.com/syndtr/goleveldb/leveldb.(*tOps).createFrom(0xc820011b30, 0x7fca56437470, 0xc8204d7200, 0x0, 0x2, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/table.go:340 +0x260
+github.com/syndtr/goleveldb/leveldb.(*Transaction).flush(0xc820d5d400, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_transaction.go:90 +0x193
+github.com/syndtr/goleveldb/leveldb.(*Transaction).Commit(0xc820d5d400, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_transaction.go:196 +0x17a
+github.com/cs733-iitb/log.(*Log).Append.func1(0xc82230bbe8, 0xc820d5d400)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/log/log.go:64 +0x3d
+github.com/cs733-iitb/log.(*Log).Append(0xc8204da0a0, 0x6b7aa0, 0xc822c47500, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/log/log.go:83 +0x3ca
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processAction(0xc8200a6000)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:90 +0xcb7
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processActions(0xc8200a6000)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:127 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:136 +0x35
+
+goroutine 66 [chan receive]:
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvent(0xc8200a6000)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:68 +0x7d
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvents(0xc8200a6000)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:75 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:137 +0x57
+
+goroutine 67 [chan receive]:
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvent(0xc8204e8000)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:201 +0x7b
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvents(0xc8204e8000)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:193 +0x2d
+created by github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:163 +0xf4
+
+goroutine 68 [syscall]:
+syscall.Syscall(0x4a, 0x1f, 0x0, 0x0, 0xc8223140a7, 0x0, 0x3fff59)
+	/usr/local/go/src/syscall/asm_linux_amd64.s:18 +0x5
+syscall.Fsync(0x1f, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_linux_amd64.go:492 +0x4a
+os.(*File).Sync(0xc82002c4a8, 0x0, 0x0)
+	/usr/local/go/src/os/file_posix.go:121 +0x61
+github.com/syndtr/goleveldb/leveldb/storage.(*fileWrap).Sync(0xc822c4af30, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/storage/file_storage.go:497 +0x45
+github.com/syndtr/goleveldb/leveldb.(*tWriter).finish(0xc822c40fc0, 0x0, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/table.go:512 +0x107
+github.com/syndtr/goleveldb/leveldb.(*tOps).createFrom(0xc82004e8a0, 0x7fca56437470, 0xc8200a7e00, 0x0, 0x2, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/table.go:340 +0x260
+github.com/syndtr/goleveldb/leveldb.(*Transaction).flush(0xc8200a9b80, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_transaction.go:90 +0x193
+github.com/syndtr/goleveldb/leveldb.(*Transaction).Commit(0xc8200a9b80, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_transaction.go:196 +0x17a
+github.com/cs733-iitb/log.(*Log).Append.func1(0xc822b55be8, 0xc8200a9b80)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/log/log.go:64 +0x3d
+github.com/cs733-iitb/log.(*Log).Append(0xc8204da100, 0x6b7aa0, 0xc822c4ae70, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/log/log.go:83 +0x3ca
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processAction(0xc8200a6300)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:90 +0xcb7
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processActions(0xc8200a6300)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:127 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:136 +0x35
+
+goroutine 69 [chan receive]:
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvent(0xc8200a6300)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:68 +0x7d
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvents(0xc8200a6300)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:75 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:137 +0x57
+
+goroutine 70 [chan receive]:
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvent(0xc8204e80f0)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:201 +0x7b
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvents(0xc8204e80f0)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:193 +0x2d
+created by github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:163 +0xf4
+
+goroutine 71 [syscall]:
+syscall.Syscall(0x4a, 0x1e, 0x0, 0x0, 0xc8216960a7, 0x0, 0x3fff59)
+	/usr/local/go/src/syscall/asm_linux_amd64.s:18 +0x5
+syscall.Fsync(0x1e, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_linux_amd64.go:492 +0x4a
+os.(*File).Sync(0xc82002c4a0, 0x0, 0x0)
+	/usr/local/go/src/os/file_posix.go:121 +0x61
+github.com/syndtr/goleveldb/leveldb/storage.(*fileWrap).Sync(0xc822c4ac30, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/storage/file_storage.go:497 +0x45
+github.com/syndtr/goleveldb/leveldb.(*tWriter).finish(0xc822c40cc0, 0x0, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/table.go:512 +0x107
+github.com/syndtr/goleveldb/leveldb.(*tOps).createFrom(0xc82004f140, 0x7fca56437470, 0xc8200a7d00, 0x0, 0x2, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/table.go:340 +0x260
+github.com/syndtr/goleveldb/leveldb.(*Transaction).flush(0xc8200a9a40, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_transaction.go:90 +0x193
+github.com/syndtr/goleveldb/leveldb.(*Transaction).Commit(0xc8200a9a40, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_transaction.go:196 +0x17a
+github.com/cs733-iitb/log.(*Log).Append.func1(0xc821acbbe8, 0xc8200a9a40)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/log/log.go:64 +0x3d
+github.com/cs733-iitb/log.(*Log).Append(0xc8204da4e0, 0x6b7aa0, 0xc822c4ab70, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/log/log.go:83 +0x3ca
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processAction(0xc8200a6280)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:90 +0xcb7
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processActions(0xc8200a6280)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:127 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:136 +0x35
+
+goroutine 72 [chan receive]:
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvent(0xc8200a6280)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:68 +0x7d
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvents(0xc8200a6280)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:75 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:137 +0x57
+
+goroutine 73 [chan receive]:
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvent(0xc8204e81e0)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:201 +0x7b
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvents(0xc8204e81e0)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:193 +0x2d
+created by github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:163 +0xf4
+
+goroutine 74 [syscall]:
+syscall.Syscall(0x4a, 0x1c, 0x0, 0x0, 0xc82002c498, 0x1c, 0x0)
+	/usr/local/go/src/syscall/asm_linux_amd64.s:18 +0x5
+syscall.Fsync(0x1c, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_linux_amd64.go:492 +0x4a
+os.(*File).Sync(0xc82002c498, 0x0, 0x0)
+	/usr/local/go/src/os/file_posix.go:121 +0x61
+github.com/syndtr/goleveldb/leveldb/storage.syncDir(0xc82000b6d0, 0xa, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/storage/file_storage_unix.go:82 +0xb4
+github.com/syndtr/goleveldb/leveldb/storage.(*fileWrap).Sync(0xc820d3ee70, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/storage/file_storage.go:503 +0xa6
+github.com/syndtr/goleveldb/leveldb.(*session).flushManifest(0xc820082160, 0xc820d5d320, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/session_util.go:245 +0x12d
+github.com/syndtr/goleveldb/leveldb.(*session).commit(0xc820082160, 0xc820d5d320, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/session.go:198 +0x107
+github.com/syndtr/goleveldb/leveldb.(*Transaction).Commit(0xc820d5d2c0, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/syndtr/goleveldb/leveldb/db_transaction.go:206 +0x299
+github.com/cs733-iitb/log.(*Log).Append.func1(0xc822b35be8, 0xc820d5d2c0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/log/log.go:64 +0x3d
+github.com/cs733-iitb/log.(*Log).Append(0xc82000ea20, 0x6b7aa0, 0xc8200b5da0, 0x0, 0x0)
+	/home/jash/Downloads/Cloud/src/github.com/cs733-iitb/log/log.go:83 +0x3ca
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processAction(0xc8204d6200)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:90 +0xcb7
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processActions(0xc8204d6200)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:127 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:136 +0x35
+
+goroutine 75 [chan receive]:
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvent(0xc8204d6200)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:68 +0x7d
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvents(0xc8204d6200)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:75 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:137 +0x57
+
+goroutine 76 [chan receive]:
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvent(0xc8204e82d0)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:201 +0x7b
+github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).processEvents(0xc8204e82d0)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:193 +0x2d
+created by github.com/JashDave/cs733/assignment3/assignment2.(*StateMachine).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment3/assignment2/raft_state_machine.go:163 +0xf4
+
+goroutine 77 [chan receive]:
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processAction(0xc8200a6880)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:81 +0x78
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processActions(0xc8200a6880)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:127 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:136 +0x35
+
+goroutine 78 [chan receive]:
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvent(0xc8200a6880)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:68 +0x7d
+github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).processInboxEvents(0xc8200a6880)
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:75 +0x21
+created by github.com/JashDave/cs733/assignment4/assignment3.(*RaftNode).Start
+	/home/jash/Downloads/Cloud/src/github.com/JashDave/cs733/assignment4/assignment3/raft_node.go:137 +0x57
+

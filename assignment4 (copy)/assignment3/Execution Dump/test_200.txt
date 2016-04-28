@@ -1,0 +1,1569 @@
+i: 0 NodeID: 100 CmtIdx: 0 LastLogIdx 1 Leader: 100
+i: 0 NodeID: 200 CmtIdx: 0 LastLogIdx 0 Leader: 100
+i: 0 NodeID: 300 CmtIdx: 0 LastLogIdx 0 Leader: 100
+i: 0 NodeID: 400 CmtIdx: 0 LastLogIdx 0 Leader: 100
+i: 0 NodeID: 500 CmtIdx: 0 LastLogIdx 0 Leader: 100
+i: 1 NodeID: 100 CmtIdx: 2 LastLogIdx 5 Leader: 100
+i: 1 NodeID: 200 CmtIdx: 2 LastLogIdx 3 Leader: 100
+i: 1 NodeID: 300 CmtIdx: 2 LastLogIdx 3 Leader: 100
+i: 1 NodeID: 400 CmtIdx: 2 LastLogIdx 3 Leader: 100
+i: 1 NodeID: 500 CmtIdx: 1 LastLogIdx 3 Leader: 100
+CI {[48] 1 <nil>}
+i: 2 NodeID: 100 CmtIdx: 7 LastLogIdx 10 Leader: 100
+i: 2 NodeID: 200 CmtIdx: 5 LastLogIdx 7 Leader: 100
+i: 2 NodeID: 300 CmtIdx: 6 LastLogIdx 7 Leader: 100
+i: 2 NodeID: 400 CmtIdx: 5 LastLogIdx 8 Leader: 100
+i: 2 NodeID: 500 CmtIdx: 6 LastLogIdx 8 Leader: 100
+CI {[49] 2 <nil>}
+i: 3 NodeID: 100 CmtIdx: 11 LastLogIdx 16 Leader: 100
+i: 3 NodeID: 200 CmtIdx: 10 LastLogIdx 10 Leader: 100
+i: 3 NodeID: 300 CmtIdx: 9 LastLogIdx 12 Leader: 100
+i: 3 NodeID: 400 CmtIdx: 10 LastLogIdx 11 Leader: 100
+i: 3 NodeID: 500 CmtIdx: 10 LastLogIdx 12 Leader: 100
+CI {[50] 3 <nil>}
+i: 4 NodeID: 100 CmtIdx: 14 LastLogIdx 20 Leader: 100
+i: 4 NodeID: 200 CmtIdx: 12 LastLogIdx 13 Leader: 100
+i: 4 NodeID: 300 CmtIdx: 13 LastLogIdx 15 Leader: 100
+i: 4 NodeID: 400 CmtIdx: 13 LastLogIdx 14 Leader: 100
+i: 4 NodeID: 500 CmtIdx: 12 LastLogIdx 15 Leader: 100
+CI {[51] 4 <nil>}
+i: 5 NodeID: 100 CmtIdx: 17 LastLogIdx 25 Leader: 100
+i: 5 NodeID: 200 CmtIdx: 15 LastLogIdx 16 Leader: 100
+i: 5 NodeID: 300 CmtIdx: 15 LastLogIdx 18 Leader: 100
+i: 5 NodeID: 400 CmtIdx: 15 LastLogIdx 17 Leader: 100
+i: 5 NodeID: 500 CmtIdx: 16 LastLogIdx 18 Leader: 100
+CI {[52] 5 <nil>}
+i: 6 NodeID: 100 CmtIdx: 20 LastLogIdx 30 Leader: 100
+i: 6 NodeID: 200 CmtIdx: 19 LastLogIdx 20 Leader: 100
+i: 6 NodeID: 300 CmtIdx: 19 LastLogIdx 21 Leader: 100
+i: 6 NodeID: 400 CmtIdx: 19 LastLogIdx 21 Leader: 100
+i: 6 NodeID: 500 CmtIdx: 19 LastLogIdx 21 Leader: 100
+CI {[53] 6 <nil>}
+i: 7 NodeID: 100 CmtIdx: 23 LastLogIdx 35 Leader: 100
+i: 7 NodeID: 200 CmtIdx: 21 LastLogIdx 22 Leader: 100
+i: 7 NodeID: 300 CmtIdx: 21 LastLogIdx 24 Leader: 100
+i: 7 NodeID: 400 CmtIdx: 22 LastLogIdx 23 Leader: 100
+i: 7 NodeID: 500 CmtIdx: 22 LastLogIdx 24 Leader: 100
+CI {[54] 7 <nil>}
+i: 8 NodeID: 100 CmtIdx: 26 LastLogIdx 40 Leader: 100
+i: 8 NodeID: 200 CmtIdx: 24 LastLogIdx 24 Leader: 100
+i: 8 NodeID: 300 CmtIdx: 24 LastLogIdx 27 Leader: 100
+i: 8 NodeID: 400 CmtIdx: 24 LastLogIdx 26 Leader: 100
+i: 8 NodeID: 500 CmtIdx: 25 LastLogIdx 27 Leader: 100
+CI {[55] 8 <nil>}
+i: 9 NodeID: 100 CmtIdx: 29 LastLogIdx 45 Leader: 100
+i: 9 NodeID: 200 CmtIdx: 26 LastLogIdx 27 Leader: 100
+i: 9 NodeID: 300 CmtIdx: 28 LastLogIdx 30 Leader: 100
+i: 9 NodeID: 400 CmtIdx: 27 LastLogIdx 29 Leader: 100
+i: 9 NodeID: 500 CmtIdx: 28 LastLogIdx 31 Leader: 100
+CI {[56] 9 <nil>}
+i: 10 NodeID: 100 CmtIdx: 32 LastLogIdx 50 Leader: 100
+i: 10 NodeID: 200 CmtIdx: 29 LastLogIdx 30 Leader: 100
+i: 10 NodeID: 300 CmtIdx: 31 LastLogIdx 33 Leader: 100
+i: 10 NodeID: 400 CmtIdx: 31 LastLogIdx 32 Leader: 100
+i: 10 NodeID: 500 CmtIdx: 31 LastLogIdx 35 Leader: 100
+CI {[57] 10 <nil>}
+i: 11 NodeID: 100 CmtIdx: 35 LastLogIdx 55 Leader: 100
+i: 11 NodeID: 200 CmtIdx: 32 LastLogIdx 32 Leader: 100
+i: 11 NodeID: 300 CmtIdx: 34 LastLogIdx 36 Leader: 100
+i: 11 NodeID: 400 CmtIdx: 34 LastLogIdx 36 Leader: 100
+i: 11 NodeID: 500 CmtIdx: 34 LastLogIdx 39 Leader: 100
+CI {[49 48] 11 <nil>}
+i: 12 NodeID: 100 CmtIdx: 39 LastLogIdx 61 Leader: 100
+i: 12 NodeID: 200 CmtIdx: 35 LastLogIdx 36 Leader: 100
+i: 12 NodeID: 300 CmtIdx: 38 LastLogIdx 40 Leader: 100
+i: 12 NodeID: 400 CmtIdx: 37 LastLogIdx 39 Leader: 100
+i: 12 NodeID: 500 CmtIdx: 38 LastLogIdx 43 Leader: 100
+CI {[49 49] 12 <nil>}
+i: 13 NodeID: 100 CmtIdx: 42 LastLogIdx 65 Leader: 100
+i: 13 NodeID: 200 CmtIdx: 38 LastLogIdx 39 Leader: 100
+i: 13 NodeID: 300 CmtIdx: 41 LastLogIdx 43 Leader: 100
+i: 13 NodeID: 400 CmtIdx: 40 LastLogIdx 41 Leader: 100
+i: 13 NodeID: 500 CmtIdx: 40 LastLogIdx 46 Leader: 100
+CI {[49 50] 13 <nil>}
+i: 14 NodeID: 100 CmtIdx: 44 LastLogIdx 69 Leader: 100
+i: 14 NodeID: 200 CmtIdx: 41 LastLogIdx 41 Leader: 100
+i: 14 NodeID: 300 CmtIdx: 44 LastLogIdx 45 Leader: 100
+i: 14 NodeID: 400 CmtIdx: 43 LastLogIdx 44 Leader: 100
+i: 14 NodeID: 500 CmtIdx: 44 LastLogIdx 49 Leader: 100
+CI {[49 51] 14 <nil>}
+i: 15 NodeID: 100 CmtIdx: 47 LastLogIdx 73 Leader: 100
+i: 15 NodeID: 200 CmtIdx: 44 LastLogIdx 44 Leader: 100
+i: 15 NodeID: 300 CmtIdx: 47 LastLogIdx 48 Leader: 100
+i: 15 NodeID: 400 CmtIdx: 47 LastLogIdx 47 Leader: 100
+i: 15 NodeID: 500 CmtIdx: 46 LastLogIdx 52 Leader: 100
+CI {[49 52] 15 <nil>}
+i: 16 NodeID: 100 CmtIdx: 50 LastLogIdx 78 Leader: 100
+i: 16 NodeID: 200 CmtIdx: 46 LastLogIdx 47 Leader: 100
+i: 16 NodeID: 300 CmtIdx: 49 LastLogIdx 51 Leader: 100
+i: 16 NodeID: 400 CmtIdx: 49 LastLogIdx 50 Leader: 100
+i: 16 NodeID: 500 CmtIdx: 49 LastLogIdx 56 Leader: 100
+CI {[49 53] 16 <nil>}
+i: 17 NodeID: 100 CmtIdx: 53 LastLogIdx 83 Leader: 100
+i: 17 NodeID: 200 CmtIdx: 49 LastLogIdx 50 Leader: 100
+i: 17 NodeID: 300 CmtIdx: 52 LastLogIdx 54 Leader: 100
+i: 17 NodeID: 400 CmtIdx: 52 LastLogIdx 53 Leader: 100
+i: 17 NodeID: 500 CmtIdx: 52 LastLogIdx 59 Leader: 100
+CI {[49 54] 17 <nil>}
+i: 18 NodeID: 100 CmtIdx: 55 LastLogIdx 87 Leader: 100
+i: 18 NodeID: 200 CmtIdx: 51 LastLogIdx 52 Leader: 100
+i: 18 NodeID: 300 CmtIdx: 54 LastLogIdx 56 Leader: 100
+i: 18 NodeID: 400 CmtIdx: 54 LastLogIdx 55 Leader: 100
+i: 18 NodeID: 500 CmtIdx: 54 LastLogIdx 61 Leader: 100
+CI {[49 55] 18 <nil>}
+i: 19 NodeID: 100 CmtIdx: 58 LastLogIdx 92 Leader: 100
+i: 19 NodeID: 200 CmtIdx: 54 LastLogIdx 55 Leader: 100
+i: 19 NodeID: 300 CmtIdx: 57 LastLogIdx 59 Leader: 100
+i: 19 NodeID: 400 CmtIdx: 57 LastLogIdx 59 Leader: 100
+i: 19 NodeID: 500 CmtIdx: 56 LastLogIdx 64 Leader: 100
+CI {[49 56] 19 <nil>}
+i: 20 NodeID: 100 CmtIdx: 61 LastLogIdx 96 Leader: 100
+i: 20 NodeID: 200 CmtIdx: 57 LastLogIdx 58 Leader: 100
+i: 20 NodeID: 300 CmtIdx: 59 LastLogIdx 61 Leader: 100
+i: 20 NodeID: 400 CmtIdx: 60 LastLogIdx 62 Leader: 100
+i: 20 NodeID: 500 CmtIdx: 59 LastLogIdx 66 Leader: 100
+CI {[49 57] 20 <nil>}
+i: 21 NodeID: 100 CmtIdx: 63 LastLogIdx 100 Leader: 100
+i: 21 NodeID: 200 CmtIdx: 60 LastLogIdx 61 Leader: 100
+i: 21 NodeID: 300 CmtIdx: 62 LastLogIdx 63 Leader: 100
+i: 21 NodeID: 400 CmtIdx: 63 LastLogIdx 64 Leader: 100
+i: 21 NodeID: 500 CmtIdx: 62 LastLogIdx 69 Leader: 100
+CI {[50 48] 21 <nil>}
+i: 22 NodeID: 100 CmtIdx: 67 LastLogIdx 105 Leader: 100
+i: 22 NodeID: 200 CmtIdx: 63 LastLogIdx 64 Leader: 100
+i: 22 NodeID: 300 CmtIdx: 65 LastLogIdx 67 Leader: 100
+i: 22 NodeID: 400 CmtIdx: 66 LastLogIdx 68 Leader: 100
+i: 22 NodeID: 500 CmtIdx: 64 LastLogIdx 72 Leader: 100
+CI {[50 49] 22 <nil>}
+i: 23 NodeID: 100 CmtIdx: 69 LastLogIdx 108 Leader: 100
+i: 23 NodeID: 200 CmtIdx: 65 LastLogIdx 66 Leader: 100
+i: 23 NodeID: 300 CmtIdx: 68 LastLogIdx 69 Leader: 100
+i: 23 NodeID: 400 CmtIdx: 69 LastLogIdx 70 Leader: 100
+i: 23 NodeID: 500 CmtIdx: 69 LastLogIdx 74 Leader: 100
+CI {[50 50] 23 <nil>}
+i: 24 NodeID: 100 CmtIdx: 72 LastLogIdx 112 Leader: 100
+i: 24 NodeID: 200 CmtIdx: 67 LastLogIdx 68 Leader: 100
+i: 24 NodeID: 300 CmtIdx: 71 LastLogIdx 71 Leader: 100
+i: 24 NodeID: 400 CmtIdx: 71 LastLogIdx 73 Leader: 100
+i: 24 NodeID: 500 CmtIdx: 71 LastLogIdx 77 Leader: 100
+CI {[50 51] 24 <nil>}
+i: 25 NodeID: 100 CmtIdx: 74 LastLogIdx 114 Leader: 100
+i: 25 NodeID: 200 CmtIdx: 69 LastLogIdx 70 Leader: 100
+i: 25 NodeID: 300 CmtIdx: 72 LastLogIdx 73 Leader: 100
+i: 25 NodeID: 400 CmtIdx: 73 LastLogIdx 75 Leader: 100
+i: 25 NodeID: 500 CmtIdx: 72 LastLogIdx 79 Leader: 100
+CI {[50 52] 25 <nil>}
+i: 26 NodeID: 100 CmtIdx: 76 LastLogIdx 117 Leader: 100
+i: 26 NodeID: 200 CmtIdx: 71 LastLogIdx 72 Leader: 100
+i: 26 NodeID: 300 CmtIdx: 74 LastLogIdx 74 Leader: 100
+i: 26 NodeID: 400 CmtIdx: 75 LastLogIdx 77 Leader: 100
+i: 26 NodeID: 500 CmtIdx: 75 LastLogIdx 81 Leader: 100
+CI {[50 53] 26 <nil>}
+i: 27 NodeID: 100 CmtIdx: 78 LastLogIdx 120 Leader: 100
+i: 27 NodeID: 200 CmtIdx: 73 LastLogIdx 74 Leader: 100
+i: 27 NodeID: 300 CmtIdx: 75 LastLogIdx 76 Leader: 100
+i: 27 NodeID: 400 CmtIdx: 77 LastLogIdx 79 Leader: 100
+i: 27 NodeID: 500 CmtIdx: 76 LastLogIdx 83 Leader: 100
+CI {[50 54] 27 <nil>}
+i: 28 NodeID: 100 CmtIdx: 79 LastLogIdx 123 Leader: 100
+i: 28 NodeID: 200 CmtIdx: 75 LastLogIdx 75 Leader: 100
+i: 28 NodeID: 300 CmtIdx: 77 LastLogIdx 78 Leader: 100
+i: 28 NodeID: 400 CmtIdx: 78 LastLogIdx 80 Leader: 100
+i: 28 NodeID: 500 CmtIdx: 78 LastLogIdx 85 Leader: 100
+CI {[50 55] 28 <nil>}
+i: 29 NodeID: 100 CmtIdx: 80 LastLogIdx 125 Leader: 100
+i: 29 NodeID: 200 CmtIdx: 76 LastLogIdx 76 Leader: 100
+i: 29 NodeID: 300 CmtIdx: 79 LastLogIdx 79 Leader: 100
+i: 29 NodeID: 400 CmtIdx: 80 LastLogIdx 81 Leader: 100
+i: 29 NodeID: 500 CmtIdx: 80 LastLogIdx 86 Leader: 100
+CI {[50 56] 29 <nil>}
+i: 30 NodeID: 100 CmtIdx: 84 LastLogIdx 130 Leader: 100
+i: 30 NodeID: 200 CmtIdx: 79 LastLogIdx 80 Leader: 100
+i: 30 NodeID: 300 CmtIdx: 82 LastLogIdx 83 Leader: 100
+i: 30 NodeID: 400 CmtIdx: 83 LastLogIdx 85 Leader: 100
+i: 30 NodeID: 500 CmtIdx: 81 LastLogIdx 89 Leader: 100
+CI {[50 57] 30 <nil>}
+i: 31 NodeID: 100 CmtIdx: 87 LastLogIdx 133 Leader: 100
+i: 31 NodeID: 200 CmtIdx: 81 LastLogIdx 82 Leader: 100
+i: 31 NodeID: 300 CmtIdx: 85 LastLogIdx 86 Leader: 100
+i: 31 NodeID: 400 CmtIdx: 86 LastLogIdx 88 Leader: 100
+i: 31 NodeID: 500 CmtIdx: 85 LastLogIdx 92 Leader: 100
+CI {[51 48] 31 <nil>}
+i: 32 NodeID: 100 CmtIdx: 89 LastLogIdx 137 Leader: 100
+i: 32 NodeID: 200 CmtIdx: 84 LastLogIdx 85 Leader: 100
+i: 32 NodeID: 300 CmtIdx: 88 LastLogIdx 89 Leader: 100
+i: 32 NodeID: 400 CmtIdx: 89 LastLogIdx 90 Leader: 100
+i: 32 NodeID: 500 CmtIdx: 88 LastLogIdx 94 Leader: 100
+CI {[51 49] 32 <nil>}
+i: 33 NodeID: 100 CmtIdx: 91 LastLogIdx 140 Leader: 100
+i: 33 NodeID: 200 CmtIdx: 86 LastLogIdx 87 Leader: 100
+i: 33 NodeID: 300 CmtIdx: 91 LastLogIdx 92 Leader: 100
+i: 33 NodeID: 400 CmtIdx: 91 LastLogIdx 92 Leader: 100
+i: 33 NodeID: 500 CmtIdx: 91 LastLogIdx 96 Leader: 100
+CI {[51 50] 33 <nil>}
+i: 34 NodeID: 100 CmtIdx: 93 LastLogIdx 142 Leader: 100
+i: 34 NodeID: 200 CmtIdx: 88 LastLogIdx 89 Leader: 100
+i: 34 NodeID: 300 CmtIdx: 92 LastLogIdx 94 Leader: 100
+i: 34 NodeID: 400 CmtIdx: 93 LastLogIdx 94 Leader: 100
+i: 34 NodeID: 500 CmtIdx: 92 LastLogIdx 98 Leader: 100
+CI {[51 51] 34 <nil>}
+i: 35 NodeID: 100 CmtIdx: 95 LastLogIdx 146 Leader: 100
+i: 35 NodeID: 200 CmtIdx: 90 LastLogIdx 91 Leader: 100
+i: 35 NodeID: 300 CmtIdx: 94 LastLogIdx 96 Leader: 100
+i: 35 NodeID: 400 CmtIdx: 94 LastLogIdx 96 Leader: 100
+i: 35 NodeID: 500 CmtIdx: 94 LastLogIdx 100 Leader: 100
+CI {[51 52] 35 <nil>}
+i: 36 NodeID: 100 CmtIdx: 97 LastLogIdx 148 Leader: 100
+i: 36 NodeID: 200 CmtIdx: 92 LastLogIdx 92 Leader: 100
+i: 36 NodeID: 300 CmtIdx: 96 LastLogIdx 98 Leader: 100
+i: 36 NodeID: 400 CmtIdx: 95 LastLogIdx 97 Leader: 100
+i: 36 NodeID: 500 CmtIdx: 95 LastLogIdx 101 Leader: 100
+CI {[51 53] 36 <nil>}
+i: 37 NodeID: 100 CmtIdx: 98 LastLogIdx 151 Leader: 100
+i: 37 NodeID: 200 CmtIdx: 93 LastLogIdx 94 Leader: 100
+i: 37 NodeID: 300 CmtIdx: 97 LastLogIdx 99 Leader: 100
+i: 37 NodeID: 400 CmtIdx: 98 LastLogIdx 99 Leader: 100
+i: 37 NodeID: 500 CmtIdx: 98 LastLogIdx 103 Leader: 100
+CI {[51 54] 37 <nil>}
+i: 38 NodeID: 100 CmtIdx: 100 LastLogIdx 154 Leader: 100
+i: 38 NodeID: 200 CmtIdx: 95 LastLogIdx 96 Leader: 100
+i: 38 NodeID: 300 CmtIdx: 99 LastLogIdx 101 Leader: 100
+i: 38 NodeID: 400 CmtIdx: 99 LastLogIdx 101 Leader: 100
+i: 38 NodeID: 500 CmtIdx: 99 LastLogIdx 105 Leader: 100
+CI {[51 55] 38 <nil>}
+i: 39 NodeID: 100 CmtIdx: 103 LastLogIdx 158 Leader: 100
+i: 39 NodeID: 200 CmtIdx: 99 LastLogIdx 99 Leader: 100
+i: 39 NodeID: 300 CmtIdx: 102 LastLogIdx 103 Leader: 100
+i: 39 NodeID: 400 CmtIdx: 102 LastLogIdx 104 Leader: 100
+i: 39 NodeID: 500 CmtIdx: 102 LastLogIdx 107 Leader: 100
+CI {[51 56] 39 <nil>}
+i: 40 NodeID: 100 CmtIdx: 105 LastLogIdx 163 Leader: 100
+i: 40 NodeID: 200 CmtIdx: 102 LastLogIdx 102 Leader: 100
+i: 40 NodeID: 300 CmtIdx: 105 LastLogIdx 106 Leader: 100
+i: 40 NodeID: 400 CmtIdx: 105 LastLogIdx 106 Leader: 100
+i: 40 NodeID: 500 CmtIdx: 105 LastLogIdx 110 Leader: 100
+CI {[51 57] 40 <nil>}
+i: 41 NodeID: 100 CmtIdx: 107 LastLogIdx 167 Leader: 100
+i: 41 NodeID: 200 CmtIdx: 105 LastLogIdx 105 Leader: 100
+i: 41 NodeID: 300 CmtIdx: 107 LastLogIdx 108 Leader: 100
+i: 41 NodeID: 400 CmtIdx: 107 LastLogIdx 108 Leader: 100
+i: 41 NodeID: 500 CmtIdx: 106 LastLogIdx 113 Leader: 100
+CI {[52 48] 41 <nil>}
+i: 42 NodeID: 100 CmtIdx: 110 LastLogIdx 171 Leader: 100
+i: 42 NodeID: 200 CmtIdx: 107 LastLogIdx 107 Leader: 100
+i: 42 NodeID: 300 CmtIdx: 110 LastLogIdx 111 Leader: 100
+i: 42 NodeID: 400 CmtIdx: 110 LastLogIdx 111 Leader: 100
+i: 42 NodeID: 500 CmtIdx: 110 LastLogIdx 116 Leader: 100
+CI {[52 49] 42 <nil>}
+i: 43 NodeID: 100 CmtIdx: 113 LastLogIdx 176 Leader: 100
+i: 43 NodeID: 200 CmtIdx: 109 LastLogIdx 110 Leader: 100
+i: 43 NodeID: 300 CmtIdx: 112 LastLogIdx 114 Leader: 100
+i: 43 NodeID: 400 CmtIdx: 112 LastLogIdx 114 Leader: 100
+i: 43 NodeID: 500 CmtIdx: 112 LastLogIdx 119 Leader: 100
+CI {[52 50] 43 <nil>}
+i: 44 NodeID: 100 CmtIdx: 116 LastLogIdx 180 Leader: 100
+i: 44 NodeID: 200 CmtIdx: 112 LastLogIdx 113 Leader: 100
+i: 44 NodeID: 300 CmtIdx: 115 LastLogIdx 116 Leader: 100
+i: 44 NodeID: 400 CmtIdx: 115 LastLogIdx 117 Leader: 100
+i: 44 NodeID: 500 CmtIdx: 114 LastLogIdx 122 Leader: 100
+CI {[52 51] 44 <nil>}
+i: 45 NodeID: 100 CmtIdx: 118 LastLogIdx 183 Leader: 100
+i: 45 NodeID: 200 CmtIdx: 114 LastLogIdx 115 Leader: 100
+i: 45 NodeID: 300 CmtIdx: 117 LastLogIdx 118 Leader: 100
+i: 45 NodeID: 400 CmtIdx: 118 LastLogIdx 119 Leader: 100
+i: 45 NodeID: 500 CmtIdx: 116 LastLogIdx 124 Leader: 100
+CI {[52 52] 45 <nil>}
+i: 46 NodeID: 100 CmtIdx: 121 LastLogIdx 186 Leader: 100
+i: 46 NodeID: 200 CmtIdx: 116 LastLogIdx 117 Leader: 100
+i: 46 NodeID: 300 CmtIdx: 120 LastLogIdx 121 Leader: 100
+i: 46 NodeID: 400 CmtIdx: 120 LastLogIdx 122 Leader: 100
+i: 46 NodeID: 500 CmtIdx: 120 LastLogIdx 127 Leader: 100
+CI {[52 53] 46 <nil>}
+i: 47 NodeID: 100 CmtIdx: 123 LastLogIdx 188 Leader: 100
+i: 47 NodeID: 200 CmtIdx: 117 LastLogIdx 118 Leader: 100
+i: 47 NodeID: 300 CmtIdx: 122 LastLogIdx 122 Leader: 100
+i: 47 NodeID: 400 CmtIdx: 122 LastLogIdx 124 Leader: 100
+i: 47 NodeID: 500 CmtIdx: 121 LastLogIdx 128 Leader: 100
+CI {[52 54] 47 <nil>}
+i: 48 NodeID: 100 CmtIdx: 125 LastLogIdx 191 Leader: 100
+i: 48 NodeID: 200 CmtIdx: 119 LastLogIdx 120 Leader: 100
+i: 48 NodeID: 300 CmtIdx: 123 LastLogIdx 124 Leader: 100
+i: 48 NodeID: 400 CmtIdx: 125 LastLogIdx 126 Leader: 100
+i: 48 NodeID: 500 CmtIdx: 123 LastLogIdx 130 Leader: 100
+CI {[52 55] 48 <nil>}
+i: 49 NodeID: 100 CmtIdx: 127 LastLogIdx 194 Leader: 100
+i: 49 NodeID: 200 CmtIdx: 121 LastLogIdx 122 Leader: 100
+i: 49 NodeID: 300 CmtIdx: 125 LastLogIdx 126 Leader: 100
+i: 49 NodeID: 400 CmtIdx: 126 LastLogIdx 128 Leader: 100
+i: 49 NodeID: 500 CmtIdx: 126 LastLogIdx 132 Leader: 100
+CI {[52 56] 49 <nil>}
+i: 50 NodeID: 100 CmtIdx: 129 LastLogIdx 197 Leader: 100
+i: 50 NodeID: 200 CmtIdx: 123 LastLogIdx 124 Leader: 100
+i: 50 NodeID: 300 CmtIdx: 127 LastLogIdx 128 Leader: 100
+i: 50 NodeID: 400 CmtIdx: 128 LastLogIdx 130 Leader: 100
+i: 50 NodeID: 500 CmtIdx: 127 LastLogIdx 134 Leader: 100
+CI {[52 57] 50 <nil>}
+i: 51 NodeID: 100 CmtIdx: 131 LastLogIdx 200 Leader: 100
+i: 51 NodeID: 200 CmtIdx: 124 LastLogIdx 125 Leader: 100
+i: 51 NodeID: 300 CmtIdx: 129 LastLogIdx 130 Leader: 100
+i: 51 NodeID: 400 CmtIdx: 130 LastLogIdx 132 Leader: 100
+i: 51 NodeID: 500 CmtIdx: 130 LastLogIdx 136 Leader: 100
+CI {[53 48] 51 <nil>}
+i: 52 NodeID: 100 CmtIdx: 133 LastLogIdx 200 Leader: 100
+i: 52 NodeID: 200 CmtIdx: 126 LastLogIdx 127 Leader: 100
+i: 52 NodeID: 300 CmtIdx: 131 LastLogIdx 132 Leader: 100
+i: 52 NodeID: 400 CmtIdx: 132 LastLogIdx 134 Leader: 100
+i: 52 NodeID: 500 CmtIdx: 131 LastLogIdx 137 Leader: 100
+CI {[53 49] 52 <nil>}
+i: 53 NodeID: 100 CmtIdx: 136 LastLogIdx 200 Leader: 100
+i: 53 NodeID: 200 CmtIdx: 129 LastLogIdx 130 Leader: 100
+i: 53 NodeID: 300 CmtIdx: 134 LastLogIdx 135 Leader: 100
+i: 53 NodeID: 400 CmtIdx: 135 LastLogIdx 137 Leader: 100
+i: 53 NodeID: 500 CmtIdx: 134 LastLogIdx 140 Leader: 100
+CI {[53 50] 53 <nil>}
+i: 54 NodeID: 100 CmtIdx: 138 LastLogIdx 200 Leader: 100
+i: 54 NodeID: 200 CmtIdx: 133 LastLogIdx 134 Leader: 100
+i: 54 NodeID: 300 CmtIdx: 138 LastLogIdx 139 Leader: 100
+i: 54 NodeID: 400 CmtIdx: 138 LastLogIdx 139 Leader: 100
+i: 54 NodeID: 500 CmtIdx: 138 LastLogIdx 141 Leader: 100
+CI {[53 51] 54 <nil>}
+i: 55 NodeID: 100 CmtIdx: 142 LastLogIdx 200 Leader: 100
+i: 55 NodeID: 200 CmtIdx: 137 LastLogIdx 138 Leader: 100
+i: 55 NodeID: 300 CmtIdx: 140 LastLogIdx 142 Leader: 100
+i: 55 NodeID: 400 CmtIdx: 141 LastLogIdx 143 Leader: 100
+i: 55 NodeID: 500 CmtIdx: 140 LastLogIdx 144 Leader: 100
+CI {[53 52] 55 <nil>}
+i: 56 NodeID: 100 CmtIdx: 144 LastLogIdx 200 Leader: 100
+i: 56 NodeID: 200 CmtIdx: 140 LastLogIdx 141 Leader: 100
+i: 56 NodeID: 300 CmtIdx: 143 LastLogIdx 144 Leader: 100
+i: 56 NodeID: 400 CmtIdx: 144 LastLogIdx 145 Leader: 100
+i: 56 NodeID: 500 CmtIdx: 143 LastLogIdx 145 Leader: 100
+CI {[53 53] 56 <nil>}
+i: 57 NodeID: 100 CmtIdx: 147 LastLogIdx 200 Leader: 100
+i: 57 NodeID: 200 CmtIdx: 143 LastLogIdx 144 Leader: 100
+i: 57 NodeID: 300 CmtIdx: 145 LastLogIdx 147 Leader: 100
+i: 57 NodeID: 400 CmtIdx: 146 LastLogIdx 148 Leader: 100
+i: 57 NodeID: 500 CmtIdx: 146 LastLogIdx 149 Leader: 100
+CI {[53 54] 57 <nil>}
+i: 58 NodeID: 100 CmtIdx: 149 LastLogIdx 200 Leader: 100
+i: 58 NodeID: 200 CmtIdx: 146 LastLogIdx 147 Leader: 100
+i: 58 NodeID: 300 CmtIdx: 148 LastLogIdx 148 Leader: 100
+i: 58 NodeID: 400 CmtIdx: 149 LastLogIdx 149 Leader: 100
+i: 58 NodeID: 500 CmtIdx: 148 LastLogIdx 149 Leader: 100
+CI {[53 55] 58 <nil>}
+i: 59 NodeID: 100 CmtIdx: 149 LastLogIdx 200 Leader: 100
+i: 59 NodeID: 200 CmtIdx: 148 LastLogIdx 149 Leader: 100
+i: 59 NodeID: 300 CmtIdx: 149 LastLogIdx 150 Leader: 100
+i: 59 NodeID: 400 CmtIdx: 149 LastLogIdx 150 Leader: 100
+i: 59 NodeID: 500 CmtIdx: 148 LastLogIdx 151 Leader: 100
+CI {[53 56] 59 <nil>}
+i: 60 NodeID: 100 CmtIdx: 151 LastLogIdx 200 Leader: 100
+i: 60 NodeID: 200 CmtIdx: 150 LastLogIdx 151 Leader: 100
+i: 60 NodeID: 300 CmtIdx: 150 LastLogIdx 152 Leader: 100
+i: 60 NodeID: 400 CmtIdx: 151 LastLogIdx 152 Leader: 100
+i: 60 NodeID: 500 CmtIdx: 150 LastLogIdx 150 Leader: 100
+CI {[53 57] 60 <nil>}
+i: 61 NodeID: 100 CmtIdx: 152 LastLogIdx 200 Leader: 100
+i: 61 NodeID: 200 CmtIdx: 151 LastLogIdx 153 Leader: 100
+i: 61 NodeID: 300 CmtIdx: 151 LastLogIdx 153 Leader: 100
+i: 61 NodeID: 400 CmtIdx: 151 LastLogIdx 153 Leader: 100
+i: 61 NodeID: 500 CmtIdx: 150 LastLogIdx 152 Leader: 100
+CI {[54 48] 61 <nil>}
+i: 62 NodeID: 100 CmtIdx: 153 LastLogIdx 200 Leader: 100
+i: 62 NodeID: 200 CmtIdx: 152 LastLogIdx 153 Leader: 100
+i: 62 NodeID: 300 CmtIdx: 152 LastLogIdx 154 Leader: 100
+i: 62 NodeID: 400 CmtIdx: 153 LastLogIdx 153 Leader: 100
+i: 62 NodeID: 500 CmtIdx: 152 LastLogIdx 153 Leader: 100
+CI {[54 49] 62 <nil>}
+i: 63 NodeID: 100 CmtIdx: 154 LastLogIdx 200 Leader: 100
+i: 63 NodeID: 200 CmtIdx: 153 LastLogIdx 155 Leader: 100
+i: 63 NodeID: 300 CmtIdx: 153 LastLogIdx 156 Leader: 100
+i: 63 NodeID: 400 CmtIdx: 153 LastLogIdx 155 Leader: 100
+i: 63 NodeID: 500 CmtIdx: 153 LastLogIdx 154 Leader: 100
+CI {[54 50] 63 <nil>}
+i: 64 NodeID: 100 CmtIdx: 155 LastLogIdx 200 Leader: 100
+i: 64 NodeID: 200 CmtIdx: 155 LastLogIdx 155 Leader: 100
+i: 64 NodeID: 300 CmtIdx: 154 LastLogIdx 157 Leader: 100
+i: 64 NodeID: 400 CmtIdx: 155 LastLogIdx 155 Leader: 100
+i: 64 NodeID: 500 CmtIdx: 154 LastLogIdx 156 Leader: 100
+CI {[54 51] 64 <nil>}
+i: 65 NodeID: 100 CmtIdx: 155 LastLogIdx 200 Leader: 100
+i: 65 NodeID: 200 CmtIdx: 155 LastLogIdx 156 Leader: 100
+i: 65 NodeID: 300 CmtIdx: 155 LastLogIdx 156 Leader: 100
+i: 65 NodeID: 400 CmtIdx: 155 LastLogIdx 156 Leader: 100
+i: 65 NodeID: 500 CmtIdx: 155 LastLogIdx 156 Leader: 100
+CI {[54 52] 65 <nil>}
+i: 66 NodeID: 100 CmtIdx: 157 LastLogIdx 200 Leader: 100
+i: 66 NodeID: 200 CmtIdx: 157 LastLogIdx 157 Leader: 100
+i: 66 NodeID: 300 CmtIdx: 156 LastLogIdx 156 Leader: 100
+i: 66 NodeID: 400 CmtIdx: 157 LastLogIdx 157 Leader: 100
+i: 66 NodeID: 500 CmtIdx: 156 LastLogIdx 158 Leader: 100
+CI {[54 53] 66 <nil>}
+i: 67 NodeID: 100 CmtIdx: 157 LastLogIdx 200 Leader: 100
+i: 67 NodeID: 200 CmtIdx: 157 LastLogIdx 158 Leader: 100
+i: 67 NodeID: 300 CmtIdx: 157 LastLogIdx 158 Leader: 100
+i: 67 NodeID: 400 CmtIdx: 157 LastLogIdx 158 Leader: 100
+i: 67 NodeID: 500 CmtIdx: 157 LastLogIdx 158 Leader: 100
+CI {[54 54] 67 <nil>}
+i: 68 NodeID: 100 CmtIdx: 159 LastLogIdx 200 Leader: 100
+i: 68 NodeID: 200 CmtIdx: 158 LastLogIdx 158 Leader: 100
+i: 68 NodeID: 300 CmtIdx: 158 LastLogIdx 158 Leader: 100
+i: 68 NodeID: 400 CmtIdx: 158 LastLogIdx 160 Leader: 100
+i: 68 NodeID: 500 CmtIdx: 157 LastLogIdx 160 Leader: 100
+CI {[54 55] 68 <nil>}
+i: 69 NodeID: 100 CmtIdx: 159 LastLogIdx 200 Leader: 100
+i: 69 NodeID: 200 CmtIdx: 158 LastLogIdx 160 Leader: 100
+i: 69 NodeID: 300 CmtIdx: 158 LastLogIdx 160 Leader: 100
+i: 69 NodeID: 400 CmtIdx: 158 LastLogIdx 159 Leader: 100
+i: 69 NodeID: 500 CmtIdx: 159 LastLogIdx 160 Leader: 100
+CI {[54 56] 69 <nil>}
+i: 70 NodeID: 100 CmtIdx: 160 LastLogIdx 200 Leader: 100
+i: 70 NodeID: 200 CmtIdx: 159 LastLogIdx 159 Leader: 100
+i: 70 NodeID: 300 CmtIdx: 159 LastLogIdx 161 Leader: 100
+i: 70 NodeID: 400 CmtIdx: 159 LastLogIdx 161 Leader: 100
+i: 70 NodeID: 500 CmtIdx: 159 LastLogIdx 161 Leader: 100
+CI {[54 57] 70 <nil>}
+i: 71 NodeID: 100 CmtIdx: 161 LastLogIdx 200 Leader: 100
+i: 71 NodeID: 200 CmtIdx: 159 LastLogIdx 161 Leader: 100
+i: 71 NodeID: 300 CmtIdx: 160 LastLogIdx 162 Leader: 100
+i: 71 NodeID: 400 CmtIdx: 160 LastLogIdx 161 Leader: 100
+i: 71 NodeID: 500 CmtIdx: 160 LastLogIdx 162 Leader: 100
+CI {[55 48] 71 <nil>}
+i: 72 NodeID: 100 CmtIdx: 162 LastLogIdx 200 Leader: 100
+i: 72 NodeID: 200 CmtIdx: 161 LastLogIdx 162 Leader: 100
+i: 72 NodeID: 300 CmtIdx: 162 LastLogIdx 162 Leader: 100
+i: 72 NodeID: 400 CmtIdx: 162 LastLogIdx 162 Leader: 100
+i: 72 NodeID: 500 CmtIdx: 162 LastLogIdx 162 Leader: 100
+CI {[55 49] 72 <nil>}
+i: 73 NodeID: 100 CmtIdx: 163 LastLogIdx 200 Leader: 100
+i: 73 NodeID: 200 CmtIdx: 162 LastLogIdx 164 Leader: 100
+i: 73 NodeID: 300 CmtIdx: 162 LastLogIdx 164 Leader: 100
+i: 73 NodeID: 400 CmtIdx: 162 LastLogIdx 164 Leader: 100
+i: 73 NodeID: 500 CmtIdx: 162 LastLogIdx 164 Leader: 100
+CI {[55 50] 73 <nil>}
+i: 74 NodeID: 100 CmtIdx: 165 LastLogIdx 200 Leader: 100
+i: 74 NodeID: 200 CmtIdx: 164 LastLogIdx 164 Leader: 100
+i: 74 NodeID: 300 CmtIdx: 163 LastLogIdx 166 Leader: 100
+i: 74 NodeID: 400 CmtIdx: 164 LastLogIdx 164 Leader: 100
+i: 74 NodeID: 500 CmtIdx: 164 LastLogIdx 164 Leader: 100
+CI {[55 51] 74 <nil>}
+i: 75 NodeID: 100 CmtIdx: 166 LastLogIdx 200 Leader: 100
+i: 75 NodeID: 200 CmtIdx: 165 LastLogIdx 167 Leader: 100
+i: 75 NodeID: 300 CmtIdx: 165 LastLogIdx 166 Leader: 100
+i: 75 NodeID: 400 CmtIdx: 164 LastLogIdx 166 Leader: 100
+i: 75 NodeID: 500 CmtIdx: 165 LastLogIdx 167 Leader: 100
+CI {[55 52] 75 <nil>}
+i: 76 NodeID: 100 CmtIdx: 167 LastLogIdx 200 Leader: 100
+i: 76 NodeID: 200 CmtIdx: 166 LastLogIdx 167 Leader: 100
+i: 76 NodeID: 300 CmtIdx: 167 LastLogIdx 167 Leader: 100
+i: 76 NodeID: 400 CmtIdx: 166 LastLogIdx 166 Leader: 100
+i: 76 NodeID: 500 CmtIdx: 167 LastLogIdx 168 Leader: 100
+CI {[55 53] 76 <nil>}
+i: 77 NodeID: 100 CmtIdx: 170 LastLogIdx 200 Leader: 100
+i: 77 NodeID: 200 CmtIdx: 168 LastLogIdx 170 Leader: 100
+i: 77 NodeID: 300 CmtIdx: 169 LastLogIdx 171 Leader: 100
+i: 77 NodeID: 400 CmtIdx: 169 LastLogIdx 170 Leader: 100
+i: 77 NodeID: 500 CmtIdx: 169 LastLogIdx 172 Leader: 100
+CI {[55 54] 77 <nil>}
+i: 78 NodeID: 100 CmtIdx: 172 LastLogIdx 200 Leader: 100
+i: 78 NodeID: 200 CmtIdx: 172 LastLogIdx 174 Leader: 100
+i: 78 NodeID: 300 CmtIdx: 172 LastLogIdx 172 Leader: 100
+i: 78 NodeID: 400 CmtIdx: 172 LastLogIdx 173 Leader: 100
+i: 78 NodeID: 500 CmtIdx: 171 LastLogIdx 172 Leader: 100
+CI {[55 55] 78 <nil>}
+i: 79 NodeID: 100 CmtIdx: 176 LastLogIdx 200 Leader: 100
+i: 79 NodeID: 200 CmtIdx: 174 LastLogIdx 177 Leader: 100
+i: 79 NodeID: 300 CmtIdx: 174 LastLogIdx 176 Leader: 100
+i: 79 NodeID: 400 CmtIdx: 175 LastLogIdx 177 Leader: 100
+i: 79 NodeID: 500 CmtIdx: 174 LastLogIdx 176 Leader: 100
+CI {[55 56] 79 <nil>}
+i: 80 NodeID: 100 CmtIdx: 178 LastLogIdx 200 Leader: 100
+i: 80 NodeID: 200 CmtIdx: 178 LastLogIdx 178 Leader: 100
+i: 80 NodeID: 300 CmtIdx: 176 LastLogIdx 178 Leader: 100
+i: 80 NodeID: 400 CmtIdx: 177 LastLogIdx 177 Leader: 100
+i: 80 NodeID: 500 CmtIdx: 177 LastLogIdx 178 Leader: 100
+CI {[55 57] 80 <nil>}
+i: 81 NodeID: 100 CmtIdx: 179 LastLogIdx 200 Leader: 100
+i: 81 NodeID: 200 CmtIdx: 178 LastLogIdx 180 Leader: 100
+i: 81 NodeID: 300 CmtIdx: 178 LastLogIdx 180 Leader: 100
+i: 81 NodeID: 400 CmtIdx: 177 LastLogIdx 179 Leader: 100
+i: 81 NodeID: 500 CmtIdx: 178 LastLogIdx 180 Leader: 100
+CI {[56 48] 81 <nil>}
+i: 82 NodeID: 100 CmtIdx: 180 LastLogIdx 200 Leader: 100
+i: 82 NodeID: 200 CmtIdx: 180 LastLogIdx 180 Leader: 100
+i: 82 NodeID: 300 CmtIdx: 179 LastLogIdx 181 Leader: 100
+i: 82 NodeID: 400 CmtIdx: 180 LastLogIdx 180 Leader: 100
+i: 82 NodeID: 500 CmtIdx: 180 LastLogIdx 180 Leader: 100
+CI {[56 49] 82 <nil>}
+i: 83 NodeID: 100 CmtIdx: 181 LastLogIdx 200 Leader: 100
+i: 83 NodeID: 200 CmtIdx: 180 LastLogIdx 182 Leader: 100
+i: 83 NodeID: 300 CmtIdx: 180 LastLogIdx 182 Leader: 100
+i: 83 NodeID: 400 CmtIdx: 180 LastLogIdx 181 Leader: 100
+i: 83 NodeID: 500 CmtIdx: 180 LastLogIdx 182 Leader: 100
+CI {[56 50] 83 <nil>}
+i: 84 NodeID: 100 CmtIdx: 182 LastLogIdx 200 Leader: 100
+i: 84 NodeID: 200 CmtIdx: 182 LastLogIdx 182 Leader: 100
+i: 84 NodeID: 300 CmtIdx: 182 LastLogIdx 182 Leader: 100
+i: 84 NodeID: 400 CmtIdx: 182 LastLogIdx 182 Leader: 100
+i: 84 NodeID: 500 CmtIdx: 180 LastLogIdx 183 Leader: 100
+CI {[56 51] 84 <nil>}
+i: 85 NodeID: 100 CmtIdx: 183 LastLogIdx 200 Leader: 100
+i: 85 NodeID: 200 CmtIdx: 182 LastLogIdx 184 Leader: 100
+i: 85 NodeID: 300 CmtIdx: 183 LastLogIdx 185 Leader: 100
+i: 85 NodeID: 400 CmtIdx: 182 LastLogIdx 184 Leader: 100
+i: 85 NodeID: 500 CmtIdx: 182 LastLogIdx 183 Leader: 100
+CI {[56 52] 85 <nil>}
+i: 86 NodeID: 100 CmtIdx: 185 LastLogIdx 200 Leader: 100
+i: 86 NodeID: 200 CmtIdx: 184 LastLogIdx 184 Leader: 100
+i: 86 NodeID: 300 CmtIdx: 185 LastLogIdx 185 Leader: 100
+i: 86 NodeID: 400 CmtIdx: 183 LastLogIdx 185 Leader: 100
+i: 86 NodeID: 500 CmtIdx: 185 LastLogIdx 186 Leader: 100
+CI {[56 53] 86 <nil>}
+i: 87 NodeID: 100 CmtIdx: 186 LastLogIdx 200 Leader: 100
+i: 87 NodeID: 200 CmtIdx: 184 LastLogIdx 185 Leader: 100
+i: 87 NodeID: 300 CmtIdx: 185 LastLogIdx 187 Leader: 100
+i: 87 NodeID: 400 CmtIdx: 185 LastLogIdx 187 Leader: 100
+i: 87 NodeID: 500 CmtIdx: 185 LastLogIdx 188 Leader: 100
+CI {[56 54] 87 <nil>}
+i: 88 NodeID: 100 CmtIdx: 188 LastLogIdx 200 Leader: 100
+i: 88 NodeID: 200 CmtIdx: 185 LastLogIdx 187 Leader: 100
+i: 88 NodeID: 300 CmtIdx: 186 LastLogIdx 188 Leader: 100
+i: 88 NodeID: 400 CmtIdx: 187 LastLogIdx 189 Leader: 100
+i: 88 NodeID: 500 CmtIdx: 186 LastLogIdx 189 Leader: 100
+CI {[56 55] 88 <nil>}
+i: 89 NodeID: 100 CmtIdx: 190 LastLogIdx 200 Leader: 100
+i: 89 NodeID: 200 CmtIdx: 188 LastLogIdx 191 Leader: 100
+i: 89 NodeID: 300 CmtIdx: 188 LastLogIdx 190 Leader: 100
+i: 89 NodeID: 400 CmtIdx: 188 LastLogIdx 190 Leader: 100
+i: 89 NodeID: 500 CmtIdx: 189 LastLogIdx 191 Leader: 100
+CI {[56 56] 89 <nil>}
+i: 90 NodeID: 100 CmtIdx: 192 LastLogIdx 200 Leader: 100
+i: 90 NodeID: 200 CmtIdx: 192 LastLogIdx 193 Leader: 100
+i: 90 NodeID: 300 CmtIdx: 191 LastLogIdx 192 Leader: 100
+i: 90 NodeID: 400 CmtIdx: 191 LastLogIdx 192 Leader: 100
+i: 90 NodeID: 500 CmtIdx: 191 LastLogIdx 192 Leader: 100
+CI {[56 57] 90 <nil>}
+i: 91 NodeID: 100 CmtIdx: 195 LastLogIdx 200 Leader: 100
+i: 91 NodeID: 200 CmtIdx: 194 LastLogIdx 197 Leader: 100
+i: 91 NodeID: 300 CmtIdx: 194 LastLogIdx 196 Leader: 100
+i: 91 NodeID: 400 CmtIdx: 194 LastLogIdx 196 Leader: 100
+i: 91 NodeID: 500 CmtIdx: 193 LastLogIdx 195 Leader: 100
+CI {[57 48] 91 <nil>}
+i: 92 NodeID: 100 CmtIdx: 197 LastLogIdx 200 Leader: 100
+i: 92 NodeID: 200 CmtIdx: 197 LastLogIdx 197 Leader: 100
+i: 92 NodeID: 300 CmtIdx: 197 LastLogIdx 198 Leader: 100
+i: 92 NodeID: 400 CmtIdx: 197 LastLogIdx 197 Leader: 100
+i: 92 NodeID: 500 CmtIdx: 197 LastLogIdx 198 Leader: 100
+CI {[57 49] 92 <nil>}
+NODE ID : 100 LastLogIndex 200
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+i: 21 Data: 20
+i: 22 Data: 21
+i: 23 Data: 22
+i: 24 Data: 23
+i: 25 Data: 24
+i: 26 Data: 25
+i: 27 Data: 26
+i: 28 Data: 27
+i: 29 Data: 28
+i: 30 Data: 29
+i: 31 Data: 30
+i: 32 Data: 31
+i: 33 Data: 32
+i: 34 Data: 33
+i: 35 Data: 34
+i: 36 Data: 35
+i: 37 Data: 36
+i: 38 Data: 37
+i: 39 Data: 38
+i: 40 Data: 39
+i: 41 Data: 40
+i: 42 Data: 41
+i: 43 Data: 42
+i: 44 Data: 43
+i: 45 Data: 44
+i: 46 Data: 45
+i: 47 Data: 46
+i: 48 Data: 47
+i: 49 Data: 48
+i: 50 Data: 49
+i: 51 Data: 50
+i: 52 Data: 51
+i: 53 Data: 52
+i: 54 Data: 53
+i: 55 Data: 54
+i: 56 Data: 55
+i: 57 Data: 56
+i: 58 Data: 57
+i: 59 Data: 58
+i: 60 Data: 59
+i: 61 Data: 60
+i: 62 Data: 61
+i: 63 Data: 62
+i: 64 Data: 63
+i: 65 Data: 64
+i: 66 Data: 65
+i: 67 Data: 66
+i: 68 Data: 67
+i: 69 Data: 68
+i: 70 Data: 69
+i: 71 Data: 70
+i: 72 Data: 71
+i: 73 Data: 72
+i: 74 Data: 73
+i: 75 Data: 74
+i: 76 Data: 75
+i: 77 Data: 76
+i: 78 Data: 77
+i: 79 Data: 78
+i: 80 Data: 79
+i: 81 Data: 80
+i: 82 Data: 81
+i: 83 Data: 82
+i: 84 Data: 83
+i: 85 Data: 84
+i: 86 Data: 85
+i: 87 Data: 86
+i: 88 Data: 87
+i: 89 Data: 88
+i: 90 Data: 89
+i: 91 Data: 90
+i: 92 Data: 91
+i: 93 Data: 92
+i: 94 Data: 93
+i: 95 Data: 94
+i: 96 Data: 95
+i: 97 Data: 96
+i: 98 Data: 97
+i: 99 Data: 98
+i: 100 Data: 99
+i: 101 Data: 100
+i: 102 Data: 101
+i: 103 Data: 102
+i: 104 Data: 103
+i: 105 Data: 104
+i: 106 Data: 105
+i: 107 Data: 106
+i: 108 Data: 107
+i: 109 Data: 108
+i: 110 Data: 109
+i: 111 Data: 110
+i: 112 Data: 111
+i: 113 Data: 112
+i: 114 Data: 113
+i: 115 Data: 114
+i: 116 Data: 115
+i: 117 Data: 116
+i: 118 Data: 117
+i: 119 Data: 118
+i: 120 Data: 119
+i: 121 Data: 120
+i: 122 Data: 121
+i: 123 Data: 122
+i: 124 Data: 123
+i: 125 Data: 124
+i: 126 Data: 125
+i: 127 Data: 126
+i: 128 Data: 127
+i: 129 Data: 128
+i: 130 Data: 129
+i: 131 Data: 130
+i: 132 Data: 131
+i: 133 Data: 132
+i: 134 Data: 133
+i: 135 Data: 134
+i: 136 Data: 135
+i: 137 Data: 136
+i: 138 Data: 137
+i: 139 Data: 138
+i: 140 Data: 139
+i: 141 Data: 140
+i: 142 Data: 141
+i: 143 Data: 142
+i: 144 Data: 143
+i: 145 Data: 144
+i: 146 Data: 145
+i: 147 Data: 146
+i: 148 Data: 147
+i: 149 Data: 148
+i: 150 Data: 149
+i: 151 Data: 150
+i: 152 Data: 151
+i: 153 Data: 152
+i: 154 Data: 153
+i: 155 Data: 154
+i: 156 Data: 155
+i: 157 Data: 156
+i: 158 Data: 157
+i: 159 Data: 158
+i: 160 Data: 159
+i: 161 Data: 160
+i: 162 Data: 161
+i: 163 Data: 162
+i: 164 Data: 163
+i: 165 Data: 164
+i: 166 Data: 165
+i: 167 Data: 166
+i: 168 Data: 167
+i: 169 Data: 168
+i: 170 Data: 169
+i: 171 Data: 170
+i: 172 Data: 171
+i: 173 Data: 172
+i: 174 Data: 173
+i: 175 Data: 174
+i: 176 Data: 175
+i: 177 Data: 176
+i: 178 Data: 177
+i: 179 Data: 178
+i: 180 Data: 179
+i: 181 Data: 180
+i: 182 Data: 181
+i: 183 Data: 182
+i: 184 Data: 183
+i: 185 Data: 184
+i: 186 Data: 185
+i: 187 Data: 186
+i: 188 Data: 187
+i: 189 Data: 188
+i: 190 Data: 189
+i: 191 Data: 190
+i: 192 Data: 191
+i: 193 Data: 192
+i: 194 Data: 193
+i: 195 Data: 194
+i: 196 Data: 195
+i: 197 Data: 196
+i: 198 Data: 197
+i: 199 Data: 198
+i: 200 Data: 199
+NODE ID : 200 LastLogIndex 200
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+i: 21 Data: 20
+i: 22 Data: 21
+i: 23 Data: 22
+i: 24 Data: 23
+i: 25 Data: 24
+i: 26 Data: 25
+i: 27 Data: 26
+i: 28 Data: 27
+i: 29 Data: 28
+i: 30 Data: 29
+i: 31 Data: 30
+i: 32 Data: 31
+i: 33 Data: 32
+i: 34 Data: 33
+i: 35 Data: 34
+i: 36 Data: 35
+i: 37 Data: 36
+i: 38 Data: 37
+i: 39 Data: 38
+i: 40 Data: 39
+i: 41 Data: 40
+i: 42 Data: 41
+i: 43 Data: 42
+i: 44 Data: 43
+i: 45 Data: 44
+i: 46 Data: 45
+i: 47 Data: 46
+i: 48 Data: 47
+i: 49 Data: 48
+i: 50 Data: 49
+i: 51 Data: 50
+i: 52 Data: 51
+i: 53 Data: 52
+i: 54 Data: 53
+i: 55 Data: 54
+i: 56 Data: 55
+i: 57 Data: 56
+i: 58 Data: 57
+i: 59 Data: 58
+i: 60 Data: 59
+i: 61 Data: 60
+i: 62 Data: 61
+i: 63 Data: 62
+i: 64 Data: 63
+i: 65 Data: 64
+i: 66 Data: 65
+i: 67 Data: 66
+i: 68 Data: 67
+i: 69 Data: 68
+i: 70 Data: 69
+i: 71 Data: 70
+i: 72 Data: 71
+i: 73 Data: 72
+i: 74 Data: 73
+i: 75 Data: 74
+i: 76 Data: 75
+i: 77 Data: 76
+i: 78 Data: 77
+i: 79 Data: 78
+i: 80 Data: 79
+i: 81 Data: 80
+i: 82 Data: 81
+i: 83 Data: 82
+i: 84 Data: 83
+i: 85 Data: 84
+i: 86 Data: 85
+i: 87 Data: 86
+i: 88 Data: 87
+i: 89 Data: 88
+i: 90 Data: 89
+i: 91 Data: 90
+i: 92 Data: 91
+i: 93 Data: 92
+i: 94 Data: 93
+i: 95 Data: 94
+i: 96 Data: 95
+i: 97 Data: 96
+i: 98 Data: 97
+i: 99 Data: 98
+i: 100 Data: 99
+i: 101 Data: 100
+i: 102 Data: 101
+i: 103 Data: 102
+i: 104 Data: 103
+i: 105 Data: 104
+i: 106 Data: 105
+i: 107 Data: 106
+i: 108 Data: 107
+i: 109 Data: 108
+i: 110 Data: 109
+i: 111 Data: 110
+i: 112 Data: 111
+i: 113 Data: 112
+i: 114 Data: 113
+i: 115 Data: 114
+i: 116 Data: 115
+i: 117 Data: 116
+i: 118 Data: 117
+i: 119 Data: 118
+i: 120 Data: 119
+i: 121 Data: 120
+i: 122 Data: 121
+i: 123 Data: 122
+i: 124 Data: 123
+i: 125 Data: 124
+i: 126 Data: 125
+i: 127 Data: 126
+i: 128 Data: 127
+i: 129 Data: 128
+i: 130 Data: 129
+i: 131 Data: 130
+i: 132 Data: 131
+i: 133 Data: 132
+i: 134 Data: 133
+i: 135 Data: 134
+i: 136 Data: 135
+i: 137 Data: 136
+i: 138 Data: 137
+i: 139 Data: 138
+i: 140 Data: 139
+i: 141 Data: 140
+i: 142 Data: 141
+i: 143 Data: 142
+i: 144 Data: 143
+i: 145 Data: 144
+i: 146 Data: 145
+i: 147 Data: 146
+i: 148 Data: 147
+i: 149 Data: 148
+i: 150 Data: 149
+i: 151 Data: 150
+i: 152 Data: 151
+i: 153 Data: 152
+i: 154 Data: 153
+i: 155 Data: 154
+i: 156 Data: 155
+i: 157 Data: 156
+i: 158 Data: 157
+i: 159 Data: 158
+i: 160 Data: 159
+i: 161 Data: 160
+i: 162 Data: 161
+i: 163 Data: 162
+i: 164 Data: 163
+i: 165 Data: 164
+i: 166 Data: 165
+i: 167 Data: 166
+i: 168 Data: 167
+i: 169 Data: 168
+i: 170 Data: 169
+i: 171 Data: 170
+i: 172 Data: 171
+i: 173 Data: 172
+i: 174 Data: 173
+i: 175 Data: 174
+i: 176 Data: 175
+i: 177 Data: 176
+i: 178 Data: 177
+i: 179 Data: 178
+i: 180 Data: 179
+i: 181 Data: 180
+i: 182 Data: 181
+i: 183 Data: 182
+i: 184 Data: 183
+i: 185 Data: 184
+i: 186 Data: 185
+i: 187 Data: 186
+i: 188 Data: 187
+i: 189 Data: 188
+i: 190 Data: 189
+i: 191 Data: 190
+i: 192 Data: 191
+i: 193 Data: 192
+i: 194 Data: 193
+i: 195 Data: 194
+i: 196 Data: 195
+i: 197 Data: 196
+i: 198 Data: 197
+i: 199 Data: 198
+i: 200 Data: 199
+NODE ID : 300 LastLogIndex 200
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+i: 21 Data: 20
+i: 22 Data: 21
+i: 23 Data: 22
+i: 24 Data: 23
+i: 25 Data: 24
+i: 26 Data: 25
+i: 27 Data: 26
+i: 28 Data: 27
+i: 29 Data: 28
+i: 30 Data: 29
+i: 31 Data: 30
+i: 32 Data: 31
+i: 33 Data: 32
+i: 34 Data: 33
+i: 35 Data: 34
+i: 36 Data: 35
+i: 37 Data: 36
+i: 38 Data: 37
+i: 39 Data: 38
+i: 40 Data: 39
+i: 41 Data: 40
+i: 42 Data: 41
+i: 43 Data: 42
+i: 44 Data: 43
+i: 45 Data: 44
+i: 46 Data: 45
+i: 47 Data: 46
+i: 48 Data: 47
+i: 49 Data: 48
+i: 50 Data: 49
+i: 51 Data: 50
+i: 52 Data: 51
+i: 53 Data: 52
+i: 54 Data: 53
+i: 55 Data: 54
+i: 56 Data: 55
+i: 57 Data: 56
+i: 58 Data: 57
+i: 59 Data: 58
+i: 60 Data: 59
+i: 61 Data: 60
+i: 62 Data: 61
+i: 63 Data: 62
+i: 64 Data: 63
+i: 65 Data: 64
+i: 66 Data: 65
+i: 67 Data: 66
+i: 68 Data: 67
+i: 69 Data: 68
+i: 70 Data: 69
+i: 71 Data: 70
+i: 72 Data: 71
+i: 73 Data: 72
+i: 74 Data: 73
+i: 75 Data: 74
+i: 76 Data: 75
+i: 77 Data: 76
+i: 78 Data: 77
+i: 79 Data: 78
+i: 80 Data: 79
+i: 81 Data: 80
+i: 82 Data: 81
+i: 83 Data: 82
+i: 84 Data: 83
+i: 85 Data: 84
+i: 86 Data: 85
+i: 87 Data: 86
+i: 88 Data: 87
+i: 89 Data: 88
+i: 90 Data: 89
+i: 91 Data: 90
+i: 92 Data: 91
+i: 93 Data: 92
+i: 94 Data: 93
+i: 95 Data: 94
+i: 96 Data: 95
+i: 97 Data: 96
+i: 98 Data: 97
+i: 99 Data: 98
+i: 100 Data: 99
+i: 101 Data: 100
+i: 102 Data: 101
+i: 103 Data: 102
+i: 104 Data: 103
+i: 105 Data: 104
+i: 106 Data: 105
+i: 107 Data: 106
+i: 108 Data: 107
+i: 109 Data: 108
+i: 110 Data: 109
+i: 111 Data: 110
+i: 112 Data: 111
+i: 113 Data: 112
+i: 114 Data: 113
+i: 115 Data: 114
+i: 116 Data: 115
+i: 117 Data: 116
+i: 118 Data: 117
+i: 119 Data: 118
+i: 120 Data: 119
+i: 121 Data: 120
+i: 122 Data: 121
+i: 123 Data: 122
+i: 124 Data: 123
+i: 125 Data: 124
+i: 126 Data: 125
+i: 127 Data: 126
+i: 128 Data: 127
+i: 129 Data: 128
+i: 130 Data: 129
+i: 131 Data: 130
+i: 132 Data: 131
+i: 133 Data: 132
+i: 134 Data: 133
+i: 135 Data: 134
+i: 136 Data: 135
+i: 137 Data: 136
+i: 138 Data: 137
+i: 139 Data: 138
+i: 140 Data: 139
+i: 141 Data: 140
+i: 142 Data: 141
+i: 143 Data: 142
+i: 144 Data: 143
+i: 145 Data: 144
+i: 146 Data: 145
+i: 147 Data: 146
+i: 148 Data: 147
+i: 149 Data: 148
+i: 150 Data: 149
+i: 151 Data: 150
+i: 152 Data: 151
+i: 153 Data: 152
+i: 154 Data: 153
+i: 155 Data: 154
+i: 156 Data: 155
+i: 157 Data: 156
+i: 158 Data: 157
+i: 159 Data: 158
+i: 160 Data: 159
+i: 161 Data: 160
+i: 162 Data: 161
+i: 163 Data: 162
+i: 164 Data: 163
+i: 165 Data: 164
+i: 166 Data: 165
+i: 167 Data: 166
+i: 168 Data: 167
+i: 169 Data: 168
+i: 170 Data: 169
+i: 171 Data: 170
+i: 172 Data: 171
+i: 173 Data: 172
+i: 174 Data: 173
+i: 175 Data: 174
+i: 176 Data: 175
+i: 177 Data: 176
+i: 178 Data: 177
+i: 179 Data: 178
+i: 180 Data: 179
+i: 181 Data: 180
+i: 182 Data: 181
+i: 183 Data: 182
+i: 184 Data: 183
+i: 185 Data: 184
+i: 186 Data: 185
+i: 187 Data: 186
+i: 188 Data: 187
+i: 189 Data: 188
+i: 190 Data: 189
+i: 191 Data: 190
+i: 192 Data: 191
+i: 193 Data: 192
+i: 194 Data: 193
+i: 195 Data: 194
+i: 196 Data: 195
+i: 197 Data: 196
+i: 198 Data: 197
+i: 199 Data: 198
+i: 200 Data: 199
+NODE ID : 400 LastLogIndex 200
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+i: 21 Data: 20
+i: 22 Data: 21
+i: 23 Data: 22
+i: 24 Data: 23
+i: 25 Data: 24
+i: 26 Data: 25
+i: 27 Data: 26
+i: 28 Data: 27
+i: 29 Data: 28
+i: 30 Data: 29
+i: 31 Data: 30
+i: 32 Data: 31
+i: 33 Data: 32
+i: 34 Data: 33
+i: 35 Data: 34
+i: 36 Data: 35
+i: 37 Data: 36
+i: 38 Data: 37
+i: 39 Data: 38
+i: 40 Data: 39
+i: 41 Data: 40
+i: 42 Data: 41
+i: 43 Data: 42
+i: 44 Data: 43
+i: 45 Data: 44
+i: 46 Data: 45
+i: 47 Data: 46
+i: 48 Data: 47
+i: 49 Data: 48
+i: 50 Data: 49
+i: 51 Data: 50
+i: 52 Data: 51
+i: 53 Data: 52
+i: 54 Data: 53
+i: 55 Data: 54
+i: 56 Data: 55
+i: 57 Data: 56
+i: 58 Data: 57
+i: 59 Data: 58
+i: 60 Data: 59
+i: 61 Data: 60
+i: 62 Data: 61
+i: 63 Data: 62
+i: 64 Data: 63
+i: 65 Data: 64
+i: 66 Data: 65
+i: 67 Data: 66
+i: 68 Data: 67
+i: 69 Data: 68
+i: 70 Data: 69
+i: 71 Data: 70
+i: 72 Data: 71
+i: 73 Data: 72
+i: 74 Data: 73
+i: 75 Data: 74
+i: 76 Data: 75
+i: 77 Data: 76
+i: 78 Data: 77
+i: 79 Data: 78
+i: 80 Data: 79
+i: 81 Data: 80
+i: 82 Data: 81
+i: 83 Data: 82
+i: 84 Data: 83
+i: 85 Data: 84
+i: 86 Data: 85
+i: 87 Data: 86
+i: 88 Data: 87
+i: 89 Data: 88
+i: 90 Data: 89
+i: 91 Data: 90
+i: 92 Data: 91
+i: 93 Data: 92
+i: 94 Data: 93
+i: 95 Data: 94
+i: 96 Data: 95
+i: 97 Data: 96
+i: 98 Data: 97
+i: 99 Data: 98
+i: 100 Data: 99
+i: 101 Data: 100
+i: 102 Data: 101
+i: 103 Data: 102
+i: 104 Data: 103
+i: 105 Data: 104
+i: 106 Data: 105
+i: 107 Data: 106
+i: 108 Data: 107
+i: 109 Data: 108
+i: 110 Data: 109
+i: 111 Data: 110
+i: 112 Data: 111
+i: 113 Data: 112
+i: 114 Data: 113
+i: 115 Data: 114
+i: 116 Data: 115
+i: 117 Data: 116
+i: 118 Data: 117
+i: 119 Data: 118
+i: 120 Data: 119
+i: 121 Data: 120
+i: 122 Data: 121
+i: 123 Data: 122
+i: 124 Data: 123
+i: 125 Data: 124
+i: 126 Data: 125
+i: 127 Data: 126
+i: 128 Data: 127
+i: 129 Data: 128
+i: 130 Data: 129
+i: 131 Data: 130
+i: 132 Data: 131
+i: 133 Data: 132
+i: 134 Data: 133
+i: 135 Data: 134
+i: 136 Data: 135
+i: 137 Data: 136
+i: 138 Data: 137
+i: 139 Data: 138
+i: 140 Data: 139
+i: 141 Data: 140
+i: 142 Data: 141
+i: 143 Data: 142
+i: 144 Data: 143
+i: 145 Data: 144
+i: 146 Data: 145
+i: 147 Data: 146
+i: 148 Data: 147
+i: 149 Data: 148
+i: 150 Data: 149
+i: 151 Data: 150
+i: 152 Data: 151
+i: 153 Data: 152
+i: 154 Data: 153
+i: 155 Data: 154
+i: 156 Data: 155
+i: 157 Data: 156
+i: 158 Data: 157
+i: 159 Data: 158
+i: 160 Data: 159
+i: 161 Data: 160
+i: 162 Data: 161
+i: 163 Data: 162
+i: 164 Data: 163
+i: 165 Data: 164
+i: 166 Data: 165
+i: 167 Data: 166
+i: 168 Data: 167
+i: 169 Data: 168
+i: 170 Data: 169
+i: 171 Data: 170
+i: 172 Data: 171
+i: 173 Data: 172
+i: 174 Data: 173
+i: 175 Data: 174
+i: 176 Data: 175
+i: 177 Data: 176
+i: 178 Data: 177
+i: 179 Data: 178
+i: 180 Data: 179
+i: 181 Data: 180
+i: 182 Data: 181
+i: 183 Data: 182
+i: 184 Data: 183
+i: 185 Data: 184
+i: 186 Data: 185
+i: 187 Data: 186
+i: 188 Data: 187
+i: 189 Data: 188
+i: 190 Data: 189
+i: 191 Data: 190
+i: 192 Data: 191
+i: 193 Data: 192
+i: 194 Data: 193
+i: 195 Data: 194
+i: 196 Data: 195
+i: 197 Data: 196
+i: 198 Data: 197
+i: 199 Data: 198
+i: 200 Data: 199
+NODE ID : 500 LastLogIndex 200
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+i: 21 Data: 20
+i: 22 Data: 21
+i: 23 Data: 22
+i: 24 Data: 23
+i: 25 Data: 24
+i: 26 Data: 25
+i: 27 Data: 26
+i: 28 Data: 27
+i: 29 Data: 28
+i: 30 Data: 29
+i: 31 Data: 30
+i: 32 Data: 31
+i: 33 Data: 32
+i: 34 Data: 33
+i: 35 Data: 34
+i: 36 Data: 35
+i: 37 Data: 36
+i: 38 Data: 37
+i: 39 Data: 38
+i: 40 Data: 39
+i: 41 Data: 40
+i: 42 Data: 41
+i: 43 Data: 42
+i: 44 Data: 43
+i: 45 Data: 44
+i: 46 Data: 45
+i: 47 Data: 46
+i: 48 Data: 47
+i: 49 Data: 48
+i: 50 Data: 49
+i: 51 Data: 50
+i: 52 Data: 51
+i: 53 Data: 52
+i: 54 Data: 53
+i: 55 Data: 54
+i: 56 Data: 55
+i: 57 Data: 56
+i: 58 Data: 57
+i: 59 Data: 58
+i: 60 Data: 59
+i: 61 Data: 60
+i: 62 Data: 61
+i: 63 Data: 62
+i: 64 Data: 63
+i: 65 Data: 64
+i: 66 Data: 65
+i: 67 Data: 66
+i: 68 Data: 67
+i: 69 Data: 68
+i: 70 Data: 69
+i: 71 Data: 70
+i: 72 Data: 71
+i: 73 Data: 72
+i: 74 Data: 73
+i: 75 Data: 74
+i: 76 Data: 75
+i: 77 Data: 76
+i: 78 Data: 77
+i: 79 Data: 78
+i: 80 Data: 79
+i: 81 Data: 80
+i: 82 Data: 81
+i: 83 Data: 82
+i: 84 Data: 83
+i: 85 Data: 84
+i: 86 Data: 85
+i: 87 Data: 86
+i: 88 Data: 87
+i: 89 Data: 88
+i: 90 Data: 89
+i: 91 Data: 90
+i: 92 Data: 91
+i: 93 Data: 92
+i: 94 Data: 93
+i: 95 Data: 94
+i: 96 Data: 95
+i: 97 Data: 96
+i: 98 Data: 97
+i: 99 Data: 98
+i: 100 Data: 99
+i: 101 Data: 100
+i: 102 Data: 101
+i: 103 Data: 102
+i: 104 Data: 103
+i: 105 Data: 104
+i: 106 Data: 105
+i: 107 Data: 106
+i: 108 Data: 107
+i: 109 Data: 108
+i: 110 Data: 109
+i: 111 Data: 110
+i: 112 Data: 111
+i: 113 Data: 112
+i: 114 Data: 113
+i: 115 Data: 114
+i: 116 Data: 115
+i: 117 Data: 116
+i: 118 Data: 117
+i: 119 Data: 118
+i: 120 Data: 119
+i: 121 Data: 120
+i: 122 Data: 121
+i: 123 Data: 122
+i: 124 Data: 123
+i: 125 Data: 124
+i: 126 Data: 125
+i: 127 Data: 126
+i: 128 Data: 127
+i: 129 Data: 128
+i: 130 Data: 129
+i: 131 Data: 130
+i: 132 Data: 131
+i: 133 Data: 132
+i: 134 Data: 133
+i: 135 Data: 134
+i: 136 Data: 135
+i: 137 Data: 136
+i: 138 Data: 137
+i: 139 Data: 138
+i: 140 Data: 139
+i: 141 Data: 140
+i: 142 Data: 141
+i: 143 Data: 142
+i: 144 Data: 143
+i: 145 Data: 144
+i: 146 Data: 145
+i: 147 Data: 146
+i: 148 Data: 147
+i: 149 Data: 148
+i: 150 Data: 149
+i: 151 Data: 150
+i: 152 Data: 151
+i: 153 Data: 152
+i: 154 Data: 153
+i: 155 Data: 154
+i: 156 Data: 155
+i: 157 Data: 156
+i: 158 Data: 157
+i: 159 Data: 158
+i: 160 Data: 159
+i: 161 Data: 160
+i: 162 Data: 161
+i: 163 Data: 162
+i: 164 Data: 163
+i: 165 Data: 164
+i: 166 Data: 165
+i: 167 Data: 166
+i: 168 Data: 167
+i: 169 Data: 168
+i: 170 Data: 169
+i: 171 Data: 170
+i: 172 Data: 171
+i: 173 Data: 172
+i: 174 Data: 173
+i: 175 Data: 174
+i: 176 Data: 175
+i: 177 Data: 176
+i: 178 Data: 177
+i: 179 Data: 178
+i: 180 Data: 179
+i: 181 Data: 180
+i: 182 Data: 181
+i: 183 Data: 182
+i: 184 Data: 183
+i: 185 Data: 184
+i: 186 Data: 185
+i: 187 Data: 186
+i: 188 Data: 187
+i: 189 Data: 188
+i: 190 Data: 189
+i: 191 Data: 190
+i: 192 Data: 191
+i: 193 Data: 192
+i: 194 Data: 193
+i: 195 Data: 194
+i: 196 Data: 195
+i: 197 Data: 196
+i: 198 Data: 197
+i: 199 Data: 198
+i: 200 Data: 199
+PASS
+ok  	github.com/JashDave/cs733/assignment4/assignment3	114.297s

@@ -1,0 +1,704 @@
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:15.489890529 +0530 IST
+200 : {Alarm map[t:1s]} time: 2016-03-30 20:18:15.489993477 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:15.490030023 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:15.490076259 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:15.490092638 +0530 IST
+400 : timeout at: 2016-03-30 20:18:16.4901515 +0530 IST
+100 : timeout at: 2016-03-30 20:18:16.490198732 +0530 IST
+100 : {SaveState map[currentTerm:1 votedFor:100]} time: 2016-03-30 20:18:16.490414947 +0530 IST
+400 : {Send map[peerId:100 event:{VoteReq map[term:1 candidateId:400 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.490394531 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:16.490647264 +0530 IST
+400 : {SaveState map[currentTerm:1 votedFor:400]} time: 2016-03-30 20:18:16.490694356 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:16.490722234 +0530 IST
+400 : {Send map[event:{VoteReq map[term:1 candidateId:400 lastLogIndex:0 lastLogTerm:0]} peerId:200]} time: 2016-03-30 20:18:16.490910481 +0530 IST
+100 : {Send map[peerId:200 event:{VoteReq map[term:1 candidateId:100 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.490782681 +0530 IST
+400 : {Send map[peerId:300 event:{VoteReq map[candidateId:400 lastLogIndex:0 lastLogTerm:0 term:1]}]} time: 2016-03-30 20:18:16.490982118 +0530 IST
+100 : {Send map[peerId:300 event:{VoteReq map[term:1 candidateId:100 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.490995769 +0530 IST
+400 : {Send map[peerId:500 event:{VoteReq map[term:1 candidateId:400 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.491038205 +0530 IST
+100 : {Send map[peerId:400 event:{VoteReq map[lastLogTerm:0 term:1 candidateId:100 lastLogIndex:0]}]} time: 2016-03-30 20:18:16.491076592 +0530 IST
+100 : {Send map[peerId:500 event:{VoteReq map[candidateId:100 lastLogIndex:0 lastLogTerm:0 term:1]}]} time: 2016-03-30 20:18:16.491133105 +0530 IST
+500 : {SaveState map[currentTerm:1 votedFor:0]} time: 2016-03-30 20:18:16.491150921 +0530 IST
+400 : {Send map[event:{VoteResp map[term:1 voteGranted:false]} peerId:100]} time: 2016-03-30 20:18:16.491247986 +0530 IST
+500 : {SaveState map[currentTerm:1 votedFor:400]} time: 2016-03-30 20:18:16.491319282 +0530 IST
+500 : timeout at: 2016-03-30 20:18:16.491358717 +0530 IST
+300 : timeout at: 2016-03-30 20:18:16.491478448 +0530 IST
+300 : {SaveState map[currentTerm:1 votedFor:300]} time: 2016-03-30 20:18:16.491572962 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:16.491752875 +0530 IST
+300 : {Send map[event:{VoteReq map[term:1 candidateId:300 lastLogIndex:0 lastLogTerm:0]} peerId:100]} time: 2016-03-30 20:18:16.491808727 +0530 IST
+300 : {Send map[peerId:200 event:{VoteReq map[candidateId:300 lastLogIndex:0 lastLogTerm:0 term:1]}]} time: 2016-03-30 20:18:16.491999093 +0530 IST
+300 : {Send map[peerId:400 event:{VoteReq map[lastLogTerm:0 term:1 candidateId:300 lastLogIndex:0]}]} time: 2016-03-30 20:18:16.492054905 +0530 IST
+300 : {Send map[peerId:500 event:{VoteReq map[term:1 candidateId:300 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.492107474 +0530 IST
+400 : {Send map[peerId:300 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.492212978 +0530 IST
+100 : {Send map[peerId:400 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.492309948 +0530 IST
+100 : {Send map[peerId:300 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.492364046 +0530 IST
+200 : timeout at: 2016-03-30 20:18:16.492643594 +0530 IST
+200 : {Send map[peerId:100 event:{VoteReq map[term:1 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.492767816 +0530 IST
+200 : {Alarm map[t:1s]} time: 2016-03-30 20:18:16.492957731 +0530 IST
+200 : {SaveState map[currentTerm:1 votedFor:200]} time: 2016-03-30 20:18:16.492998148 +0530 IST
+200 : {Send map[peerId:300 event:{VoteReq map[candidateId:200 lastLogIndex:0 lastLogTerm:0 term:1]}]} time: 2016-03-30 20:18:16.49318427 +0530 IST
+200 : {Send map[peerId:400 event:{VoteReq map[term:1 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.493253412 +0530 IST
+200 : {Send map[peerId:500 event:{VoteReq map[term:1 candidateId:200 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.493321761 +0530 IST
+100 : {Send map[peerId:200 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.493516276 +0530 IST
+400 : {Send map[peerId:200 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.493598799 +0530 IST
+200 : {Send map[peerId:400 event:{VoteResp map[voteGranted:false term:1]}]} time: 2016-03-30 20:18:16.49369256 +0530 IST
+200 : {Send map[peerId:100 event:{VoteResp map[voteGranted:false term:1]}]} time: 2016-03-30 20:18:16.493740436 +0530 IST
+200 : {Send map[peerId:300 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.493794306 +0530 IST
+300 : {Send map[peerId:400 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.493902936 +0530 IST
+300 : {Send map[peerId:100 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.493952212 +0530 IST
+300 : {Send map[peerId:200 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.493994913 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:16.509383345 +0530 IST
+500 : {SaveState map[currentTerm:2 votedFor:500]} time: 2016-03-30 20:18:16.509523998 +0530 IST
+500 : {Send map[peerId:400 event:{VoteResp map[term:1 voteGranted:true]}]} time: 2016-03-30 20:18:16.559370422 +0530 IST
+500 : {Send map[peerId:100 event:{VoteResp map[term:1 voteGranted:false]}]} time: 2016-03-30 20:18:16.559575241 +0530 IST
+500 : {Send map[peerId:100 event:{VoteReq map[candidateId:500 lastLogIndex:0 lastLogTerm:0 term:2]}]} time: 2016-03-30 20:18:16.559854768 +0530 IST
+500 : {Send map[peerId:200 event:{VoteReq map[lastLogTerm:0 term:2 candidateId:500 lastLogIndex:0]}]} time: 2016-03-30 20:18:16.559904091 +0530 IST
+500 : {Send map[peerId:300 event:{VoteReq map[term:2 candidateId:500 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.559939432 +0530 IST
+300 : {SaveState map[currentTerm:2 votedFor:500]} time: 2016-03-30 20:18:16.560057897 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:16.560233787 +0530 IST
+300 : {Send map[peerId:500 event:{VoteResp map[term:2 voteGranted:false]}]} time: 2016-03-30 20:18:16.560289115 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:16.560373258 +0530 IST
+100 : {SaveState map[currentTerm:2 votedFor:500]} time: 2016-03-30 20:18:16.560401979 +0530 IST
+100 : {Send map[peerId:500 event:{VoteResp map[term:2 voteGranted:false]}]} time: 2016-03-30 20:18:16.560521298 +0530 IST
+200 : {SaveState map[votedFor:500 currentTerm:2]} time: 2016-03-30 20:18:16.560610171 +0530 IST
+200 : {Alarm map[t:1s]} time: 2016-03-30 20:18:16.560718798 +0530 IST
+200 : {Send map[peerId:500 event:{VoteResp map[term:2 voteGranted:false]}]} time: 2016-03-30 20:18:16.560753362 +0530 IST
+500 : {Send map[peerId:400 event:{VoteReq map[term:2 candidateId:500 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:16.55997345 +0530 IST
+500 : {Send map[peerId:300 event:{VoteResp map[voteGranted:false term:2]}]} time: 2016-03-30 20:18:16.560879977 +0530 IST
+500 : {Send map[event:{VoteResp map[term:2 voteGranted:false]} peerId:200]} time: 2016-03-30 20:18:16.560918876 +0530 IST
+400 : {Send map[peerId:500 event:{VoteResp map[term:2 voteGranted:false]}]} time: 2016-03-30 20:18:16.560980955 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:16.561075206 +0530 IST
+400 : {SaveState map[currentTerm:2 votedFor:500]} time: 2016-03-30 20:18:16.561106926 +0530 IST
+500 : timeout at: 2016-03-30 20:18:17.509661306 +0530 IST
+500 : {Alarm map[t:1.56577s]} time: 2016-03-30 20:18:17.509819168 +0530 IST
+500 : {SaveState map[currentTerm:2 votedFor:0]} time: 2016-03-30 20:18:17.509864225 +0530 IST
+300 : timeout at: 2016-03-30 20:18:17.560504009 +0530 IST
+100 : timeout at: 2016-03-30 20:18:17.560506184 +0530 IST
+100 : {SaveState map[currentTerm:3 votedFor:100]} time: 2016-03-30 20:18:17.56069576 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.560704633 +0530 IST
+300 : {SaveState map[votedFor:300 currentTerm:3]} time: 2016-03-30 20:18:17.560772698 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.560914088 +0530 IST
+100 : {Send map[peerId:200 event:{VoteReq map[candidateId:100 lastLogIndex:0 lastLogTerm:0 term:3]}]} time: 2016-03-30 20:18:17.560954814 +0530 IST
+300 : {Send map[event:{VoteReq map[term:3 candidateId:300 lastLogIndex:0 lastLogTerm:0]} peerId:100]} time: 2016-03-30 20:18:17.560958412 +0530 IST
+100 : {Send map[peerId:300 event:{VoteReq map[term:3 candidateId:100 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:17.560997056 +0530 IST
+300 : {Send map[peerId:200 event:{VoteReq map[term:3 candidateId:300 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:17.561010543 +0530 IST
+100 : {Send map[peerId:400 event:{VoteReq map[term:3 candidateId:100 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:17.561034748 +0530 IST
+300 : {Send map[peerId:400 event:{VoteReq map[term:3 candidateId:300 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:17.561048333 +0530 IST
+100 : {Send map[peerId:500 event:{VoteReq map[term:3 candidateId:100 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:17.561070486 +0530 IST
+300 : {Send map[peerId:500 event:{VoteReq map[term:3 candidateId:300 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:17.561095038 +0530 IST
+500 : {SaveState map[currentTerm:3 votedFor:0]} time: 2016-03-30 20:18:17.561172066 +0530 IST
+100 : {Send map[peerId:300 event:{VoteResp map[term:3 voteGranted:false]}]} time: 2016-03-30 20:18:17.561167225 +0530 IST
+400 : timeout at: 2016-03-30 20:18:17.561233288 +0530 IST
+500 : {SaveState map[votedFor:100 currentTerm:3]} time: 2016-03-30 20:18:17.56129417 +0530 IST
+400 : {SaveState map[currentTerm:3 votedFor:400]} time: 2016-03-30 20:18:17.561307984 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.561464319 +0530 IST
+400 : {Send map[event:{VoteReq map[lastLogIndex:0 lastLogTerm:0 term:3 candidateId:400]} peerId:100]} time: 2016-03-30 20:18:17.561503474 +0530 IST
+200 : {SaveState map[currentTerm:3 votedFor:0]} time: 2016-03-30 20:18:17.561538925 +0530 IST
+400 : {Send map[peerId:200 event:{VoteReq map[candidateId:400 lastLogIndex:0 lastLogTerm:0 term:3]}]} time: 2016-03-30 20:18:17.561543064 +0530 IST
+400 : {Send map[peerId:300 event:{VoteReq map[lastLogIndex:0 lastLogTerm:0 term:3 candidateId:400]}]} time: 2016-03-30 20:18:17.561586446 +0530 IST
+400 : {Send map[peerId:500 event:{VoteReq map[term:3 candidateId:400 lastLogIndex:0 lastLogTerm:0]}]} time: 2016-03-30 20:18:17.561621886 +0530 IST
+200 : {SaveState map[currentTerm:3 votedFor:100]} time: 2016-03-30 20:18:17.561672825 +0530 IST
+200 : timeout at: 2016-03-30 20:18:17.561680031 +0530 IST
+100 : {Send map[peerId:400 event:{VoteResp map[term:3 voteGranted:false]}]} time: 2016-03-30 20:18:17.561792159 +0530 IST
+300 : {Send map[peerId:100 event:{VoteResp map[term:3 voteGranted:false]}]} time: 2016-03-30 20:18:17.561876944 +0530 IST
+300 : {Send map[peerId:400 event:{VoteResp map[term:3 voteGranted:false]}]} time: 2016-03-30 20:18:17.561915434 +0530 IST
+400 : {Send map[peerId:100 event:{VoteResp map[term:3 voteGranted:false]}]} time: 2016-03-30 20:18:17.561934602 +0530 IST
+400 : {Send map[peerId:300 event:{VoteResp map[term:3 voteGranted:false]}]} time: 2016-03-30 20:18:17.561994059 +0530 IST
+200 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.569486456 +0530 IST
+500 : {Send map[peerId:100 event:{VoteResp map[term:3 voteGranted:true]}]} time: 2016-03-30 20:18:17.569497351 +0530 IST
+200 : {SaveState map[currentTerm:4 votedFor:200]} time: 2016-03-30 20:18:17.569560484 +0530 IST
+500 : {Send map[peerId:300 event:{VoteResp map[voteGranted:false term:3]}]} time: 2016-03-30 20:18:17.569573033 +0530 IST
+500 : {Send map[peerId:400 event:{VoteResp map[term:3 voteGranted:false]}]} time: 2016-03-30 20:18:17.56961153 +0530 IST
+200 : {Send map[peerId:100 event:{VoteResp map[term:3 voteGranted:true]}]} time: 2016-03-30 20:18:17.615016533 +0530 IST
+200 : {Send map[peerId:300 event:{VoteResp map[term:3 voteGranted:false]}]} time: 2016-03-30 20:18:17.615108674 +0530 IST
+200 : {Send map[peerId:100 event:{VoteReq map[candidateId:200 lastLogIndex:0 lastLogTerm:0 term:4]}]} time: 2016-03-30 20:18:17.616779958 +0530 IST
+200 : {Send map[peerId:300 event:{VoteReq map[candidateId:200 lastLogIndex:0 lastLogTerm:0 term:4]}]} time: 2016-03-30 20:18:17.616836658 +0530 IST
+200 : {Send map[peerId:400 event:{VoteReq map[candidateId:200 lastLogIndex:0 lastLogTerm:0 term:4]}]} time: 2016-03-30 20:18:17.616868092 +0530 IST
+200 : {Send map[event:{VoteReq map[lastLogIndex:0 lastLogTerm:0 term:4 candidateId:200]} peerId:500]} time: 2016-03-30 20:18:17.616897993 +0530 IST
+200 : {Send map[peerId:400 event:{VoteResp map[term:4 voteGranted:false]}]} time: 2016-03-30 20:18:17.61692778 +0530 IST
+500 : {Send map[peerId:200 event:{VoteResp map[voteGranted:true term:4]}]} time: 2016-03-30 20:18:17.616993618 +0530 IST
+500 : {SaveState map[currentTerm:4 votedFor:0]} time: 2016-03-30 20:18:17.617026085 +0530 IST
+500 : {SaveState map[currentTerm:4 votedFor:200]} time: 2016-03-30 20:18:17.617155597 +0530 IST
+100 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:17.615331958 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:100 prevLogIndex:0]}]} time: 2016-03-30 20:18:17.61723015 +0530 IST
+100 : {Send map[peerId:300 event:{AppendEntriesReq map[leaderCommit:0 term:3 leaderId:100 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]}]} time: 2016-03-30 20:18:17.61727917 +0530 IST
+100 : {Send map[peerId:400 event:{AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:17.617314883 +0530 IST
+100 : {Send map[peerId:500 event:{AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:17.61734989 +0530 IST
+300 : {SaveState map[currentTerm:4 votedFor:200]} time: 2016-03-30 20:18:17.617487696 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.617607365 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.617636772 +0530 IST
+300 : {Send map[peerId:200 event:{VoteResp map[term:4 voteGranted:false]}]} time: 2016-03-30 20:18:17.617657884 +0530 IST
+300 : {Send map[peerId:100 event:{AppendEntriesResp map[senderId:300 forIndex:0 term:4 success:true]}]} time: 2016-03-30 20:18:17.61768636 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.617757786 +0530 IST
+100 : {SaveState map[currentTerm:4 votedFor:0]} time: 2016-03-30 20:18:17.61778118 +0530 IST
+100 : {SaveState map[currentTerm:4 votedFor:200]} time: 2016-03-30 20:18:17.617871642 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.617988834 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.618022789 +0530 IST
+400 : {SaveState map[currentTerm:4 votedFor:0]} time: 2016-03-30 20:18:17.618043674 +0530 IST
+400 : {SaveState map[votedFor:200 currentTerm:4]} time: 2016-03-30 20:18:17.618135618 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesResp map[forIndex:0 term:4 success:false senderId:200]}]} time: 2016-03-30 20:18:17.618213414 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.752217031 +0530 IST
+100 : {Send map[peerId:200 event:{VoteResp map[voteGranted:true term:4]}]} time: 2016-03-30 20:18:17.752245146 +0530 IST
+500 : {Send map[event:{AppendEntriesResp map[term:4 success:true senderId:500 forIndex:0]} peerId:100]} time: 2016-03-30 20:18:17.752310988 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:17.752468581 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:17.752532734 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200]} peerId:300]} time: 2016-03-30 20:18:17.752623356 +0530 IST
+400 : {Send map[event:{VoteResp map[term:4 voteGranted:true]} peerId:200]} time: 2016-03-30 20:18:17.75264996 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:17.752679447 +0530 IST
+400 : {Send map[peerId:100 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:0]}]} time: 2016-03-30 20:18:17.752713985 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4]}]} time: 2016-03-30 20:18:17.752762682 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.752856448 +0530 IST
+500 : {Send map[event:{AppendEntriesResp map[senderId:500 forIndex:0 term:4 success:true]} peerId:200]} time: 2016-03-30 20:18:17.75289439 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.75297796 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:0 term:4 success:true senderId:100]}]} time: 2016-03-30 20:18:17.753014058 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.753096324 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:0]}]} time: 2016-03-30 20:18:17.753134361 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.753229942 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:0]}]} time: 2016-03-30 20:18:17.753267166 +0530 IST
+200 : timeout at: 2016-03-30 20:18:17.852731454 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:17.958981024 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0]}]} time: 2016-03-30 20:18:17.959090159 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:17.959172192 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0]}]} time: 2016-03-30 20:18:17.959225808 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200]}]} time: 2016-03-30 20:18:17.959272587 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:0 term:4 success:true senderId:400]}]} time: 2016-03-30 20:18:17.959368065 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.959415555 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.959482911 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:0 term:4 success:true senderId:100]}]} time: 2016-03-30 20:18:17.959514714 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:0]}]} time: 2016-03-30 20:18:17.959590453 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.959633015 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:500 forIndex:0 term:4]}]} time: 2016-03-30 20:18:17.959727852 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:17.959774984 +0530 IST
+200 : timeout at: 2016-03-30 20:18:18.059198207 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:18.059353315 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0]}]} time: 2016-03-30 20:18:18.05940697 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:18.059522302 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]}]} time: 2016-03-30 20:18:18.059573771 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0]}]} time: 2016-03-30 20:18:18.059616836 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:18.059697655 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.059719124 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.059753409 +0530 IST
+300 : {Send map[event:{AppendEntriesResp map[senderId:300 forIndex:0 term:4 success:true]} peerId:200]} time: 2016-03-30 20:18:18.059785715 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:400 forIndex:0 term:4]}]} time: 2016-03-30 20:18:18.059822322 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.059876438 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:0]}]} time: 2016-03-30 20:18:18.059888131 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.05994215 +0530 IST
+200 : timeout at: 2016-03-30 20:18:18.15958621 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]}]} time: 2016-03-30 20:18:18.159890416 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:18.160009365 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:0]}]} time: 2016-03-30 20:18:18.160059812 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:18.160128146 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:18.160191386 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:18.160309947 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.160369326 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.160458047 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:0]}]} time: 2016-03-30 20:18:18.160503842 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:0]}]} time: 2016-03-30 20:18:18.160600112 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.160656704 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[senderId:400 forIndex:0 term:4 success:true]}]} time: 2016-03-30 20:18:18.160732296 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.160783716 +0530 IST
+200 : timeout at: 2016-03-30 20:18:18.26020919 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4]}]} time: 2016-03-30 20:18:18.260406269 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:18.260476083 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:0]}]} time: 2016-03-30 20:18:18.260521995 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200]} peerId:400]} time: 2016-03-30 20:18:18.260567349 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0]}]} time: 2016-03-30 20:18:18.260607541 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.260702652 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:500 forIndex:0 term:4]}]} time: 2016-03-30 20:18:18.260732523 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:0]}]} time: 2016-03-30 20:18:18.260811946 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.260847693 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:0]}]} time: 2016-03-30 20:18:18.260900437 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.260950243 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.261018847 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:0]}]} time: 2016-03-30 20:18:18.261047265 +0530 IST
+200 : timeout at: 2016-03-30 20:18:18.360616371 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:18.360854489 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:0]}]} time: 2016-03-30 20:18:18.36090897 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:18.360961259 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:18.361001436 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200]} peerId:500]} time: 2016-03-30 20:18:18.361040928 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:18.361115941 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.361152728 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.361211573 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:0]}]} time: 2016-03-30 20:18:18.361238714 +0530 IST
+300 : {Send map[event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:0]} peerId:200]} time: 2016-03-30 20:18:18.361301296 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.361336913 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:400 forIndex:0 term:4]}]} time: 2016-03-30 20:18:18.361387168 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.361485 +0530 IST
+200 : timeout at: 2016-03-30 20:18:18.461079715 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:18.461285265 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]}]} time: 2016-03-30 20:18:18.461346002 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false}]} peerId:300]} time: 2016-03-30 20:18:18.461411828 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:0]}]} time: 2016-03-30 20:18:18.46152578 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:18.461591509 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.46175757 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:0 term:4 success:true senderId:500]}]} time: 2016-03-30 20:18:18.461811523 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:0]}]} time: 2016-03-30 20:18:18.461937859 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.46199799 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[senderId:300 forIndex:0 term:4 success:true]}]} time: 2016-03-30 20:18:18.462082938 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.462141556 +0530 IST
+400 : {Send map[event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:0]} peerId:200]} time: 2016-03-30 20:18:18.462223988 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.462281323 +0530 IST
+i: 0 CmtIdx: 0 LastLogIdx 0
+200 : {LogStore map[term:4 index:1 data:[48]]} time: 2016-03-30 20:18:18.49255724 +0530 IST
+200 : timeout at: 2016-03-30 20:18:18.561517253 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:18.754942123 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:18.755045736 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{4 [48] true}]} peerId:100]} time: 2016-03-30 20:18:18.755106109 +0530 IST
+200 : {LogStore map[index:2 data:[49] term:4]} time: 2016-03-30 20:18:18.755184115 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{4 [48] true} leaderCommit:0]}]} time: 2016-03-30 20:18:18.755217485 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderCommit:0 term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{4 [48] true}]}]} time: 2016-03-30 20:18:18.755264228 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:0 prevLogTerm:0 entries:{4 [48] true} leaderCommit:0]}]} time: 2016-03-30 20:18:18.755310737 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:1 prevLogTerm:4 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:18.755356852 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:1 prevLogTerm:4]}]} time: 2016-03-30 20:18:18.755401408 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:1 prevLogTerm:4 entries:{0 [] false} leaderCommit:0 term:4]}]} time: 2016-03-30 20:18:18.755446656 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:1 prevLogTerm:4 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:18.755492396 +0530 IST
+500 : {LogStore map[data:[48] term:4 index:1]} time: 2016-03-30 20:18:18.756366304 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.757134671 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.758913583 +0530 IST
+400 : {LogStore map[term:4 index:1 data:[48]]} time: 2016-03-30 20:18:18.759090854 +0530 IST
+300 : {LogStore map[term:4 index:1 data:[48]]} time: 2016-03-30 20:18:18.759159723 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.759211816 +0530 IST
+100 : {LogStore map[term:4 index:1 data:[48]]} time: 2016-03-30 20:18:18.759269262 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:18.759307688 +0530 IST
+200 : timeout at: 2016-03-30 20:18:18.85520502 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:500 forIndex:1]}]} time: 2016-03-30 20:18:19.023086667 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.023188671 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:19.02322779 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:19.023957965 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:19.024759655 +0530 IST
+200 : {LogStore map[term:4 index:3 data:[50]]} time: 2016-03-30 20:18:19.024827295 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:1 prevLogTerm:4 entries:{4 [49] true} leaderCommit:0 term:4]}]} time: 2016-03-30 20:18:19.02486779 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:4 leaderId:200 prevLogIndex:1 prevLogTerm:4 entries:{4 [49] true}]} peerId:300]} time: 2016-03-30 20:18:19.024924008 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:1 prevLogTerm:4 entries:{4 [49] true} leaderCommit:0 term:4]}]} time: 2016-03-30 20:18:19.024969942 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[prevLogIndex:1 prevLogTerm:4 entries:{4 [49] true} leaderCommit:0 term:4 leaderId:200]}]} time: 2016-03-30 20:18:19.025013123 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:2 prevLogTerm:4 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:19.025055777 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:2]}]} time: 2016-03-30 20:18:19.025098654 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:2 prevLogTerm:4]}]} time: 2016-03-30 20:18:19.025154554 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:2 prevLogTerm:4 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:19.025198397 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[entries:{4 [49] true} leaderCommit:0 term:4 leaderId:200 prevLogIndex:1 prevLogTerm:4]}]} time: 2016-03-30 20:18:19.025239433 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.025479307 +0530 IST
+500 : {LogStore map[term:4 index:2 data:[49]]} time: 2016-03-30 20:18:19.025525332 +0530 IST
+400 : {LogStore map[term:4 index:2 data:[49]]} time: 2016-03-30 20:18:19.094853966 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.09490416 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.094926977 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:1]}]} time: 2016-03-30 20:18:19.094946295 +0530 IST
+100 : {LogStore map[data:[49] term:4 index:2]} time: 2016-03-30 20:18:19.094983954 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:0]}]} time: 2016-03-30 20:18:19.095005136 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.095031028 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.095049462 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.095063798 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.09506803 +0530 IST
+300 : {LogStore map[term:4 index:2 data:[49]]} time: 2016-03-30 20:18:19.095087876 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[senderId:100 forIndex:1 term:4 success:true]}]} time: 2016-03-30 20:18:19.095086841 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[senderId:300 forIndex:1 term:4 success:true]}]} time: 2016-03-30 20:18:19.095109298 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:0]}]} time: 2016-03-30 20:18:19.095116507 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:0]}]} time: 2016-03-30 20:18:19.095144692 +0530 IST
+200 : timeout at: 2016-03-30 20:18:19.124925978 +0530 IST
+200 : {Commit map[index:1 data:[48] err:<nil>]} time: 2016-03-30 20:18:19.359883533 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:19.359964444 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:19.360005643 +0530 IST
+200 : {LogStore map[index:4 data:[51] term:4]} time: 2016-03-30 20:18:19.360038743 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:2 prevLogTerm:4 entries:{4 [50] true} leaderCommit:0]}]} time: 2016-03-30 20:18:19.360074519 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[prevLogIndex:2 prevLogTerm:4 entries:{4 [50] true} leaderCommit:0 term:4 leaderId:200]} peerId:300]} time: 2016-03-30 20:18:19.360127559 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:2 prevLogTerm:4 entries:{4 [50] true} leaderCommit:0]}]} time: 2016-03-30 20:18:19.360175876 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:0 term:4 leaderId:200 prevLogIndex:2 prevLogTerm:4 entries:{4 [50] true}]} peerId:500]} time: 2016-03-30 20:18:19.360222334 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:19.360290747 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{0 [] false} leaderCommit:0]}]} time: 2016-03-30 20:18:19.360337949 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:3]}]} time: 2016-03-30 20:18:19.360383037 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:0 term:4 leaderId:200 prevLogIndex:3]}]} time: 2016-03-30 20:18:19.360427516 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:4 entries:{4 [49] true} leaderCommit:1 term:4 leaderId:200 prevLogIndex:1]}]} time: 2016-03-30 20:18:19.360484474 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:1 prevLogTerm:4 entries:{4 [49] true} leaderCommit:1 term:4]}]} time: 2016-03-30 20:18:19.360532401 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:1 prevLogTerm:4 entries:{4 [49] true} leaderCommit:1 term:4]}]} time: 2016-03-30 20:18:19.360578308 +0530 IST
+500 : {LogStore map[term:4 index:2 data:[49]]} time: 2016-03-30 20:18:19.361620321 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.361689026 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.361720246 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:500 forIndex:2]}]} time: 2016-03-30 20:18:19.36174988 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:0 term:4 success:true senderId:500]}]} time: 2016-03-30 20:18:19.361795201 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.415553364 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.415619668 +0530 IST
+400 : {LogStore map[term:4 index:3 data:[50]]} time: 2016-03-30 20:18:19.415650512 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[senderId:400 forIndex:2 term:4 success:true]}]} time: 2016-03-30 20:18:19.415683504 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:0]}]} time: 2016-03-30 20:18:19.415722347 +0530 IST
+300 : {LogStore map[term:4 index:3 data:[50]]} time: 2016-03-30 20:18:19.415951979 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.416013415 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.416036833 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:2]}]} time: 2016-03-30 20:18:19.41606131 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:300 forIndex:0 term:4]}]} time: 2016-03-30 20:18:19.416098402 +0530 IST
+200 : timeout at: 2016-03-30 20:18:19.460234458 +0530 IST
+i: 1 CmtIdx: 1 LastLogIdx 4
+CI {[48] 1 <nil>}
+100 : {LogStore map[term:4 index:3 data:[50]]} time: 2016-03-30 20:18:19.549100628 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.549177592 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.549213725 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:2]}]} time: 2016-03-30 20:18:19.549266878 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:0 term:4 success:true senderId:100]}]} time: 2016-03-30 20:18:19.549316565 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.785849475 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.786535262 +0530 IST
+400 : {LogStore map[term:4 index:2 data:[49]]} time: 2016-03-30 20:18:19.78660943 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:3]}]} time: 2016-03-30 20:18:19.786648176 +0530 IST
+400 : {Send map[event:{AppendEntriesResp map[senderId:400 forIndex:0 term:4 success:true]} peerId:200]} time: 2016-03-30 20:18:19.786688791 +0530 IST
+300 : {LogStore map[term:4 index:2 data:[49]]} time: 2016-03-30 20:18:19.871094082 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.871173376 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.871201753 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:3 term:4 success:true senderId:300]}]} time: 2016-03-30 20:18:19.871224913 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:0 term:4 success:true senderId:300]}]} time: 2016-03-30 20:18:19.871353164 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:19.939140863 +0530 IST
+100 : {LogStore map[term:4 index:2 data:[49]]} time: 2016-03-30 20:18:19.941530798 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.941613628 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:19.94164189 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:3]}]} time: 2016-03-30 20:18:19.941668493 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:0]}]} time: 2016-03-30 20:18:19.941708501 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:19.941764651 +0530 IST
+200 : {Commit map[index:2 data:[49] err:<nil>]} time: 2016-03-30 20:18:19.941811331 +0530 IST
+200 : {Commit map[index:3 data:[50] err:<nil>]} time: 2016-03-30 20:18:19.941844592 +0530 IST
+200 : {LogStore map[term:4 index:5 data:[52]]} time: 2016-03-30 20:18:19.941869953 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{4 [51] true} leaderCommit:1]}]} time: 2016-03-30 20:18:19.941933262 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[prevLogTerm:4 entries:{4 [51] true} leaderCommit:1 term:4 leaderId:200 prevLogIndex:3]}]} time: 2016-03-30 20:18:19.942002095 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{4 [51] true} leaderCommit:1]}]} time: 2016-03-30 20:18:19.942055115 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{4 [51] true} leaderCommit:1 term:4]}]} time: 2016-03-30 20:18:19.942095375 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:4 entries:{0 [] false} leaderCommit:1 term:4 leaderId:200]}]} time: 2016-03-30 20:18:19.942204597 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:4 entries:{0 [] false} leaderCommit:1 term:4 leaderId:200]}]} time: 2016-03-30 20:18:19.942257778 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:4 prevLogTerm:4 entries:{0 [] false} leaderCommit:1]}]} time: 2016-03-30 20:18:19.942309016 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:4 prevLogTerm:4 entries:{0 [] false} leaderCommit:1]}]} time: 2016-03-30 20:18:19.942380476 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[entries:{4 [50] true} leaderCommit:1 term:4 leaderId:200 prevLogIndex:2 prevLogTerm:4]}]} time: 2016-03-30 20:18:19.942436924 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:2 prevLogTerm:4 entries:{4 [50] true} leaderCommit:2 term:4]}]} time: 2016-03-30 20:18:19.942502395 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[entries:{4 [50] true} leaderCommit:2 term:4 leaderId:200 prevLogIndex:2 prevLogTerm:4]}]} time: 2016-03-30 20:18:19.94255685 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:2 prevLogTerm:4 entries:{4 [50] true} leaderCommit:2]}]} time: 2016-03-30 20:18:19.942636768 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogIndex:3 prevLogTerm:4 entries:{4 [51] true} leaderCommit:2 term:4 leaderId:200]}]} time: 2016-03-30 20:18:19.94268901 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{4 [51] true} leaderCommit:3]}]} time: 2016-03-30 20:18:19.942742391 +0530 IST
+200 : timeout at: 2016-03-30 20:18:20.041943011 +0530 IST
+500 : timeout at: 2016-03-30 20:18:20.361885716 +0530 IST
+200 : {LogStore map[term:4 index:6 data:[53]]} time: 2016-03-30 20:18:20.423006402 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:20.423135839 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:20.423183536 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:4 prevLogTerm:4 entries:{4 [52] true} leaderCommit:3]}]} time: 2016-03-30 20:18:20.423224741 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:3 term:4 leaderId:200 prevLogIndex:4 prevLogTerm:4 entries:{4 [52] true}]} peerId:300]} time: 2016-03-30 20:18:20.42331695 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:4 entries:{4 [52] true} leaderCommit:3 term:4 leaderId:200 prevLogIndex:4]}]} time: 2016-03-30 20:18:20.42337976 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderCommit:3 term:4 leaderId:200 prevLogIndex:4 prevLogTerm:4 entries:{4 [52] true}]}]} time: 2016-03-30 20:18:20.423438012 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:3 term:4 leaderId:200 prevLogIndex:5 prevLogTerm:4]}]} time: 2016-03-30 20:18:20.423494781 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:3 term:4 leaderId:200 prevLogIndex:5 prevLogTerm:4]}]} time: 2016-03-30 20:18:20.423551121 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:3 term:4 leaderId:200 prevLogIndex:5 prevLogTerm:4]}]} time: 2016-03-30 20:18:20.423607003 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:5 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:20.423662392 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{4 [51] true} leaderCommit:3]}]} time: 2016-03-30 20:18:20.423752429 +0530 IST
+i: 2 CmtIdx: 3 LastLogIdx 6
+CI {[49] 2 <nil>}
+200 : timeout at: 2016-03-30 20:18:20.523379281 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:2 term:4 success:true senderId:500]}]} time: 2016-03-30 20:18:20.557329769 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.557407919 +0530 IST
+500 : {SaveState map[votedFor:500 currentTerm:5]} time: 2016-03-30 20:18:20.557457329 +0530 IST
+500 : {Send map[peerId:100 event:{VoteReq map[term:5 candidateId:500 lastLogIndex:2 lastLogTerm:4]}]} time: 2016-03-30 20:18:20.55759828 +0530 IST
+500 : {Send map[peerId:200 event:{VoteReq map[lastLogTerm:4 term:5 candidateId:500 lastLogIndex:2]}]} time: 2016-03-30 20:18:20.557638283 +0530 IST
+500 : {Send map[peerId:300 event:{VoteReq map[lastLogTerm:4 term:5 candidateId:500 lastLogIndex:2]}]} time: 2016-03-30 20:18:20.557668933 +0530 IST
+500 : {Send map[peerId:400 event:{VoteReq map[candidateId:500 lastLogIndex:2 lastLogTerm:4 term:5]}]} time: 2016-03-30 20:18:20.557698413 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:3]}]} time: 2016-03-30 20:18:20.557727247 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:20.557756639 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:4]}]} time: 2016-03-30 20:18:20.55778531 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:20.557813185 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:3]}]} time: 2016-03-30 20:18:20.557841277 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[success:false senderId:500 forIndex:5 term:5]}]} time: 2016-03-30 20:18:20.557870372 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:20.557899188 +0530 IST
+300 : {Send map[event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:2]} peerId:200]} time: 2016-03-30 20:18:20.727102486 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.727235462 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.727283426 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.727320445 +0530 IST
+300 : {Commit map[index:1 data:[48] err:<nil>]} time: 2016-03-30 20:18:20.727357304 +0530 IST
+300 : {LogStore map[term:4 index:3 data:[50]]} time: 2016-03-30 20:18:20.727409021 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:false senderId:300 forIndex:4]}]} time: 2016-03-30 20:18:20.727473783 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:false senderId:300 forIndex:0]}]} time: 2016-03-30 20:18:20.7275324 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.72836168 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:20.728433373 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:20.728471915 +0530 IST
+200 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.728506889 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.72854225 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728576151 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728609392 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.72864178 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.72867482 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728707043 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.72873896 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728770863 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728803657 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728836697 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728868885 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728921895 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728955416 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.728987614 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729031338 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.7290632 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729095859 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729128348 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729160892 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729193501 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729225203 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729257897 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729290576 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729322754 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729354796 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729386468 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729418947 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729490709 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729524762 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729567103 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729600884 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729633654 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729665962 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.72969817 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729731235 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729763773 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729796257 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.72985268 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.72988584 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.72991872 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729950888 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.729983206 +0530 IST
+200 : {Redirect map[leaderId:200]} time: 2016-03-30 20:18:20.730014828 +0530 IST
+200 : {SaveState map[currentTerm:5 votedFor:0]} time: 2016-03-30 20:18:20.730067191 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:5 prevLogTerm:4 entries:{4 [53] true} leaderCommit:3]}]} time: 2016-03-30 20:18:20.730321533 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[prevLogIndex:5 prevLogTerm:4 entries:{4 [53] true} leaderCommit:3 term:4 leaderId:200]}]} time: 2016-03-30 20:18:20.73041506 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{4 [53] true} leaderCommit:3 term:4 leaderId:200 prevLogIndex:5 prevLogTerm:4]}]} time: 2016-03-30 20:18:20.73048147 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:5 prevLogTerm:4 entries:{4 [53] true} leaderCommit:3]}]} time: 2016-03-30 20:18:20.730545686 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:4 leaderId:200 prevLogIndex:6]}]} time: 2016-03-30 20:18:20.7306091 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:20.730672884 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:4 leaderId:200 prevLogIndex:6]}]} time: 2016-03-30 20:18:20.730736278 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:4 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:20.730798649 +0530 IST
+200 : {Send map[peerId:500 event:{VoteResp map[term:5 voteGranted:false]}]} time: 2016-03-30 20:18:20.730861392 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:5 success:false senderId:500 forIndex:6]}]} time: 2016-03-30 20:18:20.73098652 +0530 IST
+500 : {Send map[event:{AppendEntriesResp map[senderId:500 forIndex:0 term:5 success:false]} peerId:200]} time: 2016-03-30 20:18:20.731049929 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:2]}]} time: 2016-03-30 20:18:20.731140344 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.731196687 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.731233565 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.731266174 +0530 IST
+400 : {Commit map[data:[48] err:<nil> index:1]} time: 2016-03-30 20:18:20.73129971 +0530 IST
+400 : {LogStore map[term:4 index:3 data:[50]]} time: 2016-03-30 20:18:20.731375021 +0530 IST
+400 : {Send map[event:{AppendEntriesResp map[term:4 success:false senderId:400 forIndex:4]} peerId:200]} time: 2016-03-30 20:18:20.731418169 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:false senderId:400 forIndex:0]}]} time: 2016-03-30 20:18:20.73147162 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.805191002 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.805271336 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.805297238 +0530 IST
+100 : {Commit map[index:1 data:[48] err:<nil>]} time: 2016-03-30 20:18:20.805319912 +0530 IST
+100 : {LogStore map[data:[50] term:4 index:3]} time: 2016-03-30 20:18:20.805351633 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:100 forIndex:2 term:4]}]} time: 2016-03-30 20:18:20.805378831 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:false senderId:100 forIndex:4]}]} time: 2016-03-30 20:18:20.80541499 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:false senderId:100 forIndex:0]}]} time: 2016-03-30 20:18:20.805481896 +0530 IST
+300 : {LogStore map[term:4 index:4 data:[51]]} time: 2016-03-30 20:18:20.96116722 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:20.961221585 +0530 IST
+300 : {Commit map[err:<nil> index:2 data:[49]]} time: 2016-03-30 20:18:20.961242872 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:3]}]} time: 2016-03-30 20:18:20.961262502 +0530 IST
+400 : {LogStore map[term:4 index:4 data:[51]]} time: 2016-03-30 20:18:21.007826555 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.009558252 +0530 IST
+400 : {Commit map[index:2 data:[49] err:<nil>]} time: 2016-03-30 20:18:21.009619041 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:3]}]} time: 2016-03-30 20:18:21.009656105 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:3 term:4 success:true senderId:100]}]} time: 2016-03-30 20:18:21.050504297 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.05059389 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.050626799 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.050671316 +0530 IST
+100 : {Commit map[index:2 data:[49] err:<nil>]} time: 2016-03-30 20:18:21.050714929 +0530 IST
+100 : {LogStore map[term:4 index:4 data:[51]]} time: 2016-03-30 20:18:21.050747787 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:false senderId:100 forIndex:5]}]} time: 2016-03-30 20:18:21.050776349 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:0 term:4 success:false senderId:100]}]} time: 2016-03-30 20:18:21.050811692 +0530 IST
+300 : {Commit map[index:3 data:[50] err:<nil>]} time: 2016-03-30 20:18:21.264252852 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.265327031 +0530 IST
+300 : {LogStore map[term:4 index:5 data:[52]]} time: 2016-03-30 20:18:21.26539048 +0530 IST
+300 : {Send map[event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:4]} peerId:200]} time: 2016-03-30 20:18:21.265493232 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:4]}]} time: 2016-03-30 20:18:21.265501613 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.265598509 +0530 IST
+400 : {LogStore map[data:[52] term:4 index:5]} time: 2016-03-30 20:18:21.265641333 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:100 forIndex:4]}]} time: 2016-03-30 20:18:21.352554998 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.352629984 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.352660429 +0530 IST
+100 : {Commit map[index:3 data:[50] err:<nil>]} time: 2016-03-30 20:18:21.352685058 +0530 IST
+100 : {SaveState map[currentTerm:5 votedFor:0]} time: 2016-03-30 20:18:21.352718037 +0530 IST
+100 : {Send map[peerId:500 event:{VoteResp map[term:5 voteGranted:false]}]} time: 2016-03-30 20:18:21.352874006 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:6 term:5 success:false senderId:100]}]} time: 2016-03-30 20:18:21.352947969 +0530 IST
+100 : {Send map[event:{AppendEntriesResp map[term:5 success:false senderId:100 forIndex:0]} peerId:200]} time: 2016-03-30 20:18:21.35298369 +0530 IST
+i: 3 CmtIdx: 3 LastLogIdx 6
+CI {[50] 3 <nil>}
+300 : {SaveState map[currentTerm:5 votedFor:0]} time: 2016-03-30 20:18:21.538393717 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.538570839 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.538612965 +0530 IST
+300 : {LogStore map[term:5 index:6 data:[53]]} time: 2016-03-30 20:18:21.538632098 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:5]}]} time: 2016-03-30 20:18:21.538655496 +0530 IST
+300 : {Send map[event:{AppendEntriesResp map[term:4 success:true senderId:300 forIndex:0]} peerId:200]} time: 2016-03-30 20:18:21.538684906 +0530 IST
+300 : {Send map[peerId:500 event:{VoteResp map[term:5 voteGranted:false]}]} time: 2016-03-30 20:18:21.538709513 +0530 IST
+500 : timeout at: 2016-03-30 20:18:21.557558176 +0530 IST
+500 : {SaveState map[currentTerm:5 votedFor:0]} time: 2016-03-30 20:18:21.557718814 +0530 IST
+500 : {Alarm map[t:1.649264s]} time: 2016-03-30 20:18:21.557874325 +0530 IST
+400 : {Commit map[err:<nil> index:3 data:[50]]} time: 2016-03-30 20:18:21.588133104 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.588632926 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.588677591 +0530 IST
+400 : {SaveState map[currentTerm:5 votedFor:0]} time: 2016-03-30 20:18:21.588697221 +0530 IST
+400 : {LogStore map[term:5 index:6 data:[53]]} time: 2016-03-30 20:18:21.588815016 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[senderId:400 forIndex:5 term:4 success:true]}]} time: 2016-03-30 20:18:21.588841122 +0530 IST
+400 : {Send map[event:{AppendEntriesResp map[term:4 success:true senderId:400 forIndex:0]} peerId:200]} time: 2016-03-30 20:18:21.588865155 +0530 IST
+400 : {Send map[peerId:500 event:{VoteResp map[term:5 voteGranted:false]}]} time: 2016-03-30 20:18:21.58889521 +0530 IST
+200 : timeout at: 2016-03-30 20:18:21.728673253 +0530 IST
+200 : {Send map[peerId:100 event:{VoteReq map[term:6 candidateId:200 lastLogIndex:6 lastLogTerm:4]}]} time: 2016-03-30 20:18:21.728797507 +0530 IST
+200 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.728842375 +0530 IST
+200 : {SaveState map[currentTerm:6 votedFor:200]} time: 2016-03-30 20:18:21.728863843 +0530 IST
+200 : {Send map[peerId:300 event:{VoteReq map[term:6 candidateId:200 lastLogIndex:6 lastLogTerm:4]}]} time: 2016-03-30 20:18:21.72900442 +0530 IST
+200 : {Send map[peerId:400 event:{VoteReq map[term:6 candidateId:200 lastLogIndex:6 lastLogTerm:4]}]} time: 2016-03-30 20:18:21.729037884 +0530 IST
+200 : {Send map[event:{VoteReq map[lastLogIndex:6 lastLogTerm:4 term:6 candidateId:200]} peerId:500]} time: 2016-03-30 20:18:21.729060627 +0530 IST
+500 : {Send map[peerId:200 event:{VoteResp map[term:6 voteGranted:true]}]} time: 2016-03-30 20:18:21.729110143 +0530 IST
+500 : {SaveState map[currentTerm:6 votedFor:0]} time: 2016-03-30 20:18:21.72913387 +0530 IST
+500 : {SaveState map[votedFor:200 currentTerm:6]} time: 2016-03-30 20:18:21.72920802 +0530 IST
+100 : {SaveState map[currentTerm:6 votedFor:0]} time: 2016-03-30 20:18:21.729265905 +0530 IST
+100 : {SaveState map[currentTerm:6 votedFor:200]} time: 2016-03-30 20:18:21.729333969 +0530 IST
+100 : {Send map[event:{VoteResp map[term:6 voteGranted:true]} peerId:200]} time: 2016-03-30 20:18:21.733329546 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:21.733487172 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4]}]} time: 2016-03-30 20:18:21.733522859 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:21.733565022 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6]}]} time: 2016-03-30 20:18:21.733591296 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:21.733616646 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:false senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:21.733672584 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.733697768 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[prevLogIndex:5 prevLogTerm:4 entries:{4 [53] true} leaderCommit:3 term:6 leaderId:200]} peerId:500]} time: 2016-03-30 20:18:21.733730936 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:6 term:6 success:false senderId:500]}]} time: 2016-03-30 20:18:21.733779506 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.733809142 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[prevLogTerm:4 entries:{4 [52] true} leaderCommit:3 term:6 leaderId:200 prevLogIndex:4]}]} time: 2016-03-30 20:18:21.73383848 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.733877271 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:false senderId:500 forIndex:5]}]} time: 2016-03-30 20:18:21.733893847 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:3 term:6 leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{4 [51] true}]} peerId:500]} time: 2016-03-30 20:18:21.733926798 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:false senderId:500 forIndex:4]}]} time: 2016-03-30 20:18:21.733974198 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.733996556 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:2 prevLogTerm:4 entries:{4 [50] true} leaderCommit:3]}]} time: 2016-03-30 20:18:21.734022958 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.734355753 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[success:false senderId:100 forIndex:0 term:6]}]} time: 2016-03-30 20:18:21.734396553 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:5 prevLogTerm:4 entries:{4 [53] true} leaderCommit:3]}]} time: 2016-03-30 20:18:21.73444288 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.734485975 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[senderId:100 forIndex:6 term:6 success:false]}]} time: 2016-03-30 20:18:21.734503233 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogIndex:4 prevLogTerm:4 entries:{4 [52] true} leaderCommit:3 term:6 leaderId:200]}]} time: 2016-03-30 20:18:21.7345458 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.734761239 +0530 IST
+500 : {LogStore map[term:6 index:3 data:[50]]} time: 2016-03-30 20:18:21.734784902 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:21.734824589 +0530 IST
+100 : {LogStore map[term:6 index:5 data:[52]]} time: 2016-03-30 20:18:21.734851791 +0530 IST
+200 : timeout at: 2016-03-30 20:18:21.833675169 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:21.833822517 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6]}]} time: 2016-03-30 20:18:21.833859539 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[leaderCommit:3 term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false}]}]} time: 2016-03-30 20:18:21.833894814 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:21.833919836 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:21.833943326 +0530 IST
+200 : timeout at: 2016-03-30 20:18:21.933992859 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:21.934149208 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:21.934216135 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:21.934250365 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6]}]} time: 2016-03-30 20:18:21.934286525 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6]}]} time: 2016-03-30 20:18:21.934317164 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:true senderId:100 forIndex:5]}]} time: 2016-03-30 20:18:22.014719006 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.014795851 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.014817698 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[forIndex:0 term:6 success:false senderId:100]}]} time: 2016-03-30 20:18:22.014835769 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:false senderId:100 forIndex:0]}]} time: 2016-03-30 20:18:22.01487536 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.014929851 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[prevLogTerm:4 entries:{4 [53] true} leaderCommit:3 term:6 leaderId:200 prevLogIndex:5]}]} time: 2016-03-30 20:18:22.01495353 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.014973969 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.014991565 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:4 prevLogTerm:4 entries:{4 [52] true} leaderCommit:3]}]} time: 2016-03-30 20:18:22.014990084 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.015005883 +0530 IST
+400 : {SaveState map[currentTerm:6 votedFor:0]} time: 2016-03-30 20:18:22.015021785 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{4 [51] true} leaderCommit:3]}]} time: 2016-03-30 20:18:22.015017632 +0530 IST
+400 : {SaveState map[currentTerm:6 votedFor:200]} time: 2016-03-30 20:18:22.015142025 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:500 forIndex:3 term:6]}]} time: 2016-03-30 20:18:22.0152444 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.015276508 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.015292092 +0530 IST
+500 : {Commit map[index:3 data:[50] err:<nil>]} time: 2016-03-30 20:18:22.015307039 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:false senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:22.015327855 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:false senderId:500 forIndex:0]}]} time: 2016-03-30 20:18:22.015351501 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:3 term:6 leaderId:200 prevLogIndex:3 prevLogTerm:4 entries:{4 [51] true}]} peerId:500]} time: 2016-03-30 20:18:22.015407869 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[prevLogTerm:4 entries:{4 [50] true} leaderCommit:3 term:6 leaderId:200 prevLogIndex:2]}]} time: 2016-03-30 20:18:22.015458861 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[prevLogIndex:1 prevLogTerm:4 entries:{4 [49] true} leaderCommit:3 term:6 leaderId:200]}]} time: 2016-03-30 20:18:22.015486713 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:300 forIndex:6 term:5]}]} time: 2016-03-30 20:18:22.015729804 +0530 IST
+500 : {LogStore map[term:6 index:4 data:[51]]} time: 2016-03-30 20:18:22.015857871 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.016582173 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.015898257 +0530 IST
+100 : {LogStore map[term:6 index:6 data:[53]]} time: 2016-03-30 20:18:22.016626768 +0530 IST
+400 : {Send map[event:{AppendEntriesResp map[term:5 success:true senderId:400 forIndex:6]} peerId:200]} time: 2016-03-30 20:18:22.016415304 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:5 success:true senderId:400 forIndex:0]}]} time: 2016-03-30 20:18:22.016670311 +0530 IST
+400 : {Send map[peerId:200 event:{VoteResp map[term:6 voteGranted:true]}]} time: 2016-03-30 20:18:22.016698063 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:true senderId:400 forIndex:0]}]} time: 2016-03-30 20:18:22.01671924 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:true senderId:400 forIndex:0]}]} time: 2016-03-30 20:18:22.016743017 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:400 forIndex:0 term:6]}]} time: 2016-03-30 20:18:22.016766275 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{4 [53] true} leaderCommit:3 term:6 leaderId:200 prevLogIndex:5 prevLogTerm:4]}]} time: 2016-03-30 20:18:22.016830126 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{4 [52] true} leaderCommit:3 term:6 leaderId:200 prevLogIndex:4 prevLogTerm:4]}]} time: 2016-03-30 20:18:22.016863908 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.017080158 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.017107112 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.017127806 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.017142525 +0530 IST
+300 : {SaveState map[currentTerm:6 votedFor:0]} time: 2016-03-30 20:18:22.017158401 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.017232208 +0530 IST
+400 : {LogStore map[index:6 data:[53] term:6]} time: 2016-03-30 20:18:22.017256651 +0530 IST
+300 : {SaveState map[currentTerm:6 votedFor:200]} time: 2016-03-30 20:18:22.017308891 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:5 prevLogTerm:4 entries:{4 [53] true} leaderCommit:3]}]} time: 2016-03-30 20:18:22.017518875 +0530 IST
+200 : timeout at: 2016-03-30 20:18:22.034319317 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:22.034439396 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:22.034489401 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6]}]} time: 2016-03-30 20:18:22.034511773 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6]}]} time: 2016-03-30 20:18:22.034564618 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:22.034594094 +0530 IST
+300 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.128111283 +0530 IST
+300 : {LogStore map[term:6 index:6 data:[53]]} time: 2016-03-30 20:18:22.128181727 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:300 forIndex:0 term:5]}]} time: 2016-03-30 20:18:22.128212071 +0530 IST
+300 : {Send map[event:{VoteResp map[term:6 voteGranted:true]} peerId:200]} time: 2016-03-30 20:18:22.128260441 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:true senderId:300 forIndex:0]}]} time: 2016-03-30 20:18:22.128289317 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:true senderId:300 forIndex:0]}]} time: 2016-03-30 20:18:22.128316443 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:300 forIndex:0 term:6]}]} time: 2016-03-30 20:18:22.128342271 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[entries:{4 [52] true} leaderCommit:3 term:6 leaderId:200 prevLogIndex:4 prevLogTerm:4]}]} time: 2016-03-30 20:18:22.12843346 +0530 IST
+200 : timeout at: 2016-03-30 20:18:22.134810791 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4]}]} time: 2016-03-30 20:18:22.13511051 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:22.135289205 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:22.135345423 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6]}]} time: 2016-03-30 20:18:22.135415031 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:22.135559263 +0530 IST
+200 : timeout at: 2016-03-30 20:18:22.235448588 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:22.23558555 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[leaderCommit:3 term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false}]}]} time: 2016-03-30 20:18:22.235645345 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6]}]} time: 2016-03-30 20:18:22.23570594 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4]}]} time: 2016-03-30 20:18:22.235746675 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6]}]} time: 2016-03-30 20:18:22.235819689 +0530 IST
+200 : timeout at: 2016-03-30 20:18:22.335764483 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:22.335900738 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:3 term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false}]} peerId:100]} time: 2016-03-30 20:18:22.335955999 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:22.336008912 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6 leaderId:200]}]} time: 2016-03-30 20:18:22.336048958 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6]}]} time: 2016-03-30 20:18:22.336080394 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:true senderId:100 forIndex:6]}]} time: 2016-03-30 20:18:22.339292257 +0530 IST
+100 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.33936185 +0530 IST
+100 : {LogStore map[index:5 data:[52] term:6]} time: 2016-03-30 20:18:22.339388562 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[entries:{4 [52] true} leaderCommit:3 term:6 leaderId:200 prevLogIndex:4 prevLogTerm:4]}]} time: 2016-03-30 20:18:22.339460988 +0530 IST
+200 : timeout at: 2016-03-30 20:18:22.436067624 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:22.436193985 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:3 term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false}]} peerId:100]} time: 2016-03-30 20:18:22.436229737 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6]}]} time: 2016-03-30 20:18:22.436264254 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:22.436313921 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6]}]} time: 2016-03-30 20:18:22.436339023 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:500 forIndex:4 term:6]}]} time: 2016-03-30 20:18:22.472919339 +0530 IST
+500 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.472977463 +0530 IST
+500 : {LogStore map[data:[50] term:6 index:3]} time: 2016-03-30 20:18:22.472999519 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[leaderId:200 prevLogIndex:2 prevLogTerm:4 entries:{4 [50] true} leaderCommit:3 term:6]}]} time: 2016-03-30 20:18:22.473042245 +0530 IST
+i: 4 CmtIdx: 3 LastLogIdx 6
+CI {[] 0 Redirect}
+200 : timeout at: 2016-03-30 20:18:22.536369755 +0530 IST
+200 : {Send map[event:{AppendEntriesReq map[leaderCommit:3 term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false}]} peerId:100]} time: 2016-03-30 20:18:22.5364986 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:22.536544808 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6]}]} time: 2016-03-30 20:18:22.536564679 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6]}]} time: 2016-03-30 20:18:22.536590873 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:22.536615082 +0530 IST
+200 : timeout at: 2016-03-30 20:18:22.63672346 +0530 IST
+200 : {Alarm map[t:100ms]} time: 2016-03-30 20:18:22.636997237 +0530 IST
+200 : {Send map[peerId:100 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:22.637053027 +0530 IST
+200 : {Send map[peerId:300 event:{AppendEntriesReq map[entries:{0 [] false} leaderCommit:3 term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4]}]} time: 2016-03-30 20:18:22.637098475 +0530 IST
+200 : {Send map[peerId:400 event:{AppendEntriesReq map[term:6 leaderId:200 prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3]}]} time: 2016-03-30 20:18:22.637130711 +0530 IST
+200 : {Send map[peerId:500 event:{AppendEntriesReq map[prevLogIndex:6 prevLogTerm:4 entries:{0 [] false} leaderCommit:3 term:6 leaderId:200]}]} time: 2016-03-30 20:18:22.637160466 +0530 IST
+100 : {Send map[peerId:200 event:{AppendEntriesResp map[success:true senderId:100 forIndex:5 term:6]}]} time: 2016-03-30 20:18:22.710629388 +0530 IST
+200 : timeout at: 2016-03-30 20:18:22.73717884 +0530 IST
+300 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:true senderId:300 forIndex:6]}]} time: 2016-03-30 20:18:22.853368528 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[senderId:400 forIndex:6 term:6 success:true]}]} time: 2016-03-30 20:18:22.856523804 +0530 IST
+400 : {Alarm map[t:1s]} time: 2016-03-30 20:18:22.8566369 +0530 IST
+400 : {LogStore map[term:6 index:5 data:[52]]} time: 2016-03-30 20:18:22.856681461 +0530 IST
+300 : timeout at: 2016-03-30 20:18:23.128400106 +0530 IST
+400 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:true senderId:400 forIndex:5]}]} time: 2016-03-30 20:18:23.246392493 +0530 IST
+500 : {Send map[peerId:200 event:{AppendEntriesResp map[term:6 success:true senderId:500 forIndex:3]}]} time: 2016-03-30 20:18:23.246666646 +0530 IST
+--- FAIL: TestMultipleAppend (12.84s)
+	raft_node_test.go:283: Redirect
+FAIL
+exit status 1
+FAIL	github.com/JashDave/cs733/assignment4/assignment3	12.846s

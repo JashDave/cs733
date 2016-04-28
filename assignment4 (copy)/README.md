@@ -1,0 +1,13 @@
+#Yet to be made
+rpc_test.go test cases takes about 350s to run on my computer
+
+I have changed nclients value form 500 to 50 in `TestRPC_ConcurrentWrites()` since it was taking too much time.
+
+Also I have changed `TestRPC_ConcurrentCas(t *testing.T)`
+```
+	nclients := 3 //from #100 to 3
+	niters := 2   //from #10 to 2
+	if !(m.Kind == 'C' && strings.HasSuffix(string(m.Contents), " 1")) {
+```
+
+

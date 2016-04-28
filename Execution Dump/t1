@@ -1,0 +1,152 @@
+i: 0 NodeID: 100 CmtIdx: 0 LastLogIdx 0 Leader: 200
+i: 0 NodeID: 200 CmtIdx: 0 LastLogIdx 0 Leader: 200
+i: 0 NodeID: 300 CmtIdx: 0 LastLogIdx 0 Leader: 200
+i: 0 NodeID: 400 CmtIdx: 0 LastLogIdx 0 Leader: 200
+i: 0 NodeID: 500 CmtIdx: 0 LastLogIdx 0 Leader: 200
+i: 1 NodeID: 100 CmtIdx: 0 LastLogIdx 2 Leader: 200
+i: 1 NodeID: 200 CmtIdx: 3 LastLogIdx 5 Leader: 200
+i: 1 NodeID: 300 CmtIdx: 1 LastLogIdx 1 Leader: 200
+i: 1 NodeID: 400 CmtIdx: 1 LastLogIdx 1 Leader: 200
+i: 1 NodeID: 500 CmtIdx: 0 LastLogIdx 2 Leader: 200
+CI {[48] 1 <nil>}
+i: 2 NodeID: 100 CmtIdx: 2 LastLogIdx 4 Leader: 200
+i: 2 NodeID: 200 CmtIdx: 4 LastLogIdx 9 Leader: 200
+i: 2 NodeID: 300 CmtIdx: 3 LastLogIdx 5 Leader: 200
+i: 2 NodeID: 400 CmtIdx: 2 LastLogIdx 5 Leader: 200
+i: 2 NodeID: 500 CmtIdx: 1 LastLogIdx 3 Leader: 200
+CI {[49] 2 <nil>}
+i: 3 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 3 NodeID: 200 CmtIdx: 7 LastLogIdx 10 Leader: 200
+i: 3 NodeID: 300 CmtIdx: 4 LastLogIdx 10 Leader: 200
+i: 3 NodeID: 400 CmtIdx: 4 LastLogIdx 10 Leader: 200
+i: 3 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+CI {[50] 3 <nil>}
+i: 4 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 4 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 4 NodeID: 300 CmtIdx: 7 LastLogIdx 7 Leader: 200
+i: 4 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 4 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+CI {[51] 4 <nil>}
+i: 5 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 5 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 5 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 5 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 5 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+CI {[52] 5 <nil>}
+i: 6 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 6 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 6 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 6 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 6 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+CI {[53] 6 <nil>}
+i: 7 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 7 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 7 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 7 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 7 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+CI {[54] 7 <nil>}
+i: 8 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 8 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 8 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 8 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 8 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+CI {[55] 8 <nil>}
+i: 9 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 9 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 9 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 9 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 9 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 10 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 10 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 10 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 10 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 10 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 11 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 11 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 11 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 11 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 11 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 12 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 12 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 12 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 12 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 12 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 13 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 13 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 13 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 13 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 13 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 14 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 14 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 14 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 14 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 14 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 15 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 15 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 15 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 15 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 15 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 16 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 16 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 16 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 16 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 16 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 17 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 17 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 17 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 17 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 17 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 18 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 18 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 18 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 18 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 18 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+i: 19 NodeID: 100 CmtIdx: 4 LastLogIdx 4 Leader: 200
+i: 19 NodeID: 200 CmtIdx: 8 LastLogIdx 10 Leader: 200
+i: 19 NodeID: 300 CmtIdx: 8 LastLogIdx 8 Leader: 200
+i: 19 NodeID: 400 CmtIdx: 8 LastLogIdx 9 Leader: 200
+i: 19 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 200
+NODE ID : 100 LastLogIndex 4
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+NODE ID : 200 LastLogIndex 10
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+NODE ID : 300 LastLogIndex 8
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+NODE ID : 400 LastLogIndex 9
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+NODE ID : 500 LastLogIndex 5
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+PASS
+ok  	github.com/JashDave/cs733/assignment4/assignment3	28.998s

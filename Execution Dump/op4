@@ -1,0 +1,282 @@
+100 : {Timeout map[]}
+100 : {VoteResp map[voteGranted:false term:1]}
+100 : {VoteReq map[term:1 candidateId:400 lastLogIndex:0 lastLogTerm:0]}
+100 : {VoteReq map[lastLogIndex:0 lastLogTerm:0 term:1 candidateId:200]}
+100 : {VoteReq map[term:1 candidateId:300 lastLogIndex:0 lastLogTerm:0]}
+100 : {VoteResp map[term:1 voteGranted:false]}
+100 : {VoteResp map[term:1 voteGranted:false]}
+100 : {VoteResp map[term:1 voteGranted:false]}
+100 : {VoteReq map[term:2 candidateId:500 lastLogIndex:0 lastLogTerm:0]}
+100 : {VoteReq map[term:3 candidateId:400 lastLogIndex:0 lastLogTerm:0]}
+100 : {Timeout map[]}
+100 : {VoteResp map[term:4 voteGranted:false]}
+100 : {VoteReq map[candidateId:300 lastLogIndex:0 lastLogTerm:0 term:4]}
+100 : {VoteResp map[term:4 voteGranted:false]}
+100 : {VoteReq map[term:4 candidateId:200 lastLogIndex:0 lastLogTerm:0]}
+100 : {VoteResp map[term:4 voteGranted:false]}
+100 : {VoteResp map[term:4 voteGranted:false]}
+100 : {Timeout map[]}
+100 : {VoteReq map[term:5 candidateId:400 lastLogIndex:0 lastLogTerm:0]}
+400 : {AppendEntriesResp map[success:true senderId:500 forIndex:0 term:5]}
+400 : {VoteResp map[voteGranted:true term:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}
+400 : {VoteResp map[voteGranted:true term:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:0]}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}
+400 : {AppendEntriesResp map[success:true senderId:100 forIndex:0 term:5]}
+400 : {Timeout map[]}
+400 : {AppendEntriesResp map[senderId:500 forIndex:0 term:5 success:true]}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}
+400 : {AppendEntriesResp map[success:true senderId:200 forIndex:0 term:5]}
+400 : {AppendEntriesResp map[senderId:100 forIndex:0 term:5 success:true]}
+400 : {AppendEntriesResp map[forIndex:0 term:5 success:true senderId:300]}
+400 : {Timeout map[]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:0]}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:0]}
+400 : {AppendEntriesResp map[forIndex:0 term:5 success:true senderId:200]}
+400 : {AppendEntriesResp map[success:true senderId:300 forIndex:0 term:5]}
+400 : {Timeout map[]}
+400 : {AppendEntriesResp map[forIndex:0 term:5 success:true senderId:500]}
+100 : {AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:5 leaderId:400 prevLogIndex:0 prevLogTerm:0]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:0]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}
+400 : {AppendEntriesResp map[success:true senderId:300 forIndex:0 term:5]}
+400 : {Timeout map[]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:0]}
+100 : {AppendEntriesReq map[entries:{0 [] false} leaderCommit:0 term:5 leaderId:400 prevLogIndex:0 prevLogTerm:0]}
+400 : {AppendEntriesResp map[success:true senderId:100 forIndex:0 term:5]}
+400 : {AppendEntriesResp map[senderId:200 forIndex:0 term:5 success:true]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:0]}
+400 : {Append map[data:[48]]}
+i: 0 NodeID: 100 CmtIdx: 0 LastLogIdx 0 Leader: 400
+i: 0 NodeID: 200 CmtIdx: 0 LastLogIdx 0 Leader: 400
+i: 0 NodeID: 300 CmtIdx: 0 LastLogIdx 0 Leader: 400
+i: 0 NodeID: 400 CmtIdx: 0 LastLogIdx 1 Leader: 400
+i: 0 NodeID: 500 CmtIdx: 0 LastLogIdx 0 Leader: 400
+400 : {Timeout map[]}
+400 : {Append map[data:[49]]}
+100 : {AppendEntriesReq map[entries:{5 [48] true} leaderCommit:0 term:5 leaderId:400 prevLogIndex:0 prevLogTerm:0]}
+400 : {Append map[data:[50]]}
+100 : {AppendEntriesReq map[prevLogTerm:5 entries:{0 [] false} leaderCommit:0 term:5 leaderId:400 prevLogIndex:1]}
+100 : {AppendEntriesReq map[leaderId:400 prevLogIndex:1 prevLogTerm:5 entries:{5 [49] true} leaderCommit:0 term:5]}
+400 : {AppendEntriesResp map[forIndex:1 term:5 success:true senderId:500]}
+400 : {AppendEntriesResp map[senderId:500 forIndex:0 term:5 success:true]}
+400 : {AppendEntriesResp map[senderId:200 forIndex:1 term:5 success:true]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:1]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:0]}
+400 : {AppendEntriesResp map[senderId:300 forIndex:1 term:5 success:true]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:0]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:2]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:2]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:2]}
+400 : {Append map[data:[51]]}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:2 prevLogTerm:5 entries:{5 [50] true} leaderCommit:0]}
+100 : {AppendEntriesReq map[entries:{5 [49] true} leaderCommit:1 term:5 leaderId:400 prevLogIndex:1 prevLogTerm:5]}
+i: 1 NodeID: 100 CmtIdx: 0 LastLogIdx 1 Leader: 400
+i: 1 NodeID: 200 CmtIdx: 0 LastLogIdx 3 Leader: 400
+i: 1 NodeID: 300 CmtIdx: 0 LastLogIdx 3 Leader: 400
+i: 1 NodeID: 400 CmtIdx: 2 LastLogIdx 4 Leader: 400
+i: 1 NodeID: 500 CmtIdx: 0 LastLogIdx 3 Leader: 400
+CI {[48] 1 <nil>}
+400 : {AppendEntriesResp map[forIndex:2 term:5 success:true senderId:300]}
+400 : {AppendEntriesResp map[senderId:100 forIndex:3 term:5 success:true]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:3]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:3]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:3]}
+400 : {Append map[data:[52]]}
+400 : {Append map[data:[53]]}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:2 prevLogTerm:5 entries:{5 [50] true} leaderCommit:2]}
+400 : {AppendEntriesResp map[forIndex:2 term:5 success:true senderId:300]}
+400 : {AppendEntriesResp map[forIndex:4 term:5 success:false senderId:300]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:2]}
+400 : {AppendEntriesResp map[senderId:200 forIndex:2 term:5 success:true]}
+400 : {Append map[data:[54]]}
+100 : {AppendEntriesReq map[entries:{5 [51] true} leaderCommit:2 term:5 leaderId:400 prevLogIndex:3 prevLogTerm:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:2]}
+400 : {AppendEntriesResp map[senderId:300 forIndex:3 term:5 success:true]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:3]}
+400 : {AppendEntriesResp map[forIndex:3 term:5 success:true senderId:200]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:3]}
+400 : {Append map[data:[55]]}
+i: 2 NodeID: 100 CmtIdx: 2 LastLogIdx 4 Leader: 400
+i: 2 NodeID: 200 CmtIdx: 2 LastLogIdx 4 Leader: 400
+i: 2 NodeID: 300 CmtIdx: 2 LastLogIdx 4 Leader: 400
+i: 2 NodeID: 400 CmtIdx: 3 LastLogIdx 8 Leader: 400
+i: 2 NodeID: 500 CmtIdx: 1 LastLogIdx 4 Leader: 400
+CI {[49] 2 <nil>}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:3 prevLogTerm:5 entries:{5 [51] true} leaderCommit:2]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:4]}
+400 : {AppendEntriesResp map[senderId:300 forIndex:4 term:5 success:true]}
+400 : {Append map[data:[56]]}
+400 : {AppendEntriesResp map[forIndex:4 term:5 success:true senderId:200]}
+400 : {AppendEntriesResp map[success:true senderId:500 forIndex:4 term:5]}
+400 : {AppendEntriesResp map[forIndex:5 term:5 success:true senderId:300]}
+400 : {Append map[data:[57]]}
+100 : {AppendEntriesReq map[prevLogIndex:4 prevLogTerm:5 entries:{5 [52] true} leaderCommit:3 term:5 leaderId:400]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:4]}
+400 : {AppendEntriesResp map[success:true senderId:300 forIndex:6 term:5]}
+400 : {AppendEntriesResp map[forIndex:4 term:5 success:true senderId:500]}
+100 : {AppendEntriesReq map[prevLogTerm:5 entries:{5 [53] true} leaderCommit:3 term:5 leaderId:400 prevLogIndex:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:5]}
+400 : {AppendEntriesResp map[success:true senderId:200 forIndex:4 term:5]}
+i: 3 NodeID: 100 CmtIdx: 3 LastLogIdx 6 Leader: 400
+i: 3 NodeID: 200 CmtIdx: 3 LastLogIdx 5 Leader: 400
+i: 3 NodeID: 300 CmtIdx: 3 LastLogIdx 7 Leader: 400
+i: 3 NodeID: 400 CmtIdx: 5 LastLogIdx 10 Leader: 400
+i: 3 NodeID: 500 CmtIdx: 3 LastLogIdx 5 Leader: 400
+CI {[50] 3 <nil>}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:7]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:5]}
+100 : {AppendEntriesReq map[entries:{5 [54] true} leaderCommit:3 term:5 leaderId:400 prevLogIndex:6 prevLogTerm:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:6]}
+400 : {AppendEntriesResp map[forIndex:5 term:5 success:true senderId:200]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:8]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:6]}
+100 : {AppendEntriesReq map[leaderCommit:3 term:5 leaderId:400 prevLogIndex:7 prevLogTerm:5 entries:{5 [55] true}]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:7]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:6]}
+400 : {AppendEntriesResp map[senderId:200 forIndex:7 term:5 success:true]}
+100 : {AppendEntriesReq map[entries:{5 [52] true} leaderCommit:3 term:5 leaderId:400 prevLogIndex:4 prevLogTerm:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:8]}
+400 : {AppendEntriesResp map[success:true senderId:500 forIndex:7 term:5]}
+i: 4 NodeID: 100 CmtIdx: 3 LastLogIdx 4 Leader: 400
+i: 4 NodeID: 200 CmtIdx: 3 LastLogIdx 8 Leader: 400
+i: 4 NodeID: 300 CmtIdx: 3 LastLogIdx 4 Leader: 400
+i: 4 NodeID: 400 CmtIdx: 7 LastLogIdx 10 Leader: 400
+i: 4 NodeID: 500 CmtIdx: 3 LastLogIdx 8 Leader: 400
+CI {[51] 4 <nil>}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:4]}
+400 : {AppendEntriesResp map[term:5 success:false senderId:300 forIndex:9]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:8]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:8]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:5]}
+400 : {AppendEntriesResp map[forIndex:10 term:5 success:false senderId:300]}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:8 prevLogTerm:5 entries:{5 [56] true} leaderCommit:3]}
+100 : {AppendEntriesReq map[prevLogTerm:5 entries:{5 [57] true} leaderCommit:4 term:5 leaderId:400 prevLogIndex:9]}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:5 prevLogTerm:5 entries:{5 [53] true} leaderCommit:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:5]}
+400 : {AppendEntriesResp map[term:5 success:false senderId:100 forIndex:9]}
+400 : {AppendEntriesResp map[term:5 success:false senderId:100 forIndex:10]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:9]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:9]}
+100 : {AppendEntriesReq map[leaderId:400 prevLogIndex:6 prevLogTerm:5 entries:{5 [54] true} leaderCommit:6 term:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:6]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:6]}
+100 : {AppendEntriesReq map[prevLogIndex:7 prevLogTerm:5 entries:{5 [55] true} leaderCommit:7 term:5 leaderId:400]}
+400 : {AppendEntriesResp map[forIndex:5 term:5 success:true senderId:500]}
+400 : {AppendEntriesResp map[success:false senderId:500 forIndex:10 term:5]}
+400 : {AppendEntriesResp map[success:true senderId:100 forIndex:7 term:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:5]}
+400 : {AppendEntriesResp map[term:5 success:false senderId:200 forIndex:10]}
+400 : {Timeout map[]}
+400 : {AppendEntriesResp map[success:true senderId:300 forIndex:7 term:5]}
+100 : {AppendEntriesReq map[prevLogIndex:8 prevLogTerm:5 entries:{5 [56] true} leaderCommit:7 term:5 leaderId:400]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:6]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:8]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:6]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:8]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:7]}
+400 : {AppendEntriesResp map[forIndex:7 term:5 success:true senderId:500]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:9]}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:7 prevLogTerm:5 entries:{5 [55] true} leaderCommit:8]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:8]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:8]}
+400 : {AppendEntriesResp map[senderId:300 forIndex:7 term:5 success:true]}
+400 : {AppendEntriesResp map[term:5 success:false senderId:300 forIndex:0]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:9]}
+100 : {AppendEntriesReq map[term:5 leaderId:400 prevLogIndex:6 prevLogTerm:5 entries:{5 [54] true} leaderCommit:8]}
+100 : {AppendEntriesReq map[leaderCommit:9 term:5 leaderId:400 prevLogIndex:10 prevLogTerm:5 entries:{0 [] false}]}
+100 : {AppendEntriesReq map[leaderId:400 prevLogIndex:7 prevLogTerm:5 entries:{5 [55] true} leaderCommit:9 term:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:100 forIndex:8]}
+400 : {AppendEntriesResp map[forIndex:0 term:5 success:false senderId:100]}
+100 : {AppendEntriesReq map[entries:{5 [56] true} leaderCommit:9 term:5 leaderId:400 prevLogIndex:8 prevLogTerm:5]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:300 forIndex:8]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:9]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:10]}
+100 : {AppendEntriesReq map[entries:{5 [55] true} leaderCommit:9 term:5 leaderId:400 prevLogIndex:7 prevLogTerm:5]}
+400 : {AppendEntriesResp map[success:true senderId:100 forIndex:9 term:5]}
+100 : {AppendEntriesReq map[entries:{5 [56] true} leaderCommit:9 term:5 leaderId:400 prevLogIndex:8 prevLogTerm:5]}
+400 : {AppendEntriesResp map[senderId:500 forIndex:10 term:5 success:true]}
+400 : {AppendEntriesResp map[senderId:500 forIndex:0 term:5 success:true]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:9]}
+400 : {AppendEntriesResp map[forIndex:0 term:5 success:false senderId:200]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:10]}
+400 : {AppendEntriesResp map[success:true senderId:500 forIndex:10 term:5]}
+400 : {Timeout map[]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:0]}
+100 : {AppendEntriesReq map[entries:{0 [] false} leaderCommit:9 term:5 leaderId:400 prevLogIndex:10 prevLogTerm:5]}
+400 : {AppendEntriesResp map[term:5 success:false senderId:100 forIndex:0]}
+100 : {AppendEntriesReq map[prevLogIndex:7 prevLogTerm:5 entries:{5 [55] true} leaderCommit:9 term:5 leaderId:400]}
+400 : {AppendEntriesResp map[forIndex:0 term:5 success:false senderId:300]}
+400 : {AppendEntriesResp map[senderId:200 forIndex:10 term:5 success:true]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:200 forIndex:0]}
+400 : {Timeout map[]}
+400 : {AppendEntriesResp map[term:5 success:true senderId:500 forIndex:0]}
+100 : {AppendEntriesReq map[leaderCommit:10 term:5 leaderId:400 prevLogIndex:10 prevLogTerm:5 entries:{0 [] false}]}
+400 : {AppendEntriesResp map[term:5 success:false senderId:100 forIndex:0]}
+100 : {AppendEntriesReq map[entries:{5 [54] true} leaderCommit:10 term:5 leaderId:400 prevLogIndex:6 prevLogTerm:5]}
+400 : {AppendEntriesResp map[success:true senderId:200 forIndex:0 term:5]}
+400 : {AppendEntriesResp map[success:false senderId:300 forIndex:0 term:5]}
+NODE ID : 100 LastLogIndex 9
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+NODE ID : 200 LastLogIndex 10
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+NODE ID : 300 LastLogIndex 8
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+NODE ID : 400 LastLogIndex 10
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+NODE ID : 500 LastLogIndex 10
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+100 : {Fake Event map[]}
+400 : {Fake Event map[]}
+PASS
+ok  	github.com/JashDave/cs733/assignment4/assignment3	54.516s

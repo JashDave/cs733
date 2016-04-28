@@ -1,0 +1,9 @@
+package main
+import "fmt"
+import "src/github.com/cs733-iitb/log"
+
+func main() {
+	fmt.Println("ji")
+	lg,_ := log.Open("mylog")
+	fmt.Println(lg)
+}

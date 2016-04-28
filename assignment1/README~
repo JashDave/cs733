@@ -1,0 +1,48 @@
+This code presents simple File Server with version support in GO language.
+
+Following are the oprations supported :
+- Read
+- Write
+- Delete
+- Compare and swap file
+
+It starts at localhost:8080
+You can use any TCP client to connect and do the above operations.
+
+Section below describes the usage of the command supported.
+
+1. Write: create a file, or update the file’s contents if it already exists.
+Syntax
+	write <filename> <numbytes> [<exptime>]\r\n
+	<content bytes>\r\n
+The server responds with the following:
+ OK <version>\r\n
+where version is a unique 64‐bit number (in decimal format) assosciated with the filename.
+
+2. Read: Given a filename, retrieve the corresponding file:
+Syntax
+	read <filename>\r\n
+The server responds with the following format (or one of the errors described later) 
+	CONTENTS <version> <numbytes> <exptime> \r\n
+	<content bytes>\r\n
+
+3. Compare and swap: This replaces the old file contents with the new content provided the version is still the same.
+	cas <filename> <version> <numbytes> [<exptime>]\r\n
+	<content bytes>\r\n
+The server responds with the new version if successful (or one of the errors described later)
+	OK <version>\r\n
+
+4. Delete file : This deletes the file if it exists
+	delete <filename>\r\n
+Server response if successful (or one of the errors described later)
+	OK\r\n
+
+
+ERRORS:
+1. ERR_VERSION\r\n (the contents were not updated because of a version mismatch)
+2. ERR_FILE_NOT_FOUND\r\n (the filename doesn’t exist)
+3. ERR_CMD_ERR\r\n (the command is not formatted correctly)
+4. ERR_INTERNAL\r\n (any other error you wish to report that is not covered by the rest)
+
+
+For Testing you can use go test command. This command will run do_test.go file which does the basic test of the above server.

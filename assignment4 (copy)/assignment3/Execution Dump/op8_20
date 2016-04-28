@@ -1,0 +1,1029 @@
+100 : {Timeout map[]}
+100 : {VoteReq map[candidateId:400 lastLogIndex:0 lastLogTerm:0 term:1]}
+100 : {VoteResp map[term:1 voteGranted:false]}
+100 : {VoteReq map[term:1 candidateId:300 lastLogIndex:0 lastLogTerm:0]}
+100 : {VoteResp map[term:1 voteGranted:false]}
+100 : {VoteReq map[term:2 candidateId:200 lastLogIndex:0 lastLogTerm:0]}
+100 : {VoteResp map[term:1 voteGranted:true]}
+100 : {VoteReq map[lastLogIndex:0 lastLogTerm:0 term:2 candidateId:500]}
+100 : {VoteResp map[term:1 voteGranted:false]}
+100 : {Timeout map[]}
+100 : {VoteReq map[term:3 candidateId:400 lastLogIndex:0 lastLogTerm:0]}
+100 : {VoteReq map[term:3 candidateId:300 lastLogIndex:0 lastLogTerm:0]}
+100 : {VoteResp map[term:3 voteGranted:false]}
+100 : {VoteResp map[term:3 voteGranted:true]}
+100 : {VoteResp map[term:3 voteGranted:true]}
+100 : {VoteResp map[term:3 voteGranted:false]}
+100 : {AppendEntriesResp map[senderId:400 forIndex:0 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}
+100 : {AppendEntriesResp map[forIndex:0 term:3 success:true senderId:200]}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:0 term:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:0]}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[senderId:500 forIndex:0 term:3 success:true]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}
+100 : {AppendEntriesResp map[senderId:300 forIndex:0 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:0]}
+100 : {Timeout map[]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:0 prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3]}
+100 : {AppendEntriesResp map[senderId:500 forIndex:0 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}
+100 : {AppendEntriesResp map[forIndex:0 term:3 success:true senderId:300]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:0]}
+100 : {Timeout map[]}
+200 : {AppendEntriesReq map[prevLogTerm:0 entries:{0 [] false} leaderCommit:0 term:3 leaderId:100 prevLogIndex:0]}
+100 : {AppendEntriesResp map[senderId:200 forIndex:0 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:0]}
+100 : {Append map[data:[48]]}
+i: 0 NodeID: 100 CmtIdx: 0 LastLogIdx 0 Leader: 100
+i: 0 NodeID: 200 CmtIdx: 0 LastLogIdx 0 Leader: 100
+i: 0 NodeID: 300 CmtIdx: 0 LastLogIdx 0 Leader: 100
+i: 0 NodeID: 400 CmtIdx: 0 LastLogIdx 0 Leader: 100
+i: 0 NodeID: 500 CmtIdx: 0 LastLogIdx 0 Leader: 100
+100 : {Timeout map[]}
+100 : {Append map[data:[49]]}
+200 : {AppendEntriesReq map[prevLogIndex:0 prevLogTerm:0 entries:{3 [48] true} leaderCommit:0 term:3 leaderId:100]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:1 prevLogTerm:3 entries:{0 [] false} leaderCommit:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:1]}
+Sending: 2 to 400
+100 : {AppendEntriesResp map[senderId:400 forIndex:0 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:1]}
+Sending: 2 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:1]}
+Sending: 2 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:1]}
+Sending: 2 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}
+100 : {Append map[data:[50]]}
+200 : {AppendEntriesReq map[leaderCommit:0 term:3 leaderId:100 prevLogIndex:1 prevLogTerm:3 entries:{3 [49] true}]}
+100 : {Append map[data:[51]]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:1 prevLogTerm:3 entries:{3 [49] true} leaderCommit:1]}
+i: 1 NodeID: 100 CmtIdx: 1 LastLogIdx 4 Leader: 100
+i: 1 NodeID: 200 CmtIdx: 0 LastLogIdx 1 Leader: 100
+i: 1 NodeID: 300 CmtIdx: 0 LastLogIdx 1 Leader: 100
+i: 1 NodeID: 400 CmtIdx: 0 LastLogIdx 1 Leader: 100
+i: 1 NodeID: 500 CmtIdx: 0 LastLogIdx 1 Leader: 100
+CI {[48] 1 <nil>}
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:2 term:3]}
+Sending: 3 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:2]}
+Sending: 3 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:2]}
+Sending: 3 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:2]}
+Sending: 3 to 400
+100 : {Append map[data:[52]]}
+200 : {AppendEntriesReq map[entries:{3 [50] true} leaderCommit:1 term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3]}
+100 : {AppendEntriesResp map[senderId:400 forIndex:2 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:2]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:2]}
+100 : {AppendEntriesResp map[forIndex:2 term:3 success:true senderId:500]}
+100 : {Append map[data:[53]]}
+i: 2 NodeID: 100 CmtIdx: 2 LastLogIdx 6 Leader: 100
+i: 2 NodeID: 200 CmtIdx: 1 LastLogIdx 3 Leader: 100
+i: 2 NodeID: 300 CmtIdx: 1 LastLogIdx 4 Leader: 100
+i: 2 NodeID: 400 CmtIdx: 1 LastLogIdx 4 Leader: 100
+i: 2 NodeID: 500 CmtIdx: 1 LastLogIdx 3 Leader: 100
+CI {[49] 2 <nil>}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [51] true} leaderCommit:1 term:3 leaderId:100 prevLogIndex:3]}
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:400]}
+Sending: 4 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:3]}
+Sending: 4 to 300
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:200]}
+Sending: 4 to 200
+100 : {Append map[data:[54]]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [50] true} leaderCommit:2 term:3 leaderId:100 prevLogIndex:2]}
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:500]}
+Sending: 4 to 500
+100 : {AppendEntriesResp map[success:true senderId:400 forIndex:4 term:3]}
+Sending: 5 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:4]}
+Sending: 5 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:4]}
+Sending: 5 to 200
+100 : {Append map[data:[55]]}
+i: 3 NodeID: 100 CmtIdx: 4 LastLogIdx 8 Leader: 100
+i: 3 NodeID: 200 CmtIdx: 1 LastLogIdx 3 Leader: 100
+i: 3 NodeID: 300 CmtIdx: 1 LastLogIdx 3 Leader: 100
+i: 3 NodeID: 400 CmtIdx: 1 LastLogIdx 3 Leader: 100
+i: 3 NodeID: 500 CmtIdx: 1 LastLogIdx 3 Leader: 100
+CI {[50] 3 <nil>}
+100 : {AppendEntriesResp map[senderId:500 forIndex:4 term:3 success:true]}
+Sending: 5 to 500
+100 : {Append map[data:[56]]}
+200 : {AppendEntriesReq map[entries:{3 [52] true} leaderCommit:2 term:3 leaderId:100 prevLogIndex:4 prevLogTerm:3]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:5 prevLogTerm:3 entries:{3 [53] true} leaderCommit:2 term:3]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [51] true} leaderCommit:3 term:3 leaderId:100 prevLogIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:5]}
+Sending  4 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:6]}
+Sending  3 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:5]}
+Sending  4 to 200
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:6]}
+Sending  3 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:3]}
+100 : {AppendEntriesResp map[senderId:300 forIndex:5 term:3 success:false]}
+Sending  4 to 300
+100 : {AppendEntriesResp map[forIndex:6 term:3 success:false senderId:300]}
+Sending  3 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:5]}
+Sending  4 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:6]}
+Sending  3 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:7]}
+Sending  2 to 500
+100 : {Append map[data:[57]]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [54] true} leaderCommit:3 term:3 leaderId:100 prevLogIndex:6]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [52] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:4]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:4]}
+100 : {AppendEntriesResp map[success:false senderId:400 forIndex:7 term:3]}
+Sending  2 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:4]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:7]}
+Sending  2 to 200
+100 : {AppendEntriesResp map[senderId:300 forIndex:4 term:3 success:true]}
+100 : {AppendEntriesResp map[success:false senderId:300 forIndex:7 term:3]}
+Sending  2 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:4]}
+100 : {AppendEntriesResp map[forIndex:8 term:3 success:false senderId:500]}
+Sending  1 to 500
+100 : {Append map[data:[49 48]]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:7 prevLogTerm:3 entries:{3 [55] true} leaderCommit:4 term:3]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:8 prevLogTerm:3 entries:{3 [56] true} leaderCommit:4]}
+200 : {AppendEntriesReq map[prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:4 term:3 leaderId:100]}
+200 : {AppendEntriesReq map[leaderCommit:4 term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true}]}
+200 : {AppendEntriesReq map[prevLogIndex:9 prevLogTerm:3 entries:{3 [57] true} leaderCommit:4 term:3 leaderId:100]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [49] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:1]}
+i: 4 NodeID: 100 CmtIdx: 4 LastLogIdx 11 Leader: 100
+i: 4 NodeID: 200 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 4 NodeID: 300 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 4 NodeID: 400 CmtIdx: 3 LastLogIdx 3 Leader: 100
+i: 4 NodeID: 500 CmtIdx: 3 LastLogIdx 5 Leader: 100
+CI {[51] 4 <nil>}
+100 : {AppendEntriesResp map[forIndex:5 term:3 success:true senderId:400]}
+Sending: 3 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:8]}
+Sending  2 to 400
+100 : {AppendEntriesResp map[senderId:400 forIndex:9 term:3 success:false]}
+Sending  1 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:5]}
+Sending: 3 to 200
+100 : {AppendEntriesResp map[success:false senderId:200 forIndex:8 term:3]}
+Sending  2 to 200
+100 : {AppendEntriesResp map[senderId:200 forIndex:9 term:3 success:false]}
+Sending  1 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:4]}
+Sending: 2 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+Sending: 3 to 200
+100 : {AppendEntriesResp map[senderId:200 forIndex:10 term:3 success:false]}
+Sending  2 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:2]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:5]}
+Sending: 3 to 300
+100 : {AppendEntriesResp map[success:false senderId:300 forIndex:8 term:3]}
+Sending  2 to 300
+100 : {AppendEntriesResp map[success:false senderId:300 forIndex:9 term:3]}
+Sending  1 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:4]}
+Sending: 2 to 300
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:300]}
+Sending: 3 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:10]}
+Sending  2 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:2]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:5]}
+Sending: 2 to 500
+100 : {AppendEntriesResp map[senderId:500 forIndex:9 term:3 success:false]}
+Sending  1 to 500
+100 : {AppendEntriesResp map[senderId:500 forIndex:4 term:3 success:true]}
+Sending: 2 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:3]}
+Sending: 3 to 500
+100 : {AppendEntriesResp map[forIndex:2 term:3 success:true senderId:500]}
+100 : {AppendEntriesResp map[forIndex:10 term:3 success:false senderId:500]}
+Sending  2 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:1]}
+100 : {Append map[data:[49 49]]}
+200 : {AppendEntriesReq map[leaderCommit:4 term:3 leaderId:100 prevLogIndex:10 prevLogTerm:3 entries:{3 [49 48] true}]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true} leaderCommit:4 term:3]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [49] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:1]}
+200 : {AppendEntriesReq map[prevLogTerm:0 entries:{3 [48] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:0]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:1 prevLogTerm:3 entries:{3 [49] true} leaderCommit:4]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [50] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:2]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:1 prevLogTerm:3 entries:{3 [49] true} leaderCommit:4]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:11]}
+Sending  1 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:2]}
+100 : {AppendEntriesResp map[senderId:500 forIndex:1 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:2]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:3]}
+Sending: 2 to 500
+100 : {AppendEntriesResp map[forIndex:2 term:3 success:true senderId:500]}
+Sending: 3 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:11]}
+Sending  1 to 200
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:3 term:3]}
+Sending: 2 to 200
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:2 term:3]}
+Sending: 3 to 200
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:1 term:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:2]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+Sending: 4 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:2]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:11]}
+Sending  1 to 300
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:300]}
+Sending: 2 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:2]}
+Sending: 3 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:1]}
+100 : {AppendEntriesResp map[senderId:300 forIndex:2 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:3]}
+Sending: 4 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:2]}
+100 : {Append map[data:[49 50]]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:11 prevLogTerm:3 entries:{3 [49 49] true} leaderCommit:4]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:0 prevLogTerm:0 entries:{3 [48] true} leaderCommit:4 term:3]}
+200 : {AppendEntriesReq map[leaderCommit:4 term:3 leaderId:100 prevLogIndex:1 prevLogTerm:3 entries:{3 [49] true}]}
+200 : {AppendEntriesReq map[entries:{3 [50] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3]}
+200 : {AppendEntriesReq map[leaderCommit:4 term:3 leaderId:100 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true}]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:12]}
+Sending  2 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:1]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:2]}
+100 : {AppendEntriesResp map[success:true senderId:500 forIndex:3 term:3]}
+Sending: 3 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:12]}
+Sending  3 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:1]}
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:2 term:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+100 : {AppendEntriesResp map[senderId:200 forIndex:4 term:3 success:true]}
+Sending: 4 to 200
+100 : {AppendEntriesResp map[senderId:300 forIndex:12 term:3 success:false]}
+Sending  3 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:1]}
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:2 term:3]}
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:300]}
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:4 term:3]}
+Sending: 4 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:4]}
+Sending: 2 to 400
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:400]}
+Sending: 3 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:10]}
+Sending  2 to 400
+100 : {AppendEntriesResp map[forIndex:2 term:3 success:true senderId:400]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:11]}
+Sending  1 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:3]}
+Sending: 2 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:2]}
+Sending: 3 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:1]}
+100 : {AppendEntriesResp map[forIndex:12 term:3 success:false senderId:400]}
+Sending  2 to 400
+100 : {Append map[data:[49 51]]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [49 50] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:12]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true} leaderCommit:4]}
+200 : {AppendEntriesReq map[entries:{3 [51] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:3 prevLogTerm:3]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:13]}
+Sending  2 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:2]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:3]}
+Sending: 3 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:13]}
+Sending  3 to 300
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:3 term:3]}
+100 : {AppendEntriesResp map[senderId:300 forIndex:4 term:3 success:true]}
+Sending: 4 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:13]}
+Sending  1 to 400
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:13 prevLogTerm:3 entries:{3 [49 51] true} leaderCommit:4]}
+100 : {AppendEntriesResp map[senderId:400 forIndex:2 term:3 success:true]}
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:400]}
+Sending: 2 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:2]}
+Sending: 3 to 400
+100 : {AppendEntriesResp map[senderId:400 forIndex:1 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:2]}
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:400]}
+Sending: 4 to 400
+100 : {AppendEntriesResp map[forIndex:2 term:3 success:true senderId:400]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:13]}
+Sending  3 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+100 : {AppendEntriesResp map[forIndex:4 term:3 success:true senderId:200]}
+Sending: 4 to 200
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:14]}
+200 : {AppendEntriesReq map[entries:{3 [50] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3]}
+Sending  2 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:2]}
+100 : {AppendEntriesResp map[success:true senderId:500 forIndex:3 term:3]}
+Sending: 3 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:14]}
+Sending  3 to 200
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:14]}
+Sending  3 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:14]}
+Sending  3 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:300]}
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:4 term:3]}
+Sending: 4 to 300
+100 : {AppendEntriesResp map[forIndex:1 term:3 success:true senderId:400]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:2]}
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:400]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:4]}
+Sending: 4 to 400
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:4]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:3]}
+100 : {Append map[data:[49 52]]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true} leaderCommit:4]}
+i: 5 NodeID: 100 CmtIdx: 4 LastLogIdx 15 Leader: 100
+i: 5 NodeID: 200 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 5 NodeID: 300 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 5 NodeID: 400 CmtIdx: 4 LastLogIdx 4 Leader: 100
+i: 5 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 100
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:4]}
+Sending: 4 to 200
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:3 term:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:2]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:3]}
+Sending: 4 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:4]}
+Sending: 5 to 300
+100 : {AppendEntriesResp map[senderId:400 forIndex:4 term:3 success:true]}
+Sending: 5 to 400
+100 : {Append map[data:[49 53]]}
+200 : {AppendEntriesReq map[prevLogIndex:14 prevLogTerm:3 entries:{3 [49 52] true} leaderCommit:4 term:3 leaderId:100]}
+200 : {AppendEntriesReq map[prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:4 term:3 leaderId:100]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:15]}
+Sending  3 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:4]}
+Sending: 4 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:15]}
+Sending  3 to 200
+100 : {AppendEntriesResp map[forIndex:4 term:3 success:true senderId:200]}
+Sending: 4 to 200
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:15]}
+Sending  4 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:15]}
+Sending  4 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:5]}
+Sending: 5 to 400
+100 : {Append map[data:[49 54]]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:15 prevLogTerm:3 entries:{3 [49 53] true} leaderCommit:4 term:3]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true} leaderCommit:4]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:4 term:3]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:16]}
+Sending  3 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:4]}
+Sending: 4 to 500
+200 : {AppendEntriesReq map[leaderCommit:4 term:3 leaderId:100 prevLogIndex:16 prevLogTerm:3 entries:{3 [49 54] true}]}
+100 : {AppendEntriesResp map[success:false senderId:200 forIndex:16 term:3]}
+Sending  3 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:4]}
+Sending: 4 to 200
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:16]}
+200 : {AppendEntriesReq map[leaderCommit:4 term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true}]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:4 term:3]}
+Sending  4 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:4]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:17]}
+Sending  3 to 200
+100 : {AppendEntriesResp map[forIndex:17 term:3 success:false senderId:500]}
+Sending  3 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:4]}
+Sending: 4 to 500
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3 entries:{3 [50] true} leaderCommit:4]}
+100 : {AppendEntriesResp map[senderId:300 forIndex:5 term:3 success:true]}
+Sending: 5 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:16]}
+Sending  4 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:4]}
+100 : {AppendEntriesResp map[success:false senderId:300 forIndex:17 term:3]}
+Sending  3 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:4]}
+Sending: 4 to 200
+100 : {AppendEntriesResp map[senderId:500 forIndex:3 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:4]}
+Sending: 5 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+100 : {Append map[data:[49 55]]}
+200 : {AppendEntriesReq map[leaderCommit:4 term:3 leaderId:100 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true}]}
+i: 6 NodeID: 100 CmtIdx: 4 LastLogIdx 18 Leader: 100
+i: 6 NodeID: 200 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 6 NodeID: 300 CmtIdx: 4 LastLogIdx 4 Leader: 100
+i: 6 NodeID: 400 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 6 NodeID: 500 CmtIdx: 4 LastLogIdx 4 Leader: 100
+100 : {AppendEntriesResp map[senderId:200 forIndex:4 term:3 success:true]}
+Sending: 5 to 200
+100 : {AppendEntriesResp map[success:true senderId:400 forIndex:5 term:3]}
+Sending: 5 to 400
+100 : {AppendEntriesResp map[forIndex:17 term:3 success:false senderId:400]}
+Sending  4 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:4]}
+100 : {Append map[data:[49 56]]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [49 55] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:17]}
+200 : {AppendEntriesReq map[prevLogIndex:4 prevLogTerm:3 entries:{3 [52] true} leaderCommit:4 term:3 leaderId:100]}
+100 : {AppendEntriesResp map[success:false senderId:400 forIndex:18 term:3]}
+Sending  3 to 400
+100 : {AppendEntriesResp map[senderId:200 forIndex:18 term:3 success:false]}
+Sending  4 to 200
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:5 term:3]}
+Sending: 4 to 300
+100 : {AppendEntriesResp map[senderId:300 forIndex:4 term:3 success:true]}
+Sending: 5 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:18]}
+Sending  4 to 300
+100 : {Append map[data:[49 57]]}
+i: 7 NodeID: 100 CmtIdx: 4 LastLogIdx 20 Leader: 100
+i: 7 NodeID: 200 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 7 NodeID: 300 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 7 NodeID: 400 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 7 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 100
+100 : {AppendEntriesResp map[forIndex:19 term:3 success:false senderId:300]}
+Sending  3 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:4]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:5]}
+Sending: 6 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:18]}
+Sending  5 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:19]}
+Sending  4 to 500
+100 : {AppendEntriesResp map[senderId:400 forIndex:5 term:3 success:true]}
+Sending: 4 to 400
+100 : {AppendEntriesResp map[forIndex:4 term:3 success:true senderId:400]}
+Sending: 5 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:19]}
+Sending  4 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:20]}
+Sending  3 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:20]}
+Sending  3 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:4]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:5]}
+Sending: 5 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:5]}
+Sending: 4 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:4]}
+Sending: 5 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:20]}
+Sending  4 to 300
+100 : {AppendEntriesResp map[forIndex:3 term:3 success:true senderId:300]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:4]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:18 prevLogTerm:3 entries:{3 [49 56] true} leaderCommit:4]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:4]}
+200 : {AppendEntriesReq map[prevLogIndex:19 prevLogTerm:3 entries:{3 [49 57] true} leaderCommit:4 term:3 leaderId:100]}
+200 : {AppendEntriesReq map[entries:{3 [52] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:4 prevLogTerm:3]}
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:19]}
+Sending  4 to 200
+100 : {AppendEntriesResp map[senderId:200 forIndex:4 term:3 success:true]}
+100 : {AppendEntriesResp map[success:false senderId:200 forIndex:20 term:3]}
+Sending  3 to 200
+100 : {AppendEntriesResp map[success:true senderId:500 forIndex:6 term:3]}
+Sending: 4 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:5]}
+Sending: 4 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:4]}
+Sending: 5 to 400
+100 : {AppendEntriesResp map[senderId:400 forIndex:3 term:3 success:true]}
+100 : {AppendEntriesResp map[forIndex:4 term:3 success:true senderId:400]}
+i: 8 NodeID: 100 CmtIdx: 4 LastLogIdx 20 Leader: 100
+i: 8 NodeID: 200 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 8 NodeID: 300 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 8 NodeID: 400 CmtIdx: 4 LastLogIdx 4 Leader: 100
+i: 8 NodeID: 500 CmtIdx: 4 LastLogIdx 5 Leader: 100
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:4 term:3]}
+200 : {AppendEntriesReq map[entries:{3 [50] true} leaderCommit:4 term:3 leaderId:100 prevLogIndex:2 prevLogTerm:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:5]}
+Sending: 4 to 200
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:4 term:3]}
+Sending: 5 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:3]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:3 prevLogTerm:3 entries:{3 [51] true} leaderCommit:4]}
+200 : {AppendEntriesReq map[leaderCommit:4 term:3 leaderId:100 prevLogIndex:4 prevLogTerm:3 entries:{3 [52] true}]}
+100 : {AppendEntriesResp map[senderId:200 forIndex:4 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:5]}
+Sending: 5 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:4]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:5]}
+Sending: 5 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:4]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:4]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:5]}
+Sending: 6 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:5]}
+Sending: 6 to 200
+200 : {AppendEntriesReq map[prevLogIndex:5 prevLogTerm:3 entries:{3 [53] true} leaderCommit:5 term:3 leaderId:100]}
+i: 9 NodeID: 100 CmtIdx: 5 LastLogIdx 20 Leader: 100
+i: 9 NodeID: 200 CmtIdx: 4 LastLogIdx 6 Leader: 100
+i: 9 NodeID: 300 CmtIdx: 4 LastLogIdx 5 Leader: 100
+i: 9 NodeID: 400 CmtIdx: 4 LastLogIdx 6 Leader: 100
+i: 9 NodeID: 500 CmtIdx: 4 LastLogIdx 4 Leader: 100
+CI {[52] 5 <nil>}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:6]}
+Sending: 7 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:0]}
+Sending  6 to 400
+100 : {AppendEntriesResp map[forIndex:5 term:3 success:true senderId:300]}
+Sending: 6 to 300
+100 : {AppendEntriesResp map[senderId:300 forIndex:0 term:3 success:false]}
+Sending  5 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:5]}
+Sending: 6 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:0]}
+Sending  5 to 500
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:20 prevLogTerm:3 entries:{0 [] false} leaderCommit:5]}
+100 : {AppendEntriesResp map[forIndex:6 term:3 success:true senderId:200]}
+Sending: 7 to 200
+100 : {AppendEntriesResp map[success:false senderId:200 forIndex:0 term:3]}
+Sending  6 to 200
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:6 prevLogTerm:3 entries:{3 [54] true} leaderCommit:6]}
+100 : {AppendEntriesResp map[success:true senderId:400 forIndex:7 term:3]}
+Sending: 7 to 400
+100 : {AppendEntriesResp map[forIndex:6 term:3 success:true senderId:300]}
+Sending: 6 to 300
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:5 term:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:6]}
+Sending: 6 to 500
+100 : {AppendEntriesResp map[success:true senderId:500 forIndex:5 term:3]}
+200 : {AppendEntriesReq map[entries:{3 [53] true} leaderCommit:6 term:3 leaderId:100 prevLogIndex:5 prevLogTerm:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:7]}
+Sending: 7 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:6]}
+200 : {AppendEntriesReq map[prevLogIndex:6 prevLogTerm:3 entries:{3 [54] true} leaderCommit:6 term:3 leaderId:100]}
+i: 10 NodeID: 100 CmtIdx: 6 LastLogIdx 20 Leader: 100
+i: 10 NodeID: 200 CmtIdx: 6 LastLogIdx 6 Leader: 100
+i: 10 NodeID: 300 CmtIdx: 5 LastLogIdx 5 Leader: 100
+i: 10 NodeID: 400 CmtIdx: 5 LastLogIdx 5 Leader: 100
+i: 10 NodeID: 500 CmtIdx: 5 LastLogIdx 5 Leader: 100
+CI {[53] 6 <nil>}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:6]}
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:6 term:3]}
+Sending: 7 to 300
+i: 11 NodeID: 100 CmtIdx: 6 LastLogIdx 20 Leader: 100
+i: 11 NodeID: 200 CmtIdx: 6 LastLogIdx 7 Leader: 100
+i: 11 NodeID: 300 CmtIdx: 6 LastLogIdx 7 Leader: 100
+i: 11 NodeID: 400 CmtIdx: 5 LastLogIdx 7 Leader: 100
+i: 11 NodeID: 500 CmtIdx: 5 LastLogIdx 6 Leader: 100
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:7 term:3]}
+Sending: 8 to 200
+200 : {AppendEntriesReq map[entries:{3 [55] true} leaderCommit:6 term:3 leaderId:100 prevLogIndex:7 prevLogTerm:3]}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[forIndex:7 term:3 success:true senderId:400]}
+Sending: 8 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:0]}
+Sending  7 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:6]}
+Sending: 7 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:0]}
+Sending  6 to 500
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:7 term:3]}
+Sending: 8 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:0]}
+Sending  7 to 300
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:20 prevLogTerm:3 entries:{0 [] false} leaderCommit:6 term:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:8]}
+Sending: 9 to 200
+100 : {AppendEntriesResp map[senderId:200 forIndex:0 term:3 success:false]}
+Sending  8 to 200
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [56] true} leaderCommit:7 term:3 leaderId:100 prevLogIndex:8]}
+100 : {AppendEntriesResp map[success:true senderId:500 forIndex:7 term:3]}
+Sending: 7 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:6]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:7]}
+Sending: 8 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:8]}
+Sending: 8 to 400
+100 : {AppendEntriesResp map[success:true senderId:400 forIndex:7 term:3]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:7 prevLogTerm:3 entries:{3 [55] true} leaderCommit:7]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:8]}
+Sending: 8 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:7]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:9]}
+Sending: 9 to 200
+100 : {AppendEntriesResp map[success:true senderId:500 forIndex:8 term:3]}
+Sending: 9 to 500
+i: 12 NodeID: 100 CmtIdx: 8 LastLogIdx 20 Leader: 100
+i: 12 NodeID: 200 CmtIdx: 7 LastLogIdx 7 Leader: 100
+i: 12 NodeID: 300 CmtIdx: 7 LastLogIdx 7 Leader: 100
+i: 12 NodeID: 400 CmtIdx: 7 LastLogIdx 8 Leader: 100
+i: 12 NodeID: 500 CmtIdx: 7 LastLogIdx 9 Leader: 100
+CI {[54] 7 <nil>}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:9]}
+Sending: 10 to 500
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [56] true} leaderCommit:7 term:3 leaderId:100 prevLogIndex:8]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:8]}
+Sending: 9 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:8]}
+Sending: 9 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:8]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:10]}
+Sending: 11 to 500
+100 : {AppendEntriesResp map[forIndex:9 term:3 success:true senderId:400]}
+Sending: 10 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:9]}
+Sending: 10 to 300
+100 : {AppendEntriesResp map[forIndex:9 term:3 success:true senderId:200]}
+Sending: 10 to 200
+200 : {AppendEntriesReq map[leaderCommit:9 term:3 leaderId:100 prevLogIndex:9 prevLogTerm:3 entries:{3 [57] true}]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:11]}
+Sending: 12 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:10]}
+Sending: 11 to 400
+i: 13 NodeID: 100 CmtIdx: 10 LastLogIdx 20 Leader: 100
+i: 13 NodeID: 200 CmtIdx: 7 LastLogIdx 10 Leader: 100
+i: 13 NodeID: 300 CmtIdx: 8 LastLogIdx 10 Leader: 100
+i: 13 NodeID: 400 CmtIdx: 9 LastLogIdx 11 Leader: 100
+i: 13 NodeID: 500 CmtIdx: 8 LastLogIdx 12 Leader: 100
+CI {[55] 8 <nil>}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:10]}
+Sending: 11 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:12]}
+Sending: 13 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:10]}
+Sending: 11 to 200
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [49 48] true} leaderCommit:10 term:3 leaderId:100 prevLogIndex:10]}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:11]}
+Sending: 12 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:0]}
+Sending  11 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:11]}
+Sending: 12 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:0]}
+Sending  11 to 300
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:20 prevLogTerm:3 entries:{0 [] false} leaderCommit:10]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:13]}
+Sending: 14 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:0]}
+Sending  13 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:11]}
+Sending: 12 to 200
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:0]}
+Sending  11 to 200
+200 : {AppendEntriesReq map[prevLogIndex:11 prevLogTerm:3 entries:{3 [49 49] true} leaderCommit:11 term:3 leaderId:100]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:12]}
+Sending: 12 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:11]}
+100 : {AppendEntriesResp map[forIndex:12 term:3 success:true senderId:300]}
+Sending: 12 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:11]}
+100 : {AppendEntriesResp map[senderId:500 forIndex:14 term:3 success:true]}
+Sending: 14 to 500
+i: 14 NodeID: 100 CmtIdx: 11 LastLogIdx 20 Leader: 100
+i: 14 NodeID: 200 CmtIdx: 10 LastLogIdx 12 Leader: 100
+i: 14 NodeID: 300 CmtIdx: 11 LastLogIdx 11 Leader: 100
+i: 14 NodeID: 400 CmtIdx: 11 LastLogIdx 11 Leader: 100
+i: 14 NodeID: 500 CmtIdx: 11 LastLogIdx 12 Leader: 100
+CI {[56] 9 <nil>}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:10 prevLogTerm:3 entries:{3 [49 48] true} leaderCommit:11]}
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:12 term:3]}
+Sending: 12 to 200
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:11 term:3]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:11 prevLogTerm:3 entries:{3 [49 49] true} leaderCommit:11]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:12]}
+Sending: 13 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:12]}
+Sending: 13 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:13]}
+Sending: 14 to 400
+100 : {AppendEntriesResp map[forIndex:12 term:3 success:true senderId:200]}
+Sending: 13 to 200
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:12 prevLogTerm:3 entries:{3 [49 50] true} leaderCommit:13]}
+100 : {AppendEntriesResp map[success:true senderId:500 forIndex:13 term:3]}
+i: 15 NodeID: 100 CmtIdx: 13 LastLogIdx 20 Leader: 100
+i: 15 NodeID: 200 CmtIdx: 11 LastLogIdx 13 Leader: 100
+i: 15 NodeID: 300 CmtIdx: 11 LastLogIdx 13 Leader: 100
+i: 15 NodeID: 400 CmtIdx: 12 LastLogIdx 14 Leader: 100
+i: 15 NodeID: 500 CmtIdx: 11 LastLogIdx 14 Leader: 100
+CI {[57] 10 <nil>}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[success:true senderId:300 forIndex:13 term:3]}
+Sending: 14 to 300
+100 : {AppendEntriesResp map[forIndex:0 term:3 success:false senderId:300]}
+Sending  13 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:14]}
+Sending: 15 to 500
+100 : {AppendEntriesResp map[term:3 success:false senderId:500 forIndex:0]}
+Sending  14 to 500
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:20 prevLogTerm:3 entries:{0 [] false} leaderCommit:13]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:13]}
+Sending: 14 to 200
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:0]}
+Sending  13 to 200
+200 : {AppendEntriesReq map[prevLogIndex:13 prevLogTerm:3 entries:{3 [49 51] true} leaderCommit:13 term:3 leaderId:100]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:14]}
+Sending: 15 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:0]}
+Sending  14 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:14]}
+Sending: 14 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:13]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:15]}
+Sending: 15 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:15]}
+Sending: 15 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:14]}
+i: 16 NodeID: 100 CmtIdx: 14 LastLogIdx 20 Leader: 100
+i: 16 NodeID: 200 CmtIdx: 13 LastLogIdx 14 Leader: 100
+i: 16 NodeID: 300 CmtIdx: 13 LastLogIdx 14 Leader: 100
+i: 16 NodeID: 400 CmtIdx: 14 LastLogIdx 14 Leader: 100
+i: 16 NodeID: 500 CmtIdx: 13 LastLogIdx 13 Leader: 100
+CI {[49 48] 11 <nil>}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:12 prevLogTerm:3 entries:{3 [49 50] true} leaderCommit:13]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:14]}
+Sending: 14 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:13]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:13 prevLogTerm:3 entries:{3 [49 51] true} leaderCommit:14]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:14]}
+Sending: 15 to 300
+100 : {AppendEntriesResp map[success:true senderId:500 forIndex:14 term:3]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:15]}
+Sending: 16 to 300
+i: 17 NodeID: 100 CmtIdx: 14 LastLogIdx 20 Leader: 100
+i: 17 NodeID: 200 CmtIdx: 13 LastLogIdx 14 Leader: 100
+i: 17 NodeID: 300 CmtIdx: 14 LastLogIdx 16 Leader: 100
+i: 17 NodeID: 400 CmtIdx: 14 LastLogIdx 15 Leader: 100
+i: 17 NodeID: 500 CmtIdx: 13 LastLogIdx 15 Leader: 100
+CI {[49 49] 12 <nil>}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:14]}
+Sending: 15 to 200
+200 : {AppendEntriesReq map[entries:{3 [49 52] true} leaderCommit:14 term:3 leaderId:100 prevLogIndex:14 prevLogTerm:3]}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[success:true senderId:400 forIndex:15 term:3]}
+Sending: 16 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:0]}
+Sending  15 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:15]}
+Sending: 16 to 500
+100 : {AppendEntriesResp map[senderId:500 forIndex:0 term:3 success:false]}
+Sending  15 to 500
+100 : {AppendEntriesResp map[forIndex:16 term:3 success:true senderId:300]}
+Sending: 17 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:0]}
+Sending  16 to 300
+200 : {AppendEntriesReq map[prevLogIndex:20 prevLogTerm:3 entries:{0 [] false} leaderCommit:14 term:3 leaderId:100]}
+100 : {AppendEntriesResp map[success:true senderId:200 forIndex:15 term:3]}
+Sending: 16 to 200
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:0]}
+Sending  15 to 200
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [49 53] true} leaderCommit:15 term:3 leaderId:100 prevLogIndex:15]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:16]}
+Sending: 16 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:15]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:14 prevLogTerm:3 entries:{3 [49 52] true} leaderCommit:15]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:16]}
+Sending: 16 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:15]}
+200 : {AppendEntriesReq map[prevLogTerm:3 entries:{3 [49 53] true} leaderCommit:15 term:3 leaderId:100 prevLogIndex:15]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:16]}
+Sending: 16 to 500
+100 : {AppendEntriesResp map[senderId:500 forIndex:15 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:17]}
+Sending: 17 to 300
+i: 18 NodeID: 100 CmtIdx: 15 LastLogIdx 20 Leader: 100
+i: 18 NodeID: 200 CmtIdx: 15 LastLogIdx 15 Leader: 100
+i: 18 NodeID: 300 CmtIdx: 15 LastLogIdx 15 Leader: 100
+i: 18 NodeID: 400 CmtIdx: 15 LastLogIdx 15 Leader: 100
+i: 18 NodeID: 500 CmtIdx: 15 LastLogIdx 15 Leader: 100
+CI {[49 50] 13 <nil>}
+100 : {AppendEntriesResp map[forIndex:16 term:3 success:true senderId:400]}
+Sending: 17 to 400
+100 : {AppendEntriesResp map[forIndex:16 term:3 success:true senderId:500]}
+Sending: 17 to 500
+100 : {AppendEntriesResp map[senderId:200 forIndex:16 term:3 success:true]}
+Sending: 17 to 200
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:16 prevLogTerm:3 entries:{3 [49 54] true} leaderCommit:16]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:16]}
+100 : {AppendEntriesResp map[senderId:400 forIndex:17 term:3 success:true]}
+Sending: 18 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:17]}
+Sending: 18 to 500
+i: 19 NodeID: 100 CmtIdx: 17 LastLogIdx 20 Leader: 100
+i: 19 NodeID: 200 CmtIdx: 15 LastLogIdx 17 Leader: 100
+i: 19 NodeID: 300 CmtIdx: 15 LastLogIdx 17 Leader: 100
+i: 19 NodeID: 400 CmtIdx: 16 LastLogIdx 18 Leader: 100
+i: 19 NodeID: 500 CmtIdx: 16 LastLogIdx 18 Leader: 100
+CI {[49 51] 14 <nil>}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:17]}
+Sending: 18 to 200
+200 : {AppendEntriesReq map[leaderCommit:17 term:3 leaderId:100 prevLogIndex:17 prevLogTerm:3 entries:{3 [49 55] true}]}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[senderId:300 forIndex:17 term:3 success:true]}
+Sending: 18 to 300
+100 : {AppendEntriesResp map[term:3 success:false senderId:300 forIndex:0]}
+Sending  17 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:18]}
+Sending: 19 to 400
+100 : {AppendEntriesResp map[term:3 success:false senderId:400 forIndex:0]}
+Sending  18 to 400
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:20 prevLogTerm:3 entries:{0 [] false} leaderCommit:17]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:18]}
+Sending: 19 to 200
+100 : {AppendEntriesResp map[term:3 success:false senderId:200 forIndex:0]}
+Sending  18 to 200
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:18 prevLogTerm:3 entries:{3 [49 56] true} leaderCommit:18 term:3]}
+100 : {AppendEntriesResp map[forIndex:18 term:3 success:true senderId:500]}
+Sending: 19 to 500
+100 : {AppendEntriesResp map[forIndex:0 term:3 success:false senderId:500]}
+Sending  18 to 500
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:18]}
+Sending: 18 to 300
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:17]}
+100 : {AppendEntriesResp map[senderId:400 forIndex:19 term:3 success:true]}
+Sending: 19 to 400
+i: 20 NodeID: 100 CmtIdx: 18 LastLogIdx 20 Leader: 100
+i: 20 NodeID: 200 CmtIdx: 17 LastLogIdx 19 Leader: 100
+i: 20 NodeID: 300 CmtIdx: 17 LastLogIdx 17 Leader: 100
+i: 20 NodeID: 400 CmtIdx: 17 LastLogIdx 17 Leader: 100
+i: 20 NodeID: 500 CmtIdx: 17 LastLogIdx 19 Leader: 100
+CI {[49 52] 15 <nil>}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:19]}
+200 : {AppendEntriesReq map[prevLogIndex:17 prevLogTerm:3 entries:{3 [49 55] true} leaderCommit:18 term:3 leaderId:100]}
+Sending: 19 to 500
+100 : {AppendEntriesResp map[forIndex:18 term:3 success:true senderId:500]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:19]}
+Sending: 19 to 200
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:18]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:18 prevLogTerm:3 entries:{3 [49 56] true} leaderCommit:18 term:3]}
+100 : {AppendEntriesResp map[forIndex:18 term:3 success:true senderId:400]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:18]}
+Sending: 19 to 300
+100 : {AppendEntriesResp map[senderId:500 forIndex:19 term:3 success:true]}
+Sending: 20 to 500
+100 : {AppendEntriesResp map[senderId:200 forIndex:19 term:3 success:true]}
+Sending: 20 to 200
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:19 prevLogTerm:3 entries:{3 [49 57] true} leaderCommit:19]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:19]}
+Sending: 20 to 300
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[senderId:400 forIndex:19 term:3 success:true]}
+Sending: 20 to 400
+100 : {AppendEntriesResp map[success:false senderId:400 forIndex:0 term:3]}
+Sending  19 to 400
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:20 prevLogTerm:3 entries:{0 [] false} leaderCommit:19]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:20]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:200 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:20]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:20]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:500 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:20]}
+Sending: 20 to 400
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:19]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:20]}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[forIndex:0 term:3 success:true senderId:500]}
+200 : {AppendEntriesReq map[leaderId:100 prevLogIndex:20 prevLogTerm:3 entries:{0 [] false} leaderCommit:20 term:3]}
+100 : {AppendEntriesResp map[senderId:200 forIndex:0 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:0]}
+100 : {AppendEntriesResp map[forIndex:0 term:3 success:true senderId:400]}
+100 : {Timeout map[]}
+100 : {AppendEntriesResp map[senderId:500 forIndex:0 term:3 success:true]}
+200 : {AppendEntriesReq map[term:3 leaderId:100 prevLogIndex:20 prevLogTerm:3 entries:{0 [] false} leaderCommit:20]}
+100 : {AppendEntriesResp map[senderId:200 forIndex:0 term:3 success:true]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:300 forIndex:0]}
+100 : {AppendEntriesResp map[term:3 success:true senderId:400 forIndex:0]}
+NODE ID : 100 LastLogIndex 20
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+NODE ID : 200 LastLogIndex 20
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+NODE ID : 300 LastLogIndex 20
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+NODE ID : 400 LastLogIndex 20
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+NODE ID : 500 LastLogIndex 20
+i: 0 Data: 
+i: 1 Data: 0
+i: 2 Data: 1
+i: 3 Data: 2
+i: 4 Data: 3
+i: 5 Data: 4
+i: 6 Data: 5
+i: 7 Data: 6
+i: 8 Data: 7
+i: 9 Data: 8
+i: 10 Data: 9
+i: 11 Data: 10
+i: 12 Data: 11
+i: 13 Data: 12
+i: 14 Data: 13
+i: 15 Data: 14
+i: 16 Data: 15
+i: 17 Data: 16
+i: 18 Data: 17
+i: 19 Data: 18
+i: 20 Data: 19
+100 : {Fake Event map[]}
+200 : {Fake Event map[]}
+PASS
+ok  	github.com/JashDave/cs733/assignment4/assignment3	60.421s
