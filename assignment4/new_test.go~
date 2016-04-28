@@ -411,8 +411,8 @@ func TestRPC_RaftStability(t *testing.T) {
 	cl.close()
 
 	//fmt.Println("DP51  ", Servers[0].Pid)
-	//err2 := Servers[0].Kill()
-	//err3 := Servers[0].Release()
+	err2 := Servers[0].Kill()
+	err3 := Servers[0].Release()
 	mykill(8080)
 
 	//Wait for new leader to get elected

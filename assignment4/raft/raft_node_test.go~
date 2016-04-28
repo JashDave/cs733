@@ -18,8 +18,8 @@ var nc []NetConfig = []NetConfig{{uint64(ids[0]), "localhost", uint16(5001)},
 	{uint64(ids[3]), "localhost", uint16(5004)},
 	{uint64(ids[4]), "localhost", uint16(5005)}}
 
-const EleTimeout uint64 = 2000
-const HBTimeout uint64 = 50
+const EleTimeout uint64 = 1000
+const HBTimeout uint64 = 100
 
 func ImportHolder() {
 	fmt.Println("")

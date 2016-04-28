@@ -317,9 +317,20 @@ func (sm *StateMachine) Timeout() {
 		sm.alarmChan <- CreateAction("Alarm", "t", sm.heartbeatTimeout)
 		//Send blank append entries to all
 		for _, p := range sm.peers {
+
+			ni:=sm.nextIndex[sm.peerIndex[p]]
+			if ni < sm.logIndex { // optimize to send bunch of entries
+				//fmt.Println("Sending:",ni,"to",senderId)
+				event := CreateEvent("AppendEntriesReq", "term", sm.currentTerm, "leaderId", sm.id, "prevLogIndex", ni-1, "prevLogTerm", sm.logElementAt(ni-1).Term, "entries", sm.logElementAt(ni), "leaderCommit", sm.commitIndex)
+				sm.sendChan <- CreateAction("Send", "peerId", p, "event", event)
+			} else {
+
+
 			entry := LogEntry{0, nil, false}
 			event := CreateEvent("AppendEntriesReq", "term", sm.currentTerm, "leaderId", sm.id, "prevLogIndex", sm.logIndex-1, "prevLogTerm", sm.logElementAt(sm.logIndex-1).Term, "entries", entry, "leaderCommit", sm.commitIndex)
 			sm.sendChan <- CreateAction("Send", "peerId", p, "event", event)
+
+			}
 		}
 
 	case CANDIDATE:
