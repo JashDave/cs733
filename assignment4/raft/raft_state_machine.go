@@ -9,13 +9,13 @@
  * Assumes all functions are atomic i.e. StateMachine can only be stoped after completion of function in progress.
  * stop flag has race condition but it is Ok
  */
-package assignment2
+package raft
 
 import (
-	"fmt"
 	"errors"
-	"math/rand"
+	"fmt"
 	"github.com/cs733-iitb/log"
+	"math/rand"
 	"time"
 )
 
@@ -26,8 +26,6 @@ const (
 	CANDIDATE
 	LEADER
 )
-
-
 
 type LogEntry struct {
 	Term  uint64
@@ -68,15 +66,14 @@ type StateMachine struct {
 	stop         bool
 	processMutex chan int
 
-	
-	alarmChan   chan Action
-	commitChan   chan Action
+	alarmChan  chan Action
+	commitChan chan Action
 	saveChan   chan Action
 	sendChan   chan Action
 
-	timeoutChan    chan Event
-	responseChan    chan Event
-	requestChan    chan Event
+	timeoutChan  chan Event
+	responseChan chan Event
+	requestChan  chan Event
 
 	respno int
 }
@@ -136,7 +133,6 @@ func (sm *StateMachine) GetRequestChannel() *(chan Event) {
 	return &sm.requestChan
 }
 
-
 func InitStateMachine(id uint64, peers []uint64, majority uint64, electionTimeout, heartbeatTimeout time.Duration, currentTerm, votedFor uint64, log *log.Log) *StateMachine {
 	sm := new(StateMachine)
 	sm.respno = 0
@@ -154,7 +150,7 @@ func InitStateMachine(id uint64, peers []uint64, majority uint64, electionTimeou
 	//Volatile
 	sm.state = FOLLOWER
 	sm.leaderId = 0
-	sm.logIndex = uint64(sm.log.GetLastIndex())+1
+	sm.logIndex = uint64(sm.log.GetLastIndex()) + 1
 
 	sm.commitIndex = 0
 	sm.nextIndex = make([]uint64, len(sm.peers))
@@ -165,15 +161,15 @@ func InitStateMachine(id uint64, peers []uint64, majority uint64, electionTimeou
 		sm.peerIndex[sm.peers[i]] = i
 	}
 	sm.stop = true
-	
+
 	sm.alarmChan = make(chan Action, CHANNEL_SIZE)
 	sm.commitChan = make(chan Action, CHANNEL_SIZE)
 	sm.saveChan = make(chan Action, CHANNEL_SIZE)
 	sm.sendChan = make(chan Action, CHANNEL_SIZE)
 
-	sm.timeoutChan  = make(chan Event, CHANNEL_SIZE)
-	sm.responseChan  = make(chan Event, CHANNEL_SIZE)
-	sm.requestChan   = make(chan Event, CHANNEL_SIZE)
+	sm.timeoutChan = make(chan Event, CHANNEL_SIZE)
+	sm.responseChan = make(chan Event, CHANNEL_SIZE)
+	sm.requestChan = make(chan Event, CHANNEL_SIZE)
 
 	sm.processMutex = make(chan int, 1)
 	sm.processMutex <- 1
@@ -199,7 +195,6 @@ func (sm *StateMachine) Stop() {
 	sm.timeoutChan <- CreateEvent("Fake Event")
 }
 
-
 //-----------------------Internal Functions of StateMachine---------------------------
 /*
  *
@@ -216,59 +211,58 @@ func (sm *StateMachine) processEvents() {
 func (sm *StateMachine) getPrioritizedEvent() Event {
 	e := Event{}
 	select {
+	case e = <-sm.timeoutChan:
+	default:
+		select {
 		case e = <-sm.timeoutChan:
-		default :
+		case e = <-sm.responseChan:
+		default:
 			select {
-				case e = <-sm.timeoutChan:
-				case e = <-sm.responseChan:
-				default :
-					select {
-						case e = <-sm.timeoutChan:
-						case e = <-sm.responseChan:
-						case e = <-sm.requestChan:
-					}
+			case e = <-sm.timeoutChan:
+			case e = <-sm.responseChan:
+			case e = <-sm.requestChan:
 			}
+		}
 	}
 	return e
 }
 
-
 func (sm *StateMachine) processEvent() {
 	e := sm.getPrioritizedEvent()
 
-/*
-if (sm.state == LEADER) { 
-fmt.Println(sm.id,":",e)
-}
+	/*
+	   if (sm.state == LEADER) {
+	   fmt.Println(sm.id,":",e)
+	   }
 
-if (sm.state != LEADER && sm.id==100) { 
-fmt.Println(sm.id,":",e)
-} else if (sm.state != LEADER && sm.id==200 && sm.leaderId == 100) { 
-fmt.Println(sm.id,":",e)
-}
-*/
+	   if (sm.state != LEADER && sm.id==100) {
+	   fmt.Println(sm.id,":",e)
+	   } else if (sm.state != LEADER && sm.id==200 && sm.leaderId == 100) {
+	   fmt.Println(sm.id,":",e)
+	   }
+	*/
 
-		switch e.Name {
-		case "Append":
-			sm.Append(e.Data["data"].([]byte))
-		case "Timeout":
-			sm.Timeout()
-		case "AppendEntriesReq":
-			sm.AppendEntriesReq(e.Data["term"].(uint64), e.Data["leaderId"].(uint64), e.Data["prevLogIndex"].(uint64), e.Data["prevLogTerm"].(uint64), e.Data["entries"].(LogEntry), e.Data["leaderCommit"].(uint64))
-		case "AppendEntriesResp":
-			sm.AppendEntriesResp(e.Data["term"].(uint64), e.Data["success"].(bool), e.Data["senderId"].(uint64), e.Data["forIndex"].(uint64))
-		case "VoteReq":
-			sm.VoteReq(e.Data["term"].(uint64), e.Data["candidateId"].(uint64), e.Data["lastLogIndex"].(uint64), e.Data["lastLogTerm"].(uint64))
-		case "VoteResp":
-			sm.VoteResp(e.Data["term"].(uint64), e.Data["voteGranted"].(bool))
-		}
+	switch e.Name {
+	case "Append":
+		sm.Append(e.Data["data"].([]byte))
+	case "Timeout":
+		sm.Timeout()
+	case "AppendEntriesReq":
+		sm.AppendEntriesReq(e.Data["term"].(uint64), e.Data["leaderId"].(uint64), e.Data["prevLogIndex"].(uint64), e.Data["prevLogTerm"].(uint64), e.Data["entries"].(LogEntry), e.Data["leaderCommit"].(uint64))
+	case "AppendEntriesResp":
+		sm.AppendEntriesResp(e.Data["term"].(uint64), e.Data["success"].(bool), e.Data["senderId"].(uint64), e.Data["forIndex"].(uint64))
+	case "VoteReq":
+		sm.VoteReq(e.Data["term"].(uint64), e.Data["candidateId"].(uint64), e.Data["lastLogIndex"].(uint64), e.Data["lastLogTerm"].(uint64))
+	case "VoteResp":
+		sm.VoteResp(e.Data["term"].(uint64), e.Data["voteGranted"].(bool))
+	}
 }
 
 func (sm *StateMachine) addToLog(entry LogEntry, index uint64) error {
 	sm.saveChan <- CreateAction("LogStore", "term", sm.currentTerm, "index", index, "data", entry.Data)
 	//? wait for LogStore to complete
 	sm.logIndex = index + 1
-//?? LogStore Event not required if we do this here
+	//?? LogStore Event not required if we do this here
 	if uint64(sm.log.GetLastIndex()+1) > index {
 		sm.log.TruncateToEnd(int64(index))
 	}
@@ -283,11 +277,10 @@ func (sm *StateMachine) saveState(term, votedFor uint64) error {
 	return nil
 }
 
-
 func (sm *StateMachine) logElementAt(idx uint64) LogEntry {
-	entry,err := sm.log.Get(int64(idx))
+	entry, err := sm.log.Get(int64(idx))
 	if err != nil {
-fmt.Println("Error in log access : ",err,"Idx:",idx)
+		fmt.Println("Error in log access : ", err, "Idx:", idx)
 		//return nil
 	}
 	return entry.(LogEntry)
@@ -312,7 +305,7 @@ func (sm *StateMachine) Append(data []byte) {
 		}
 
 	default:
-		sm.commitChan <- CreateAction("Redirect", "leaderId", sm.leaderId,"data",data)
+		sm.commitChan <- CreateAction("Redirect", "leaderId", sm.leaderId, "data", data)
 	}
 }
 
@@ -379,7 +372,7 @@ func (sm *StateMachine) AppendEntriesReq(term uint64, leaderId uint64, prevLogIn
 		event = CreateEvent("AppendEntriesResp", "term", sm.currentTerm, "success", true, "senderId", sm.id, "forIndex", prevLogIndex+1)
 		sm.sendChan <- CreateAction("Send", "peerId", leaderId, "event", event)
 		return
-	} else { 
+	} else {
 		sm.alarmChan <- CreateAction("Alarm", "t", sm.electionTimeout)
 		success := sm.appendEntryHelper(prevLogIndex, prevLogTerm, entries, leaderCommit)
 		event = CreateEvent("AppendEntriesResp", "term", sm.currentTerm, "success", success, "senderId", sm.id, "forIndex", prevLogIndex+1)
@@ -400,7 +393,7 @@ func (sm *StateMachine) appendEntryHelper(prevLogIndex uint64, prevLogTerm uint6
 				} else {
 					sm.commitIndex = leaderCommit
 				}
-//fmt.Println("SM CmtIdx:",sm.commitIndex)
+				//fmt.Println("SM CmtIdx:",sm.commitIndex)
 				sm.commitChan <- CreateAction("Commit", "index", sm.commitIndex, "data", sm.logElementAt(sm.commitIndex).Data, "err", nil)
 			}
 			return true
@@ -412,15 +405,13 @@ func (sm *StateMachine) appendEntryHelper(prevLogIndex uint64, prevLogTerm uint6
 			} else {
 				sm.commitIndex = leaderCommit
 			}
-//fmt.Println("SM CmtIdx:",sm.commitIndex)
+			//fmt.Println("SM CmtIdx:",sm.commitIndex)
 			sm.commitChan <- CreateAction("Commit", "index", sm.commitIndex, "data", sm.logElementAt(sm.commitIndex).Data, "err", nil)
 		}
 		return true
 	}
 	return false //else false
 }
-
-
 
 //-------------------------------------------------------------------
 func (sm *StateMachine) AppendEntriesResp(term uint64, success bool, senderId uint64, forIndex uint64) {
@@ -451,16 +442,15 @@ func (sm *StateMachine) AppendEntriesResp(term uint64, success bool, senderId ui
 					}
 				}
 
-
 				if matchcount >= sm.majority {
 					//fmt.Println("DP#2","ID",sm.id,"NI",ni,"len",len(sm.log),sm.log)
 					sm.commitIndex = ni - 1
-//fmt.Println("SM CmtIdx:",sm.commitIndex,"NI",sm.nextIndex)
+					//fmt.Println("SM CmtIdx:",sm.commitIndex,"NI",sm.nextIndex)
 					sm.commitChan <- CreateAction("Commit", "index", ni-1, "data", sm.logElementAt(ni-1).Data, "err", nil)
 				}
 			}
 			if ni < sm.logIndex { // optimize to send bunch of entries
-//fmt.Println("Sending:",ni,"to",senderId)
+				//fmt.Println("Sending:",ni,"to",senderId)
 				event := CreateEvent("AppendEntriesReq", "term", sm.currentTerm, "leaderId", sm.id, "prevLogIndex", ni-1, "prevLogTerm", sm.logElementAt(ni-1).Term, "entries", sm.logElementAt(ni), "leaderCommit", sm.commitIndex)
 				sm.sendChan <- CreateAction("Send", "peerId", senderId, "event", event)
 			}
@@ -478,7 +468,7 @@ func (sm *StateMachine) AppendEntriesResp(term uint64, success bool, senderId ui
 			ni := sm.nextIndex[sm.peerIndex[senderId]]
 			event := CreateEvent("AppendEntriesReq", "term", sm.currentTerm, "leaderId", sm.id, "prevLogIndex", ni-1, "prevLogTerm", sm.logElementAt(ni-1).Term, "entries", sm.logElementAt(ni), "leaderCommit", sm.commitIndex)
 			sm.sendChan <- CreateAction("Send", "peerId", senderId, "event", event)
-//fmt.Println("Sending ",ni,"to",senderId)
+			//fmt.Println("Sending ",ni,"to",senderId)
 		}
 	}
 }

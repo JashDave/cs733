@@ -1,4 +1,4 @@
-package raftnode
+package raft
 
 import (
 	"fmt"
@@ -21,15 +21,14 @@ var nc []NetConfig = []NetConfig{{uint64(ids[0]), "localhost", uint16(5001)},
 const EleTimeout uint64 = 5000
 const HBTimeout uint64 = 2000
 
-
-func ImportHolder(){
+func ImportHolder() {
 	fmt.Println("")
 }
 
-func GetNode(idx int,t *testing.T) *RaftNode {
+func GetNode(idx int, t *testing.T) *RaftNode {
 	conf := Config{nc, uint64(ids[idx]), DIRNAME + strconv.Itoa(int(ids[idx])), EleTimeout, HBTimeout}
-	rn,err := CreateRaftNode(conf)
-	if err!= nil {
+	rn, err := CreateRaftNode(conf)
+	if err != nil {
 		t.Fatal("Error creating node.", err)
 	}
 	return rn
@@ -39,7 +38,7 @@ func MakeNodes(t *testing.T) ([]*RaftNode, *mock.MockCluster) {
 	cl, _ := mock.NewCluster(nil)
 	rafts := make([]*RaftNode, len(nc))
 	for i := 0; i < len(nc); i++ {
-		rafts[i] = GetNode(i,t)
+		rafts[i] = GetNode(i, t)
 		rafts[i].server.Close() //Override with mock cluster
 		tmp, err := cl.AddServer(int(rafts[i].id))
 		if err != nil {
@@ -92,10 +91,6 @@ func WaitToGetLeader(rafts []*RaftNode, times int) *RaftNode {
 	return ldr
 }
 
-
-
-
-
 func TestMultipleAppend(t *testing.T) {
 	ClearAll()
 	rn, _ := MakeNodes(t)
@@ -108,19 +103,19 @@ func TestMultipleAppend(t *testing.T) {
 		t.Fatal("Error getting leader")
 	}
 
-	times := 1000
+	times := 100
 
-	for i:=0;i<times;i++ {
+	for i := 0; i < times; i++ {
 		ldr.Append([]byte(strconv.Itoa(i)))
 	}
 
-	for i:=0; i<2*times &&  int(ldr.CommittedIndex()) < (times-1); i++ {
-for _,node := range rn {
-		fmt.Println("i:",i,"NodeID:",node.id,"CmtIdx:",node.CommittedIndex(),"LastLogIdx",node.rnlog.GetLastIndex(),"Leader:",node.LeaderId())
-}
+	for i := 0; i < 2*times && int(ldr.CommittedIndex()) < (times-1); i++ {
+		for _, node := range rn {
+			fmt.Println("i:", i, "NodeID:", node.id, "CmtIdx:", node.CommittedIndex(), "LastLogIdx", node.rnlog.GetLastIndex(), "Leader:", node.LeaderId())
+		}
 		select {
-		case ci := <- *ldr.GetCommitChannel():
-			fmt.Println("CI",ci)
+		case ci := <-*ldr.GetCommitChannel():
+			fmt.Println("CI", ci)
 			if ci.Err != nil {
 				t.Fatal(ci.Err)
 			}
@@ -131,23 +126,17 @@ for _,node := range rn {
 
 	time.Sleep(time.Millisecond * 2000)
 
-	for _,ldr = range rn {
-	fmt.Println("NODE ID :",ldr.Id(),"LastLogIndex",ldr.rnlog.GetLastIndex())
-		for i:=uint64(0);i<=ldr.CommittedIndex() ;i++ {
-			err,data := ldr.Get(i)
-			fmt.Println("i:",i,"Data:",string(data))
-			if err!=nil {
-				t.Fatal("Not commited in log:",err)
+	for _, ldr = range rn {
+		fmt.Println("NODE ID :", ldr.Id(), "LastLogIndex", ldr.rnlog.GetLastIndex())
+		for i := uint64(0); i <= ldr.CommittedIndex(); i++ {
+			err, data := ldr.Get(i)
+			fmt.Println("i:", i, "Data:", string(data))
+			if err != nil {
+				t.Fatal("Not commited in log:", err)
 			}
 		}
 	}
 }
-
-
-
-
-
-
 
 /*
 func TestInit(t *testing.T) {
@@ -184,7 +173,7 @@ func TestCommit(t *testing.T) {
 				t.Fatal("Got different data")
 			}
 			//Check Log also
-			commitIndex := node.CommittedIndex() 
+			commitIndex := node.CommittedIndex()
 			err,data := node.Get(commitIndex)
 			if err!=nil {
 				t.Fatal("Not commited in log",err)
@@ -313,7 +302,6 @@ func TestPartitionGetsHealed(t *testing.T) {
 	}
 }
 */
-
 
 /*
 func TestLeaderStability(t *testing.T) {

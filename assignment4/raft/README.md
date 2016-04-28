@@ -4,7 +4,7 @@ For more details of Raft consensus algorithm refer https://ramcloud.stanford.edu
 
 #Usage
 ```
-import . "github.com/JashDave/cs733/assignment3/"
+import . "github.com/JashDave/cs733/assignment4/raft"
 
 //Network Configuration of RaftNodes as ID, HostAddress, PortNumber
 var nc []NetConfig = []NetConfig{100, "localhost", uint16(5001)}, 
@@ -52,7 +52,9 @@ rn.Shutdown()
 
 #Testing
 Just do 
-go test github.com/cs733/assignment3
+```
+go test github.com/cs733/assignment4/raft
+```
 It takes around 100 seconds to run. 
 
 
@@ -60,7 +62,6 @@ It takes around 100 seconds to run.
 
 	"github.com/cs733-iitb/log"
 	"github.com/cs733-iitb/cluster"
-	"github.com/JashDave/cs733/assignment3/assignment2"
 
 Thanks to Sriram Srinivasan for providing log and cluster libraries.
 

@@ -1,11 +1,10 @@
-package raftnode
+package raft
 
 import (
 	"encoding/gob"
 	"encoding/json"
 	"errors"
 	"fmt"
-	raftsm "github.com/JashDave/cs733/assignment4/assignment3/assignment2"
 	"github.com/cs733-iitb/cluster"
 	"github.com/cs733-iitb/log"
 	"io/ioutil"
@@ -14,7 +13,7 @@ import (
 	"time"
 )
 
-func ResereveImport2(){
+func ResereveImport2() {
 	fmt.Println("")
 }
 
@@ -58,131 +57,129 @@ type RaftNode struct {
 	server     cluster.Server
 	commitChan chan CommitInfo
 
-	sm           *raftsm.StateMachine
+	sm *StateMachine
 
+	smAlarmChan  chan Action
+	smCommitChan chan Action
+	smSaveChan   chan Action
+	smSendChan   chan Action
 
-	smAlarmChan   chan raftsm.Action
-	smCommitChan   chan raftsm.Action
-	smSaveChan   chan raftsm.Action
-	smSendChan   chan raftsm.Action
+	smTimeoutChan  chan Event
+	smResponseChan chan Event
+	smRequestChan  chan Event
 
-	smTimeoutChan    chan raftsm.Event
-	smResponseChan    chan raftsm.Event
-	smRequestChan    chan raftsm.Event
-
-	stopChan    chan int
+	stopChan chan int
 }
 
 func (rn *RaftNode) processInboxEvent() {
 	select {
 	case e := <-rn.server.Inbox():
-		switch e.Msg.(raftsm.Event).Name {
+		switch e.Msg.(Event).Name {
 		case "Append":
-			rn.smRequestChan <- e.Msg.(raftsm.Event)
+			rn.smRequestChan <- e.Msg.(Event)
 		case "Timeout":
-			rn.smTimeoutChan <- e.Msg.(raftsm.Event)
+			rn.smTimeoutChan <- e.Msg.(Event)
 		case "AppendEntriesReq":
-			rn.smRequestChan <- e.Msg.(raftsm.Event)
+			rn.smRequestChan <- e.Msg.(Event)
 		case "AppendEntriesResp":
-			rn.smResponseChan <- e.Msg.(raftsm.Event)
+			rn.smResponseChan <- e.Msg.(Event)
 		case "VoteReq":
-			rn.smRequestChan <- e.Msg.(raftsm.Event)
+			rn.smRequestChan <- e.Msg.(Event)
 		case "VoteResp":
-			rn.smResponseChan <- e.Msg.(raftsm.Event)
+			rn.smResponseChan <- e.Msg.(Event)
 		}
 	}
 }
 
 func (rn *RaftNode) processInboxEvents() {
 	for {
-		  select {
-		  case <- rn.stopChan:
-		      return
-		  default:
-		  }
+		select {
+		case <-rn.stopChan:
+			return
+		default:
+		}
 		rn.processInboxEvent()
 	}
 }
 
-
-func (rn *RaftNode)getPrioritizedAction() raftsm.Action {
-	e := raftsm.Action{}
+func (rn *RaftNode) getPrioritizedAction() Action {
+	e := Action{}
 	select {
+	case e = <-rn.smAlarmChan:
+	default:
+		select {
 		case e = <-rn.smAlarmChan:
-		default :
+		case e = <-rn.smCommitChan:
+		default:
 			select {
+			case e = <-rn.smAlarmChan:
+			case e = <-rn.smCommitChan:
+			case e = <-rn.smSaveChan:
+			default:
+				select {
 				case e = <-rn.smAlarmChan:
 				case e = <-rn.smCommitChan:
-				default :
-					select {
-						case e = <-rn.smAlarmChan:
-						case e = <-rn.smCommitChan:
-						case e = <-rn.smSaveChan:
-						default :
-							select {
-								case e = <-rn.smAlarmChan:
-								case e = <-rn.smCommitChan:
-								case e = <-rn.smSaveChan:
-								case e = <-rn.smSendChan:
-							}
-					}
+				case e = <-rn.smSaveChan:
+				case e = <-rn.smSendChan:
+				}
 			}
+		}
 	}
 	return e
 }
 
 func (rn *RaftNode) processAction() {
 	e := rn.getPrioritizedAction()
-//fmt.Println(rn.id,":",e,"time:",time.Now())
-		switch e.Name {
-		case "LogStore":
-/* Done in StateMachine
-			l := raftsm.LogEntry{e.Data["term"].(uint64), e.Data["data"].([]byte), true}
-			idx := int64(e.Data["index"].(uint64)) - 1
-			if idx <= rn.rnlog.GetLastIndex() + 1 {
-				rn.rnlog.TruncateToEnd(idx)
-			}
-			err := rn.rnlog.Append(l)
-			if err != nil {
-				//error
-			}
-*/
-		case "SaveState":
-			tvf := TermVotedFor{e.Data["currentTerm"].(uint64), e.Data["votedFor"].(uint64)}
-			data, err := json.Marshal(tvf)
-			if err != nil {
-				//return nil,err//error
-			}
-			err = ioutil.WriteFile(rn.statefile, data, 0777)
-			if err != nil {
-				//fmt.Println("File write errorr", err)
-				//return nil,err//error
-			}
-		case "Alarm":
-			rn.alarm(e.Data["t"].(time.Duration))
-		case "Send":
-			id := int(e.Data["peerId"].(uint64))
-			rn.server.Outbox() <- &cluster.Envelope{Pid: id, Msg: e.Data["event"].(raftsm.Event)}
-		case "Redirect":
-			ci := CommitInfo{e.Data["data"].([]byte), 0, errors.New("Redirect")}
-			rn.commitChan <- ci
-		case "Commit":
-			//? for all or just leader
-			ci := CommitInfo{e.Data["data"].([]byte), e.Data["index"].(uint64), nil}
-			rn.commitIndex = ci.Index
-			rn.commitChan <- ci
-
+	//fmt.Println(rn.id,":",e,"time:",time.Now())
+	switch e.Name {
+	case "LogStore":
+		/* Done in StateMachine
+		l := LogEntry{e.Data["term"].(uint64), e.Data["data"].([]byte), true}
+		idx := int64(e.Data["index"].(uint64)) - 1
+		if idx <= rn.rnlog.GetLastIndex() + 1 {
+			rn.rnlog.TruncateToEnd(idx)
 		}
+		err := rn.rnlog.Append(l)
+		if err != nil {
+			//error
+		}
+		*/
+	case "SaveState":
+		tvf := TermVotedFor{e.Data["currentTerm"].(uint64), e.Data["votedFor"].(uint64)}
+		data, err := json.Marshal(tvf)
+		if err != nil {
+			//return nil,err//error
+		}
+		err = ioutil.WriteFile(rn.statefile, data, 0777)
+		if err != nil {
+			//fmt.Println("File write errorr", err)
+			//return nil,err//error
+		}
+	case "Alarm":
+		rn.alarm(e.Data["t"].(time.Duration))
+	case "Send":
+		id := int(e.Data["peerId"].(uint64))
+		rn.server.Outbox() <- &cluster.Envelope{Pid: id, Msg: e.Data["event"].(Event)}
+	case "Redirect":
+		ci := CommitInfo{e.Data["data"].([]byte), 0, errors.New("Redirect")}
+		rn.commitChan <- ci
+	case "Commit":
+		//? for all or just leader
+		ci := CommitInfo{e.Data["data"].([]byte), e.Data["index"].(uint64), nil}
+		rn.commitIndex = ci.Index
+		rn.commitChan <- ci
+
+	}
 }
 
 func (rn *RaftNode) processActions() {
 	//? Stop using process channel
 	for {
-		  select {
-		  case <- rn.stopChan:
-		      return
-		  default:
-		  }
+		select {
+		case <-rn.stopChan:
+			return
+		default:
+		}
 		rn.processAction()
 	}
 }
@@ -217,10 +214,10 @@ func CreateRaftNode(conf Config) (*RaftNode, error) {
 		return nil, err
 	}
 	rn.rnlog = rnlog
-	rn.rnlog.RegisterSampleEntry(raftsm.LogEntry{})
+	rn.rnlog.RegisterSampleEntry(LogEntry{})
 
 	if rn.rnlog.GetLastIndex() == -1 {
-		rn.rnlog.Append(raftsm.LogEntry{0,nil,false})
+		rn.rnlog.Append(LogEntry{0, nil, false})
 	}
 
 	rn.server, err = GetServer(int(conf.Id), conf.Cluster)
@@ -263,33 +260,31 @@ func CreateRaftNode(conf Config) (*RaftNode, error) {
 
 	rn.logIndex = uint64(rn.rnlog.GetLastIndex()) + 1
 
-	rn.sm = raftsm.InitStateMachine(conf.Id, peerIds, rn.majority, time.Duration(conf.ElectionTimeout)*time.Millisecond, time.Duration(conf.HeartbeatTimeout)*time.Millisecond, rn.currentTerm, rn.votedFor /*//?*/, rn.rnlog)
+	rn.sm = InitStateMachine(conf.Id, peerIds, rn.majority, time.Duration(conf.ElectionTimeout)*time.Millisecond, time.Duration(conf.HeartbeatTimeout)*time.Millisecond, rn.currentTerm, rn.votedFor /*//?*/, rn.rnlog)
 
+	rn.smAlarmChan = *rn.sm.GetAlarmChannel()
+	rn.smCommitChan = *rn.sm.GetCommitChannel()
+	rn.smSaveChan = *rn.sm.GetSaveChannel()
+	rn.smSendChan = *rn.sm.GetSendChannel()
 
-	rn.smAlarmChan   = *rn.sm.GetAlarmChannel()
-	rn.smCommitChan  = *rn.sm.GetCommitChannel()
-	rn.smSaveChan  = *rn.sm.GetSaveChannel()
-	rn.smSendChan   = *rn.sm.GetSendChannel()
-
-	rn.smTimeoutChan  = *rn.sm.GetTimeoutChannel()
-	rn.smResponseChan  = *rn.sm.GetResponseChannel()
-	rn.smRequestChan   = *rn.sm.GetRequestChannel()
-
+	rn.smTimeoutChan = *rn.sm.GetTimeoutChannel()
+	rn.smResponseChan = *rn.sm.GetResponseChannel()
+	rn.smRequestChan = *rn.sm.GetRequestChannel()
 
 	rn.commitChan = make(chan CommitInfo, 1000)
 	rn.stopChan = make(chan int, 2)
 
 	rn.timer = time.AfterFunc(100000*time.Second, func() {
-//fmt.Println(rn.id,": timeout at:",time.Now())
-		rn.smTimeoutChan <- raftsm.CreateEvent("Timeout")
+		//fmt.Println(rn.id,": timeout at:",time.Now())
+		rn.smTimeoutChan <- CreateEvent("Timeout")
 	})
 	rn.timer.Stop()
-	gob.Register(raftsm.Event{})
+	gob.Register(Event{})
 	return rn, nil
 }
 
 func (rn *RaftNode) Append(data []byte) {
-	rn.smRequestChan <- raftsm.CreateEvent("Append", "data", data)
+	rn.smRequestChan <- CreateEvent("Append", "data", data)
 }
 
 func (rn *RaftNode) GetCommitChannel() *chan CommitInfo {
@@ -305,7 +300,7 @@ func (rn *RaftNode) Get(index uint64) (error, []byte) {
 	if err != nil {
 		return err, nil
 	}
-	return nil, (data.(raftsm.LogEntry)).Data
+	return nil, (data.(LogEntry)).Data
 }
 
 func (rn *RaftNode) Id() uint64 {
@@ -317,8 +312,8 @@ func (rn *RaftNode) LeaderId() uint64 {
 }
 
 func (rn *RaftNode) Shutdown() {
-	rn.stopChan<-1
-	rn.stopChan<-2
+	rn.stopChan <- 1
+	rn.stopChan <- 2
 	rn.sm.Stop()
 	rn.server.Close()
 	rn.rnlog.Close()

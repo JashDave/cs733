@@ -1,8 +1,6 @@
 package main
 
-
 import (
-
 	"bufio"
 	"bytes"
 	"errors"
@@ -11,40 +9,39 @@ import (
 	"strings"
 	"sync"
 
+	"fmt"
+	"os"
 	"testing"
 	"time"
-	"os"
-	"fmt"
-	//raft "github.com/JashDave/cs733/assignment4/assignment3"
 )
 
 var Servers []*os.Process
 
 func TestRPCMain(t *testing.T) {
-	Servers = make([]*os.Process,5)
+	Servers = make([]*os.Process, 5)
 	os.RemoveAll("TestLog100")
 	os.RemoveAll("TestLog200")
 	os.RemoveAll("TestLog300")
 	os.RemoveAll("TestLog400")
 	os.RemoveAll("TestLog500")
-	for idx:=0;idx<5;idx++ {
-		time.Sleep(2000 *time.Millisecond)
+	for idx := 0; idx < 5; idx++ {
+		time.Sleep(2000 * time.Millisecond)
 		cmd := "/usr/local/go/bin/go"
-		args := []string{"","run","server.go",fmt.Sprintf("Config/ServerConf%d.json",idx)}
+		args := []string{"", "run", "server.go", fmt.Sprintf("Config/ServerConf%d.json", idx)}
 		pattr := new(os.ProcAttr)
 		pattr.Files = []*os.File{os.Stdin, os.Stdout, os.Stderr}
 		p, err := os.StartProcess(cmd, args, pattr)
 		if err != nil {
 			fmt.Printf("Error running %s:\n%s\n", cmd, err.Error())
 		} else {
-			Servers[idx]=p
+			Servers[idx] = p
 			//fmt.Printf("PID for %s is %d\n", cmd, p.Pid)
 		}
 
 	}
-fmt.Println("Initiated 1")
-	time.Sleep(time.Duration(5000) * 10 *time.Millisecond)
-fmt.Println("Initiated 2")
+	fmt.Println("Initiated 1")
+	time.Sleep(time.Duration(5000) * 10 * time.Millisecond)
+	fmt.Println("Initiated 2")
 }
 
 func expect(t *testing.T, response *Msg, expected *Msg, errstr string, err error) {
@@ -71,13 +68,11 @@ func expect(t *testing.T, response *Msg, expected *Msg, errstr string, err error
 	}
 }
 
-
-
 func TestRPC_BasicSequential(t *testing.T) {
 	cl := mkClient(t)
 	defer cl.close()
 
-fmt.Println("DP1")
+	fmt.Println("DP1")
 	// Read non-existent file cs733net
 	m, err := cl.read("cs733net")
 	expect(t, m, &Msg{Kind: 'F'}, "file not found", err)
@@ -102,7 +97,7 @@ fmt.Println("DP1")
 	m, err = cl.cas("cs733net", version1, data2, 0)
 	expect(t, m, &Msg{Kind: 'O'}, "cas success", err)
 
-//fmt.Println("DP2")
+	//fmt.Println("DP2")
 	// Expect to read it back
 	m, err = cl.read("cs733net")
 	expect(t, m, &Msg{Kind: 'C', Contents: []byte(data2)}, "read my cas", err)
@@ -123,15 +118,14 @@ fmt.Println("DP1")
 	m, err = cl.read("cs733net")
 	expect(t, m, &Msg{Kind: 'F'}, "file not found", err)
 
-//fmt.Println("DP3")
+	//fmt.Println("DP3")
 }
 
 func TestRPC_Binary(t *testing.T) {
 	cl := mkClient(t)
 	defer cl.close()
 
-
-//fmt.Println("DP4")
+	//fmt.Println("DP4")
 	// Write binary contents
 	data := "\x00\x01\r\n\x03" // some non-ascii, some crlf chars
 	m, err := cl.write("binfile", data, 0)
@@ -141,7 +135,7 @@ func TestRPC_Binary(t *testing.T) {
 	m, err = cl.read("binfile")
 	expect(t, m, &Msg{Kind: 'C', Contents: []byte(data)}, "read my write", err)
 
-//fmt.Println("DP5")
+	//fmt.Println("DP5")
 }
 
 func TestRPC_Chunks(t *testing.T) {
@@ -155,8 +149,7 @@ func TestRPC_Chunks(t *testing.T) {
 		}
 	}
 
-
-//fmt.Println("DP6")
+	//fmt.Println("DP6")
 	// Send the command "write teststream 10\r\nabcdefghij\r\n" in multiple chunks
 	// Nagle's algorithm is disabled on a write, so the server should get these in separate TCP packets.
 	snd("wr")
@@ -172,7 +165,7 @@ func TestRPC_Chunks(t *testing.T) {
 	m, err = cl.rcv()
 	expect(t, m, &Msg{Kind: 'O'}, "writing in chunks should work", err)
 
-//fmt.Println("DP7")
+	//fmt.Println("DP7")
 }
 
 func TestRPC_Batch(t *testing.T) {
@@ -183,7 +176,7 @@ func TestRPC_Batch(t *testing.T) {
 		"write batch2 4\r\ndefg\r\n" +
 		"read batch1\r\n"
 
-//fmt.Println("DP8")
+		//fmt.Println("DP8")
 	cl.send(cmds)
 	m, err := cl.rcv()
 	expect(t, m, &Msg{Kind: 'O'}, "write batch1 success", err)
@@ -192,7 +185,7 @@ func TestRPC_Batch(t *testing.T) {
 	m, err = cl.rcv()
 	expect(t, m, &Msg{Kind: 'C', Contents: []byte("abc")}, "read batch1", err)
 
-//fmt.Println("DP9")
+	//fmt.Println("DP9")
 }
 
 func TestRPC_BasicTimer(t *testing.T) {
@@ -208,7 +201,7 @@ func TestRPC_BasicTimer(t *testing.T) {
 	m, err = cl.read("cs733")
 	expect(t, m, &Msg{Kind: 'C', Contents: []byte(str)}, "read my cas", err)
 
-//fmt.Println("DP10")
+	//fmt.Println("DP10")
 	time.Sleep(3 * time.Second)
 
 	// Expect to not find the file after expiry
@@ -226,7 +219,7 @@ func TestRPC_BasicTimer(t *testing.T) {
 	// The last expiry time was 3 seconds. We should expect the file to still be around 2 seconds later
 	time.Sleep(2 * time.Second)
 
-//fmt.Println("DP11")
+	//fmt.Println("DP11")
 	// Expect the file to not have expired.
 	m, err = cl.read("cs733")
 	expect(t, m, &Msg{Kind: 'C', Contents: []byte(str)}, "file to not expire until 4 sec", err)
@@ -237,11 +230,11 @@ func TestRPC_BasicTimer(t *testing.T) {
 	expect(t, m, &Msg{Kind: 'F'}, "file not found after 4 sec", err)
 
 	// Create the file with an expiry time of 1 sec. We're going to delete it
-	// then immediately create it. The new file better not get deleted. 
+	// then immediately create it. The new file better not get deleted.
 	m, err = cl.write("cs733", str, 1)
 	expect(t, m, &Msg{Kind: 'O'}, "file created for delete", err)
 
-//fmt.Println("DP12")
+	//fmt.Println("DP12")
 	m, err = cl.delete("cs733")
 	expect(t, m, &Msg{Kind: 'O'}, "deleted ok", err)
 
@@ -252,9 +245,8 @@ func TestRPC_BasicTimer(t *testing.T) {
 	m, err = cl.read("cs733")
 	expect(t, m, &Msg{Kind: 'C'}, "file should not be deleted", err)
 
-//fmt.Println("DP12.1")
+	//fmt.Println("DP12.1")
 }
-
 
 // nclients write to the same file. At the end the file should be
 // any one clients' last write
@@ -264,7 +256,7 @@ func TestRPC_ConcurrentWrites(t *testing.T) {
 	niters := 10
 	clients := make([]*Client, nclients)
 
-//fmt.Println("DP13.1")
+	//fmt.Println("DP13.1")
 	for i := 0; i < nclients; i++ {
 		cl := mkClient(t)
 		if cl == nil {
@@ -274,7 +266,7 @@ func TestRPC_ConcurrentWrites(t *testing.T) {
 		clients[i] = cl
 	}
 
-//fmt.Println("DP13")
+	//fmt.Println("DP13")
 
 	errCh := make(chan error, nclients)
 	var sem sync.WaitGroup // Used as a semaphore to coordinate goroutines to begin concurrently
@@ -298,7 +290,7 @@ func TestRPC_ConcurrentWrites(t *testing.T) {
 	time.Sleep(100 * time.Millisecond) // give goroutines a chance
 	sem.Done()                         // Go!
 
-//fmt.Println("DP14")
+	//fmt.Println("DP14")
 	// There should be no errors
 	for i := 0; i < nclients*niters; i++ {
 		select {
@@ -306,7 +298,7 @@ func TestRPC_ConcurrentWrites(t *testing.T) {
 			if m.Kind != 'O' {
 				t.Fatalf("Concurrent write failed with kind=%c", m.Kind)
 			}
-		case err := <- errCh:
+		case err := <-errCh:
 			t.Fatal(err)
 		}
 	}
@@ -317,9 +309,8 @@ func TestRPC_ConcurrentWrites(t *testing.T) {
 		t.Fatalf("Expected to be able to read after 1000 writes. Got msg = %v", m)
 	}
 
-//fmt.Println("DP14.1")
+	//fmt.Println("DP14.1")
 }
-
 
 // nclients cas to the same file. At the end the file should be any one clients' last write.
 // The only difference between this test and the ConcurrentWrite test above is that each
@@ -329,7 +320,7 @@ func TestRPC_ConcurrentCas(t *testing.T) {
 	nclients := 3 //? #100
 	niters := 2   //? #10
 
-//fmt.Println("DP15.1")
+	//fmt.Println("DP15.1")
 	clients := make([]*Client, nclients)
 	for i := 0; i < nclients; i++ {
 		cl := mkClient(t)
@@ -340,7 +331,7 @@ func TestRPC_ConcurrentCas(t *testing.T) {
 		clients[i] = cl
 	}
 
-//fmt.Println("DP15")
+	//fmt.Println("DP15")
 	var sem sync.WaitGroup // Used as a semaphore to coordinate goroutines to *begin* concurrently
 	sem.Add(1)
 
@@ -354,15 +345,15 @@ func TestRPC_ConcurrentCas(t *testing.T) {
 	wg.Add(nclients)
 
 	errorCh := make(chan error, nclients)
-	
+
 	for i := 0; i < nclients; i++ {
 		go func(i int, ver int, cl *Client) {
-//fmt.Println("15.2 i",i)
+			//fmt.Println("15.2 i",i)
 			sem.Wait()
 			defer wg.Done()
 			for j := 0; j < niters; j++ {
 
-//fmt.Println("15.3 ij",i,j)
+				//fmt.Println("15.3 ij",i,j)
 				str := fmt.Sprintf("cl %d %d", i, j)
 				for {
 					m, err := cl.cas("concCas", ver, str, 0)
@@ -376,7 +367,7 @@ func TestRPC_ConcurrentCas(t *testing.T) {
 						return
 					}
 					ver = m.Version // retry with latest version
-//fmt.Println("15.4 ij",i,j)
+					//fmt.Println("15.4 ij",i,j)
 				}
 			}
 		}(i, ver, clients[i])
@@ -386,17 +377,16 @@ func TestRPC_ConcurrentCas(t *testing.T) {
 	sem.Done()                         // Start goroutines
 	wg.Wait()                          // Wait for them to finish
 	select {
-	case e := <- errorCh:
+	case e := <-errorCh:
 		t.Fatalf("Error received while doing cas: %v", e)
 	default: // no errors
 	}
 	m, _ = clients[0].read("concCas")
-//	if !(m.Kind == 'C' && strings.HasSuffix(string(m.Contents), " 9")) {	//Original
+	//	if !(m.Kind == 'C' && strings.HasSuffix(string(m.Contents), " 9")) {	//Original
 	if !(m.Kind == 'C' && strings.HasSuffix(string(m.Contents), " 1")) {
 		t.Fatalf("Expected to be able to read after 1000 writes. Got msg.Kind = %d, msg.Contents=%s", m.Kind, m.Contents)
 	}
 }
-
 
 func TestRPC_RaftStability(t *testing.T) {
 
@@ -409,9 +399,8 @@ func TestRPC_RaftStability(t *testing.T) {
 	defer Servers[4].Kill()
 	defer mykill(8084)
 
-
 	cl := mkClient(t)
-fmt.Println("DP50")
+	fmt.Println("DP50")
 	data := "My Data."
 	m, err := cl.write("StabilityTestFile", data, 0)
 	expect(t, m, &Msg{Kind: 'O'}, "write success", err)
@@ -421,56 +410,54 @@ fmt.Println("DP50")
 	expect(t, m, &Msg{Kind: 'C', Contents: []byte(data)}, "read my write", err)
 	cl.close()
 
-fmt.Println("DP51  ",Servers[0].Pid)
-	err2:=Servers[0].Kill()
-	err3:=Servers[0].Release()
-mykill(8080)
+	fmt.Println("DP51  ", Servers[0].Pid)
+	err2 := Servers[0].Kill()
+	err3 := Servers[0].Release()
+	mykill(8080)
 
+	//Wait for new leader to get elected
+	fmt.Println("DP52  ", Servers[0].Pid, err2, err3)
+	time.Sleep(time.Duration(5000) * 5 * time.Millisecond)
 
-//Wait for new leader to get elected
-fmt.Println("DP52  ",Servers[0].Pid,err2,err3)
-	time.Sleep(time.Duration(5000) * 5 *time.Millisecond)
-
-
-fmt.Println("DP53")
-	cl2 := mkClient2(t,"localhost:8083")
+	fmt.Println("DP53")
+	cl2 := mkClient2(t, "localhost:8083")
 	defer cl2.close()
 
-fmt.Println("DP54")
+	fmt.Println("DP54")
 	m, err = cl2.read("StabilityTestFile")
 
-fmt.Println("DP55")
-	if m.Kind=='R' {
-fmt.Println("Redirected to",m.Filename)
-		cl3 := mkClient2(t,m.Filename)
+	fmt.Println("DP55")
+	if m.Kind == 'R' {
+		fmt.Println("Redirected to", m.Filename)
+		cl3 := mkClient2(t, m.Filename)
 
-fmt.Println("DP56")
+		fmt.Println("DP56")
 		m, err = cl3.read("StabilityTestFile")
 
-fmt.Println("DP57")
+		fmt.Println("DP57")
 		expect(t, m, &Msg{Kind: 'C', Contents: []byte(data)}, "read my write"+m.Filename, err)
 		defer cl3.close()
 	} else {
 		expect(t, m, &Msg{Kind: 'C', Contents: []byte(data)}, "read my write", err)
 	}
 
-fmt.Println("DP58")
-
+	fmt.Println("DP58")
 
 }
 
 func mykill(port int) {
 	cmd := "/bin/fuser"
-	args := []string{"","-k",fmt.Sprintf("%d/tcp",port)}
+	args := []string{"", "-k", fmt.Sprintf("%d/tcp", port)}
 	pattr := new(os.ProcAttr)
 	pattr.Files = []*os.File{os.Stdin, os.Stdout, os.Stderr}
-	_, err := os.StartProcess(cmd, args, pattr);
+	_, err := os.StartProcess(cmd, args, pattr)
 	if err != nil {
-	    fmt.Printf("Error in running %s : \n%s\n", cmd, err.Error())
+		fmt.Printf("Error in running %s : \n%s\n", cmd, err.Error())
 	} else {
-	    //fmt.Printf("PID for %s id %d\n", cmd, p.Pid)
+		//fmt.Printf("PID for %s id %d\n", cmd, p.Pid)
 	}
 }
+
 //----------------------------------------------------------------------
 // Utility functions
 
@@ -540,7 +527,7 @@ func mkClient(t *testing.T) *Client {
 	return client
 }
 
-func mkClient2(t *testing.T,addr string) *Client {
+func mkClient2(t *testing.T, addr string) *Client {
 	var client *Client
 	raddr, err := net.ResolveTCPAddr("tcp", addr)
 	if err == nil {
@@ -624,7 +611,7 @@ func parseFirst(line string) (msg *Msg, err error) {
 	toInt := func(fieldNum int) int {
 		var i int
 		if err == nil {
-			if fieldNum >=  len(fields) {
+			if fieldNum >= len(fields) {
 				err = errors.New(fmt.Sprintf("Not enough fields. Expected field #%d in %s\n", fieldNum, line))
 				return 0
 			}
