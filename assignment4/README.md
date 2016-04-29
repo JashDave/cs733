@@ -24,10 +24,10 @@ Download and install ZeroMQ form http://zeromq.org/
 
 
 ##Dependencies
-ZeroMQ form http://zeromq.org/
-Log from github.com/cs733-iitb/log
-Cluster from github.com/cs733-iitb/cluster
-It also uses an edited version of file system form github.com/cs733-iitb/cs733/assignment1/ as present in "fs" and "root" folder
+1. ZeroMQ form http://zeromq.org/
+2. Log from github.com/cs733-iitb/log
+3. Cluster from github.com/cs733-iitb/cluster
+4. It also uses an edited version of file system form github.com/cs733-iitb/cs733/assignment1/ as present in "fs" and "root" folder
 
 ##Usage
 Start the required number of servers (atleast 3) with the following command.
