@@ -69,12 +69,13 @@ Example configuration files are present in "Config" folder.
 
 The format for each of the four commands is shown below,
 
-| Command  | Success Response | Error Response
-|----------|-----|----------|
-|read _filename_ \r\n| CONTENTS _version_ _numbytes_ _exptime remaining_\r\n</br>_content bytes_\r\n </br>| ERR_FILE_NOT_FOUND
-|write _filename_ _numbytes_ [_exptime_]\r\n</br>_content bytes_\r\n| OK _version_\r\n| |
-|cas _filename_ _version_ _numbytes_ [_exptime_]\r\n</br>_content bytes_\r\n| OK _version_\r\n | ERR\_VERSION _newversion_
-|delete _filename_ \r\n| OK\r\n | ERR_FILE_NOT_FOUND
+
+| Command                                                                     | Success Response                                                                    | Error Response            |
+|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------|---------------------------|
+| read _filename_ \r\n                                                        | CONTENTS _version_ _numbytes_ _exptime remaining_\r\n</br>_content bytes_\r\n </br> | ERR_FILE_NOT_FOUND        |
+| write _filename_ _numbytes_ [_exptime_]\r\n</br>_content bytes_\r\n         | OK _version_\r\n                                                                    |                           |
+| cas _filename_ _version_ _numbytes_ [_exptime_]\r\n</br>_content bytes_\r\n | OK _version_\r\n                                                                    | ERR\_VERSION _newversion_ |
+| delete _filename_ \r\n                                                      | OK\r\n                                                                              | ERR_FILE_NOT_FOUND        |
 
 In addition the to the semantic error responses in the table above, all commands can get three additional errors. `ERR_CMD_ERR` is returned on a malformed command, `ERR_INTERNAL` on, well, internal errors and `ERR_REDIRECT socket_address`. On getting `ERR_REDIRECT` close your current telnet connection and connect to given socket address.
 
