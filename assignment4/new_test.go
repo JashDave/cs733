@@ -7,7 +7,7 @@ import (
 	"net"
 	"strconv"
 	"strings"
-	//"sync"
+	"sync"
 
 	"fmt"
 	"os"
@@ -67,7 +67,7 @@ func expect(t *testing.T, response *Msg, expected *Msg, errstr string, err error
 		t.Fatal("Expected " + errstr)
 	}
 }
-/*
+
 func TestRPC_BasicSequential(t *testing.T) {
 	cl := mkClient(t)
 	defer cl.close()
@@ -387,7 +387,7 @@ func TestRPC_ConcurrentCas(t *testing.T) {
 		t.Fatalf("Expected to be able to read after 1000 writes. Got msg.Kind = %d, msg.Contents=%s", m.Kind, m.Contents)
 	}
 }
-*/
+
 func TestRPC_RaftStability(t *testing.T) {
 
 	defer Servers[1].Kill()

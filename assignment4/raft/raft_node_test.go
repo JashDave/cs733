@@ -91,7 +91,7 @@ func WaitToGetLeader(rafts []*RaftNode, times int) *RaftNode {
 	return ldr
 }
 
-/*
+
 func TestInit(t *testing.T) {
 	ClearAll()
 	rn := GetNode(0,t)
@@ -254,7 +254,7 @@ func TestPartitionGetsHealed(t *testing.T) {
 		t.Fatal("No leader in healed partition")
 	}
 }
-*/
+
 func TestMultipleAppend(t *testing.T) {
 	ClearAll()
 	rn, _ := MakeNodes(t)
@@ -267,7 +267,7 @@ func TestMultipleAppend(t *testing.T) {
 		t.Fatal("Error getting leader")
 	}
 
-	times := 500
+	times := 100
 
 	for i := 1; i <= times; i++ {
 		ldr.Append([]byte(strconv.Itoa(i)))
